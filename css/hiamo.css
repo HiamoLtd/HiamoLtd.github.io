@@ -3,6 +3,15 @@
     color: #212224;
 }
 
+/*Light background*/
+.hiamo-light {
+    background-color: #eaeaea;
+}
+
+.page-bg {
+    background-color: #212224;
+}
+
 /*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
 @media (min-width: 768px) {
     .absolute-x-center {
@@ -10,4 +19,21 @@
         position: absolute;
         transform: translateX(-50%);
     }
+}
+
+/* Header Styles */
+.hiamo-orange-header {
+    color: #fc3a14;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.hiamo-white-header {
+    color: #f7f8fa;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.hiamo-email {
+    font-size: 30px;
 }

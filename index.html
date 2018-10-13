@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Hiamo Limited</title>
 </head>
-<body>
+<body class="page-bg">
+<!-- Place the nav bar at the top of the page -->
 <nav class="navbar navbar-fixed-top navbar-expand-md navbar-default navbar-light hiamo-nav">
     <!-- Place the logo -->
     <a class="navbar-brand" href="#">
-        <img src="images/logonav.png" height="60" style="padding-left: 3vw">
+        <!-- Height will be 60, logo will be changed to logo without name -->
+        <img src="images/logo_name.png" height="80" style="padding-left: 3vw">
     </a>
     <!-- Create a button to toggle the dropdown menu -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,18 +27,27 @@
     <!-- Place all the links around the page -->
     <div class="collapse navbar-collapse" id="nav-list">
         <ul class="navbar-nav  absolute-x-center">
+            <!--<li class="nav-item active">-->
+                <!--<a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#Team">Team</a>-->
+            <!--</li>-->
             <li class="nav-item active">
-                <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#Team">Team</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#Contact">Contact</a>
             </li>
         </ul>
     </div>
 </nav>
+<br>
+<h2 class="hiamo-white-header" style="text-align: center">Under construction...</h2>
+<!-- Contact us is the main area for now, so include that here -->
+<div class="container justify-content-center" style="padding-top: 10vh; text-align: center" id="Contact">
+    <h1 class="hiamo-orange-header">Contact Us</h1>
+    <h2 class="hiamo-white-header">If you want to reach us, email here.</h2>
+    <a class="hiamo-email" href="mailto:contact@hiamo.nz">contact@hiamo.nz</a>
+</div>
+
 
 
 <!-- Optional JavaScript -->
