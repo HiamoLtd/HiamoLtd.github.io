@@ -1,0 +1,13 @@
+.hiamo-nav {
+    background-color: #f7f8fa;
+    color: #212224;
+}
+
+/*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
+@media (min-width: 768px) {
+    .absolute-x-center {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+}
