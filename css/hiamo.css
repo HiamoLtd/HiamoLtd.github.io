@@ -1,6 +1,17 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    padding-bottom: 115px;
+    padding-top: 90px;
+}
+
 .hiamo-nav {
     background-color: #f7f8fa;
     color: #212224;
+    height: 90px;
 }
 
 /*Light background*/
@@ -47,7 +58,7 @@
     /* The mission container aligns text and content to center in mobile mode */
     .hiamo-mission {
         width: 100%;
-        padding: 2vw;
+        padding: 0;
         text-align: center;
         align-content: center;
     }
@@ -88,4 +99,34 @@
 .hiamo-social {
     width: 4vw;
     padding: 0;
+}
+
+.hiamo-social-footer {
+    width: 5vh;
+    padding: 0;
+}
+
+.hiamo-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fc3a14;
+    color: #212224;
+}
+
+.hiamo-col, .hiamo-row {
+    background-color: inherit;
+    color: inherit;
+}
+
+.hiamo-bg-grey {
+    background-color: #212224;
+}
+
+.hiamo-bg-orange {
+    background-color: #fc3a14;
+}
+
+.hiamo-bg-white {
+    background-color: #f7f8fa;
 }

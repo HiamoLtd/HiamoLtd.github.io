@@ -14,40 +14,40 @@
 </head>
 <body class="page-bg">
 <!-- Place the nav bar at the top of the page -->
-<nav class="navbar navbar-expand-md navbar-default navbar-light hiamo-nav"><!--fixed-top TODO this needs to go back in-->
-    <!-- Place the logo -->
-    <a class="navbar-brand" href="#">
-        <!-- Height will be 60, logo will be changed to logo without name -->
-        <img src="images/logo_name.png" height="70" style="padding-left: 3vw">
-    </a>
-    <!-- Create a button to toggle the dropdown menu -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- Place all the links around the page -->
-    <div class="collapse navbar-collapse" id="nav-list">
-        <ul class="navbar-nav  absolute-x-center">
-            <!--<li class="nav-item active">-->
-                <!--<a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>-->
-            <!--</li>-->
-            <!--<li class="nav-item">-->
-                <!--<a class="nav-link" href="#Team">Team</a>-->
-            <!--</li>-->
-            <li class="nav-item active">
-                <a class="nav-link" href="#Contact">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+    <nav class="navbar navbar-expand-md navbar-default navbar-light hiamo-nav fixed-top"><!--fixed-top TODO this needs to go back in-->
+        <!-- Place the logo -->
+        <a class="navbar-brand" href="#">
+            <!-- Height will be 60, logo will be changed to logo without name -->
+            <img src="images/logo_name.png" height="70" style="padding-left: 3vw">
+        </a>
+        <!-- Create a button to toggle the dropdown menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Place all the links around the page -->
+        <div class="collapse navbar-collapse" id="nav-list">
+            <ul class="navbar-nav  absolute-x-center">
+                <!--<li class="nav-item active">-->
+                    <!--<a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#Team">Team</a>-->
+                <!--</li>-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 <!-- Company information at top -->
-<div class="container-fluid hiamo-header-image" style="height: 87.1vh;">
+<div class="container-fluid hiamo-header-image" style="height: 42vw; position: relative">
     <!-- Mission in top left -->
     <div class="hiamo-mission">
         <h2 class="hiamo-orange-smaller">
             Reconnecting explorers with historic sites through the lens of today's innovation.
         </h2>
     </div>
-    <div class="row align-items-center" style="position: absolute; bottom: 0; width: 100%">
+    <div class="row align-items-center" style="position: absolute; bottom: 0; width: 100%;">
         <div class="col-4" style="align-content: left; padding-left: 2vw;">
             <ul class="list-inline">
                 <li class="list-inline-item">
@@ -79,8 +79,53 @@
         </div>
     </div>
 </div>
+<!-- About us details
+<div class="container-fluid hiamo-container hiamo-bg-white">
+    <div class="row hiamo-row">
+        <div class="col-4 hiamo-col">
+            <p>A text</p>
+        </div>
+        <div class="col-4 hiamo-col">
+            <p>A text</p>
+        </div>
+        <div class="col-4 hiamo-col">
+            <p>A text</p>
+        </div>
+    </div>
+</div>
+<!-- Current Project Details
+<div class="container-fluid hiamo-container hiamo-bg-orange">
+    <div class="row hiamo-row">
+        <div class="col-12 hiamo-col">
+            <p>A text</p>
+        </div>
+    </div>
+</div>
+<!-- Team details
+<div class="container-fluid hiamo-container hiamo-bg-white"><!-- Todo this could also be above, part of the about
+    <div class="row hiamo-row">
+        <div class="col-4 hiamo-col">
+            <p>Person One</p>
+        </div>
+        <div class="col-4 hiamo-col">
+            <p>Person Two</p>
+        </div>
+        <div class="col-4 hiamo-col">
+            <p>Person Three</p>
+        </div>
+    </div>
+</div>
+-->
+<!-- Contact us
+<div class="container-fluid hiamo-container hiamo-bg-grey">
+    <div class="row hiamo-row">
+        <div class="col-4 hiamo-col">
+            <p>Contact info</p>
+        </div>
+    </div>
+</div>
+-->
 
-<h2 class="hiamo-white-header" style="text-align: center">Under construction...</h2>
 <!-- Contact us is the main area for now, so include that here -->
 <div class="container justify-content-center" style="padding-top: 10vh; text-align: center" id="Contact">
     <h1 class="hiamo-orange-header">Contact Us</h1>
@@ -88,7 +133,44 @@
     <a class="hiamo-email" href="mailto:contact@hiamo.nz">contact@hiamo.nz</a>
 </div>
 
-
+<!-- Page footer -->
+<footer class="footer hiamo-footer">
+    <div class="row align-items-center">
+        <!-- Contact information -->
+        <div class="col-lg-6" style="text-align: left; padding: 1vw 0 0 3vw">
+            <h1 class="hiamo-white-header" style="font-size: 3vh;">Contact Information</h1>
+            <p><span style="font-weight: bold">Email:</span> <a style="color: #212224" href="mailto:contact@hiamo.nz">contact@hiamo.nz</a>
+                <br>
+                <span style="font-weight: bold">Phone:</span> <a style="color: #212224" href="tel:+64278609129">+64 27 860 9129</a>
+            </p>
+        </div>
+        <!-- Social media -->
+        <div class="col-lg-6" style="align-content: right; padding-right: 3vw;">
+            <ul class="list-inline float-right">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/HiamoNZ/">
+                        <img src="images/FacebookLogo.png" class="hiamo-social-footer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/HiamoNZ">
+                        <img src="images/TwitterLogo.png" class="hiamo-social-footer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/hiamo_nz/">
+                        <img src="images/InstagramLogo.png" class="hiamo-social-footer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/company/hiamo/">
+                        <img src="images/LinkedInLogo.png" class="hiamo-social-footer">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
