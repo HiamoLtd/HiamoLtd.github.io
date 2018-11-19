@@ -70,18 +70,6 @@ body {
     }
 }
 
-
-/* Header Styles */
-.hiamo-orange-header {
-    color: #fc3a14;
-    font-weight: bolder;
-    font-size: 60px;
-}
-
-.hiamo-email {
-    font-size: 30px;
-}
-
 /* Fort Dorset image */
 .hiamo-header-image {
     background-image: url("../images/DorsetBackground.png");
@@ -130,3 +118,27 @@ body {
 .hiamo-bg-white {
     background-color: #f7f8fa;
 }
+
+/* Header Styles */
+.hiamo-orange-header {
+    color: #fc3a14;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.hiamo-grey-header {
+    color: #212224;
+    padding: 1vw 1vw 0vw 1vw;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.hiamo-email {
+    font-size: 30px;
+}
+
+/* Text classes */
+.hiamo-small-text {
+    padding: 0vw 1vw 1vw 1vw;
+}
+
