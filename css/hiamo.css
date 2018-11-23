@@ -12,6 +12,7 @@ body {
     background-color: #f7f8fa;
     color: #212224;
     height: 90px;
+    outline: 5px solid #fc3a14;
 }
 
 /*Light background*/
@@ -31,7 +32,7 @@ body {
         transform: translateX(-50%);
     }
     .hiamo-orange-smaller {
-        color: #fc3a14;
+        color: #f7f8fa;
         font-weight: bold;
         font-size: 2.3vw;
     }
@@ -57,7 +58,7 @@ body {
 /* If we are within the mobile screen size, apply custom styling */
 @media (max-width: 768px) {
     .hiamo-orange-smaller {
-        color: #fc3a14;
+        color: #f7f8fa;
         font-weight: bold;
         font-size: 4vw;
     }
