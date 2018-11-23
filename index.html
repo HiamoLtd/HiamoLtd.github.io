@@ -11,10 +11,34 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Hiamo Limited</title>
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./images/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./images/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./images/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./images/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./images/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./images/favicon/mstile-310x310.png" />
+
+    <meta name="theme-color" content="#fc3a14">
 </head>
 <body class="page-bg">
 <!-- Place the nav bar at the top of the page -->
-    <nav class="navbar navbar-expand-md navbar-default navbar-light hiamo-nav fixed-top"><!--fixed-top TODO this needs to go back in-->
+    <nav class="navbar navbar-expand-md navbar-default navbar-light hiamo-nav fixed-top">
         <!-- Place the logo -->
         <a class="navbar-brand" href="#">
             <!-- Height will be 60, logo will be changed to logo without name -->
@@ -27,12 +51,15 @@
         <!-- Place all the links around the page -->
         <div class="collapse navbar-collapse" id="nav-list">
             <ul class="navbar-nav  absolute-x-center">
-                <!--<li class="nav-item active">-->
-                    <!--<a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>-->
-                <!--</li>-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a>
+                </li>
                 <!--<li class="nav-item">-->
                     <!--<a class="nav-link" href="#Team">Team</a>-->
                 <!--</li>-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="#About">About</a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="#Contact">Contact</a>
                 </li>
@@ -40,7 +67,7 @@
         </div>
     </nav>
 <!-- Company information at top -->
-<div class="container-fluid hiamo-header-image" style="height: 42vw; position: relative">
+<div class="container-fluid hiamo-header-image" style="height: 42vw; position: relative" id="Home">
     <!-- Mission in top left -->
     <div class="hiamo-mission">
         <h2 class="hiamo-orange-smaller">
@@ -73,17 +100,41 @@
             </ul>
         </div>
         <div class="col-8">
-            <h3 class="hiamo-white-header" style="text-align: right; padding-right: 2vw;">
+            <h3 class="hiamo-white-title" style="text-align: right; padding-right: 2vw;">
                 Augmented Reality for historic sites.
             </h3>
         </div>
     </div>
 </div>
 <!-- About us details -->
-<div class="container-fluid hiamo-container hiamo-bg-white">
+<div class="container-fluid hiamo-container hiamo-bg-white" id="About">
     <div class="row hiamo-row">
         <div class="col-lg-4 hiamo-col">
-            <h1 class="hiamo-grey-header">About Us</h1>
+            <h1 class="hiamo-grey-header centre-text hiamo-header-padding">The Market</h1>
+            <p class="hiamo-small-text">
+                <span style="font-weight: bold">5731</span> listed heritage sites in New Zealand.
+                <br><br>
+                Over <span style="font-weight: bold">227,000</span> visits to staffed New Zealand heritage sites annually.
+                <br><br>
+                Over <span style="font-weight: bold">$16 million</span> annual revenue from New Zealand heritage sites.
+                <br><br>
+                Over <span style="font-weight: bold">$24 billion</span> annual revenue from UNESCO world heritage sites worldwide.
+            </p>
+            <!-- Todo this is the old text -->
+            <!--<span style="font-weight: bold">Passion:</span><br>-->
+            <!--Our work reflects our passion.-->
+            <!--<br><br>-->
+            <!--<span style="font-weight: bold">Sharing of Knowledge:</span><br>-->
+            <!--No one can grow by themselves. We grow together.-->
+            <!--<br><br>-->
+            <!--<span style="font-weight: bold">Collaboration:</span><br>-->
+            <!--Working with clients instead for clients.-->
+            <!--<br><br>-->
+            <!--<span style="font-weight: bold">Accuracy:</span><br>-->
+            <!--Ensuring historical accuracy while valuing heritage.-->
+        </div>
+        <div class="col-lg-4 hiamo-col">
+            <h1 class="hiamo-grey-header centre-text hiamo-header-padding">About Us</h1>
             <p class="hiamo-small-text">
                 Hiamo is working to bring AR to numerous heritage sites around New Zealand and beyond. We want to work
                 with site managers to bring an exciting interactive experience to historic landmarks.
@@ -95,23 +146,7 @@
             </p>
         </div>
         <div class="col-lg-4 hiamo-col">
-            <h1 class="hiamo-grey-header">Company Values</h1>
-            <p class="hiamo-small-text hiamo-center-container">
-                <span style="font-weight: bold">Passion:</span><br>
-                Our work reflects our passion.
-                <br><br>
-                <span style="font-weight: bold">Sharing of Knowledge:</span><br>
-                No one can grow by themselves. We grow together.
-                <br><br>
-                    <span style="font-weight: bold">Collaboration:</span><br>
-                Working with clients instead for clients.
-                <br><br>
-                    <span style="font-weight: bold">Accuracy:</span><br>
-                Ensuring historical accuracy while valuing heritage.
-            </p>
-        </div>
-        <div class="col-lg-4 hiamo-col">
-            <h1 class="hiamo-grey-header">Hiamo Meaning</h1>
+            <h1 class="hiamo-grey-header centre-text hiamo-header-padding">Hiamo Meaning</h1>
             <p class="hiamo-small-text">
                 Hiamo is a te reo Māori word which has many meanings, depending on the context it is used in.
                 The Te Aka Online Māori Dictionary lists some definitions as: <br><br>
@@ -126,11 +161,41 @@
         </div>
     </div>
 </div>
-<!-- Current Project Details
-<div class="container-fluid hiamo-container hiamo-bg-orange">
-    <div class="row hiamo-row">
-        <div class="col-12 hiamo-col">
-            <p>A text</p>
+<!-- Current Project Details -->
+<div class="container-fluid hiamo-container hiamo-bg-grey" id="Projects">
+    <h1 class="hiamo-white-title centre-text hiamo-header-padding">Current Project - Wellington Fortifications</h1>
+    <div class="row hiamo-row hiamo-bg-white">
+        <div class="col-lg-6 hiamo-col">
+            <p class="hiamo-small-text" style="padding-top: 1vw; padding-bottom: 0">
+                At this time, Hiamo is working to recreate the guns at a historic gun
+                emplacement site in Wellington city, New Zealand. Many residents and tourists do not know about
+                these sites and it is often hard to tell what these hulking concrete structures were used for.
+                <br><br>
+                We are helping to remedy this issue by bringing the historic armaments of these sites back to
+                their original emplacements using Augmented Reality (AR) technology. Physical replicas are not an option
+                at many of these sites, but using AR Hiamo is able to display these lost elements.
+                <br><br>
+                The current version of this application places a model of one of the guns on-site, allowing users
+                to move around the replica and understand the scale of the object. Our work is now focussed on
+                improving this gun model, enabling users to interact with it, and telling the story of both the
+                gun and the site itself.
+                <br><br>
+                For more information on our current and future work, visit our projects page.
+                <br>
+            </p>
+            <a href="#" style="text-decoration: none">
+                <div class="hiamo-bg-orange hiamo-div-button">
+                    <h1 class="hiamo-white-button-title">Projects</h1>
+                </div>
+            </a>
+        </div>
+        <div class="col-lg-6 hiamo-col" style="padding: 0; margin: 0;">
+            <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.youtube.com/embed/fNDudLmO1sQ" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    class="embed-responsive-item"
+                    allowfullscreen></iframe>
+            </div>
         </div>
     </div>
 </div>
@@ -162,7 +227,7 @@
 <!-- Contact us is the main area for now, so include that here -->
 <div class="container justify-content-center" style="padding-top: 10vh; text-align: center" id="Contact">
     <h1 class="hiamo-orange-header">Contact Us</h1>
-    <h2 class="hiamo-white-header">If you want to reach us, email here.</h2>
+    <h2 class="hiamo-white-title">If you want to reach us, email here.</h2>
     <a class="hiamo-email" href="mailto:contact@hiamo.nz">contact@hiamo.nz</a>
 </div>
 
@@ -171,7 +236,7 @@
     <div class="row align-items-center">
         <!-- Contact information -->
         <div class="col-lg-6" style="text-align: left; padding: 1vw 0 0 3vw">
-            <h1 class="hiamo-white-header" style="font-size: 3vh;">Contact Information</h1>
+            <h1 class="hiamo-white-title" style="font-size: 3vh;">Contact Information</h1>
             <p><span style="font-weight: bold">Email:</span> <a style="color: #212224" href="mailto:contact@hiamo.nz">contact@hiamo.nz</a>
                 <br>
                 <span style="font-weight: bold">Phone:</span> <a style="color: #212224" href="tel:+64278609129">+64 27 860 9129</a>
