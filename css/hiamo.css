@@ -277,7 +277,7 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1x.5s;
   animation-name: fade;
   animation-duration: 1.5s;
     animation-fill-mode: forwards;
@@ -356,3 +356,33 @@ img {vertical-align: middle;}
     font-family: 'Raleway';
     src: URL('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
   }
+
+
+.hiamo-banner-title {
+    text-align: center;
+    padding: 0;
+    /* Potentially use this one instead Raleway */
+    font-family: Playfair Display;
+}
+
+.hiamo-banner-holder {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.hiamo-stroke
+{
+    color: #f7f8fa;
+    text-shadow:
+            -1px -1px 0 #212224,
+            1px -1px 0 #212224,
+            -1px 1px 0 #212224,
+            1px 1px 0 #212224;
+}
+
+.hiamo-banner-image {
+    background-size: 100% 100%;
+}
