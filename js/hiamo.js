@@ -6,7 +6,7 @@ function nextSlide() {
     showSlides(slideIndex += 1);
 }
 
-var myTimer = setInterval(nextSlide, 30000);
+var myTimer = setInterval(nextSlide, 5000);
 
 
 function plusSlides(n) {

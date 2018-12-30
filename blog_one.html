@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Hiamo CSS -->
+    <link rel="stylesheet" href="css/hiamo.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Hiamo - Blog</title>
+
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./images/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./images/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./images/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./images/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./images/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./images/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./images/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./images/favicon/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./images/favicon/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./images/favicon/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./images/favicon/mstile-310x310.png" />
+
+    <meta name="theme-color" content="#fc3a14">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Work+Sans|Playfair+Display" rel="stylesheet">
+</head>
+<body class="page-bg">
+<!-- Place the nav bar at the top of the page -->
+    <nav class="navbar navbar-expand-md navbar-default navbar-light hiamo-nav fixed-top">
+        <!-- Place the logo -->
+        <a class="navbar-brand" href="index.html">
+            <!-- Height will be 60, logo will be changed to logo without name -->
+            <img src="images/Icons/logo_name.png" height="80" style="padding-left: 3vw">
+        </a>
+        <!--  <div class="col-lg-4 hiamo-col">
+            <h1 class="hiamo-grey-header centre-text hiamo-header-padding">Hiamo Meaning</h1>
+            <p class="hiamo-small-text">
+                Hiamo is a te reo Māori word which has many meanings, depending on the context it is used in.
+                The Te Aka Online Māori Dictionary lists some definitions as: <br><br>
+                <span style="font-weight: bold">1. (verb)</span> to be thrilled, excited, exciting.
+                <br>
+                <span style="font-weight: bold">2. (verb)</span> to be elevated, exalted, impressed.
+                <br><br>
+
+                More information can be found <a href="http://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=hiamo">here</a>.
+
+            </p>
+        </div> -->
+        <!-- Create a button to toggle the dropdown menu -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-list" aria-controls="nav-list" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Place all the links around the page -->
+        <div class="collapse navbar-collapse" id="nav-list">
+            <ul class="navbar-nav  absolute-x-right" style="right: 4%;">
+                <li class="nav-item active" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">
+                    <!-- <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a> -->
+                    <a href="index.html" class="nav-link" style="margin-top:5px; cursor:pointer;font-family: Raleway;">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">
+                    <div class="dropdown" style="cursor:pointer; background-color: transparent;">
+                        <a href="index.html" style="text-decoration: none">
+                            <button class="dropbtn" style="margin-top:5px; cursor:pointer; display: block; padding: .5rem; font-size: 1.5vw; background-color: transparent; font-family: Raleway;" href="index.html">About</button>
+                        </a>
+                        <div class="dropdown-content" style="max-width: 20%;">
+                          <a href="index.html" onclick="document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" class="nav-link" title="Go to team" style="cursor:pointer; font-size: 1vw;; font-family: Raleway;">Team<span class="sr-only">(current)</span></a>
+                          <a href="index.html" onclick="document.querySelector('#values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" class="nav-link" title="Go to values" style="cursor:pointer;font-size: 1vw; font-family: Raleway;">Values<span class="sr-only">(current)</span></a>
+                          <a href="index.html" onclick="document.querySelector('#market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" class="nav-link" title="Go to market" style="cursor:pointer;font-size: 1vw; font-family: Raleway;">The Market<span class="sr-only">(current)</span></a>
+                          <a href="https://www.instagram.com/hiamo_nz/" class="nav-link" style="cursor:pointer; text-decoration: none; font-size: 1vw; font-family: Raleway;">Gallery<span class="sr-only">(current)</span></a>
+                          <a href="blog.html"  class="nav-link" style="cursor:pointer; font-size: 1vw; font-family: Raleway; text-decoration: none;">Blog<span class="sr-only">(current)</span></a>
+                        </div>
+                      </div> 
+                 </li>
+                <li class="nav-item active" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">
+                    <div class="dropdown" style="cursor:pointer; background-color: transparent;">
+                        <a href="index.html" style="text-decoration: none">
+                            <button href="index.html" class="dropbtn" style="margin-top:5px; cursor:pointer; display: block; padding: .5rem; font-size: 1.5vw; background-color: transparent; font-family: Raleway;" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">Projects</button>
+                        </a>
+                            <div class="dropdown-content" style="max-width: 20%">
+                          <a href="index.html"  onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="futureprojects" class="nav-link" title="Go to projects" style="cursor:pointer;font-size:1vw; font-family: Raleway;">Future Plans<span class="sr-only">(current)</span></a>
+                        </div>
+                      </div> 
+                 </li>
+                <li class="nav-item active dropdown" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">
+                    <!-- TODO contact id is a double up -->
+                    <!--TODO fix this, its not nice. It doesnt go to the address after the page reloads. Whoops-->
+                    <!--onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="contact"-->
+                   <a href="index.html"   class="nav-link" title="Go to contact" style="margin-top:5px; cursor:pointer; font-family: Raleway;">Contact <span class="sr-only">(current)</span></a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+<!-- About us details -->
+    <div class="container-fluid hiamo-container hiamo-bg-white" id="Blogs" style="background-color: #212224; padding-bottom: 15%">
+        <div class="row hiamo-row">
+            <!--style="background-image: url('./images/Old/DorsetHighlight.jpg')"-->
+                <div class="col-md-6 hiamo-col hiamo-blog-box" id="team" style="max-width: 80%; padding: 7%; flex: none; margin: auto; margin-top: 15%; background-color: #f7f8fa; box-shadow: 0.5px 4px 10px 5px #000; border-radius: 10px;">
+                    <h1 class="hiamo-grey-header hiamo-header-padding" style="margin-bottom:2.5%; font-size: 3vw; font-family: Poiret One; text-shadow: 2px 2px 3px rgba(255,255,255,0.5);">
+                        2018 - A Year of Firsts
+                    </h1>
+                    <!--<div class="crop">-->
+                        <!--<img src="./images/Old/DorsetHighlight.jpg" style="width: 100%;">-->
+                    <!--</div>-->
+                    <div style="display:flex; align-items:center; flex-direction: row;">
+                        <p class="hiamo-small-text"  style="font-size: 1.3vw; font-family: Work Sans;">
+                            Happy New Year’s Eve everyone! We hope you had a brilliant and rewarding 2018 and that 2019 will be even more exciting.
+                            <br>
+                            <br>
+                            Our 2018 has been very an exciting year with many firsts.
+                            <br>
+                            First time launching a company.
+                            <br>
+                            First time participating in an innovation (business) accelerator program.
+                            <br>
+                            First time pitching to potential clients and future partners.
+                            <br>
+                            First time participating in a business showcase.
+                            <br>
+                            First time ordering company merchandise!
+                            <br>
+                            <br>
+                            As we got to grips with all the new jargon and the never-ending paperwork needs we found ourselves solidifying our company, building our brand and identity, realising our strengths, and planning how we will contribute the Cultural and Heritage sector of New Zealand and beyond. Of course, we wouldn't have made this far without the encouragement and advice of our mentors and peers and we would like to take this moment to appreciate all the amazing people who have and are continuing to support us and our company.
+                            <br>
+                            <br>
+                            A huge thank you to Te Papa and the Mahuki Innovation Accelerator program. We are extremely grateful for the opportunity gave us to manifest our company, while also providing us with a platform to grow, connect with others, and present ourselves to many audiences.
+                            <br>
+                            <br>
+                            Thank you to the Mahuki team, Tui Te Hau, and Ezel Kokcu for your endless support, advice, and for seeing the best in us. You have been the first people we turned to and you always made time for us.
+                            <br>
+                            <br>
+                            Thank you to the 2018 Mahuki cohort and the Alumni. We are incredibly glad to have grown alongside 10 amazing teams. Where we saw problems and risks, you saw solutions and opportunities. Your quirkiness, advice, banter, and lunch trips are what we will miss the most.
+                            <br>
+                            <br>
+                            Thank you to our spectacular mentors. Your guidance and counsel are invaluable to us and has greatly assisted us as we found our footing through the journey so far.
+                            <br>
+                            <br>
+                            Thank you to all who have offered their consultation and resources for our company and ideas. Your recommendations and knowledge have helped us progress much farther with our work.
+                            <br>
+                            <br>
+                            Thank you to our cohort, staff, and supervisors at Victoria University of Wellington for being so understanding, encouraging, and accommodating to us starting our business venture in the middle of our final year!
+                            <br>
+                            <br>
+                            Thank you to our family, friends and peers for the non-stop support, love, rides in your cars and for taking us out for much-needed breaks and hearing out all our ramblings even when it didn’t make any sense!
+                            <br>
+                            <br>
+                            And last but not the least, a big thank you to you who are reading this! It is because of your interest and encouragement in us and what we do that makes us eager to create and innovate. You all are the reason why we are ‘Hiamo’ and we hope we can return that excitement and elevation to you with our products.
+                            <br>
+                            <br>
+                            Happy Holidays and Happy New Year!
+                            <br>
+                            Shaika and Alex</p>
+                    </div>
+                </div>
+            <div style="max-width: 80%; margin: auto; margin-top: 2%; margin-bottom: 2%; padding: 1%; text-align:center; ">
+                <div class="hiamo-bg-orange hiamo-div-button" style="padding: 1vw; padding-right: 2vw; padding-left: 2vw; border-radius: 30px; float: left; box-shadow: 0.5px 4px 10px 5px #121213;">
+                    <!--Previously was https://www.linkedin.com/company/hiamo/-->
+                    <a href="blog.html" style="text-decoration: none;"><h1 class="hiamo-white-button-title" style="font-family: Raleway; color: #f7f8fa;">Read our Blog</h1></a>
+                </div>
+                <div class="hiamo-bg-orange hiamo-div-button" style="padding: 1vw; padding-right: 2vw; padding-left: 2vw; border-radius: 30px; float: left; box-shadow: 0.5px 4px 10px 5px #121213;">
+                    <a href="https://www.instagram.com/hiamo_nz/" style="text-decoration: none;"><h1 class="hiamo-white-button-title" style="font-family: Raleway; color: #f7f8fa;">View Gallery</h1></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Page footer -->
+<footer class="footer hiamo-footer" id="Contact">
+    <div class="row align-items-center" style="margin: 0">
+        <!-- Contact information -->
+        <div class="col-lg-6" style="text-align: left; padding: 1vw 0 0 3vw">
+            <h1 class="hiamo-white-title" style="font-size: 2vw; margin-top: 5%; font-family: Raleway;">Contact Information</h1>
+            <p style="color: #282a2c; font-size: 1.3vw; font-family: Work Sans;"><span style="font-weight: bold">Email:</span> <a style="color: #212224" href="mailto:contact@hiamo.nz">contact@hiamo.nz</a>
+                <br>
+                <span style="font-weight: bold">Phone:</span> <a style="color: #212224" href="tel:+64278609129">+64 27 860 9129</a>
+            </p>
+            <p style="align-text:left; color: #282a2c; font-size: 1.1vw; font-family: Work Sans; margin: auto;"><span style="font-weight: bold">Attributions:</span> Icons by <a href="https://icons8.com" style="color: #f7f8fa;">icon8</a></p>
+            <p style="align-text:left; color: #282a2c; font-size: 1.1vw; font-family: Work Sans; margin: auto;">Copyright Hiamo Ltd 2018</p>
+        </div>
+        <!-- Social media -->
+        <div class="col-lg-6" style="align-content: right; padding-right: 3vw;">
+            <ul class="list-inline float-right">
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/HiamoNZ/">
+                        <img src="images/Icons/facebook.svg" class="hiamo-social-footer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://twitter.com/HiamoNZ">
+                        <img src="images/Icons/twitter.svg" class="hiamo-social-footer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.instagram.com/hiamo_nz/">
+                        <img src="images/Icons/instagram.svg" class="hiamo-social-footer">
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/company/hiamo/">
+                        <img src="images/Icons/linkedin.svg" class="hiamo-social-footer">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div>
+            <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+            <style type="text/css">
+                #mc_embed_signup{
+                    background:transparent; 
+                    clear:left; 
+                    font-size:1.2vw; 
+                    font-family: Raleway;
+                    width:100%;
+                    padding-right: 3vw;
+                    margin-left: 180%;
+                    margin-top: -15%;
+                }
+            </style>
+            <div id="mc_embed_signup">
+            <form action="https://hiamo.us19.list-manage.com/subscribe/post?u=66c32641927b716398fa84232&amp;id=8a9223dd72" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Subscribe to our mailing list</label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_66c32641927b716398fa84232_8a9223dd72" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+        </div> -->        
+    </div>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/hiamo.js"></script>
+
+</body>
+</html>

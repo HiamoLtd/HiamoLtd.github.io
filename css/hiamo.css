@@ -386,3 +386,28 @@ img {vertical-align: middle;}
 .hiamo-banner-image {
     background-size: 100% 100%;
 }
+
+.hiamo-blog-box {
+    max-width: 80%;
+    padding: 2.5%;
+    flex: none;
+    margin: 5% auto;
+    background-color: #f7f8fa;
+    box-shadow: 0.5px 4px 10px 5px #000;
+    border-radius: 10px;
+}
+
+.hiamo-bg-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+
+.crop {
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
