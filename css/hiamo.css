@@ -14,13 +14,12 @@ html {
 body {
     /* Margin bottom by footer height */
     padding-bottom: 115px;
-    padding-top: 90px;
+    /*padding-top: 90px;*/
 }
 
 .hiamo-nav {
     background-color: #f7f8fa;
     color: #212224;
-    height: 120px;
     border-bottom: 5px solid #fc3a14;
 }
 
