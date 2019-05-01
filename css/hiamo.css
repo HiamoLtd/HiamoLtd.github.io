@@ -317,10 +317,51 @@ img {vertical-align: middle;}
     position: absolute;
     background-color: #f7f8fa;
     min-width: 102%;
-    box-shadow: 0px 8px 16px 0px #4c4d4f;
+    box-shadow: 0 8px 16px 0 #4c4d4f;
     z-index: 1;
   }
-  
+/* Style the dropdown content */
+.dropdown-menu {
+    padding: 1px;
+    display: none;
+    box-shadow: 0 5px 5px 0 #4c4d4f;
+    z-index: 1;
+    background-color: #f7f8fa;
+    cursor: pointer;
+}
+/* Change the text in the dropdown to fit properly */
+.dropdown-menu a {
+    color: #212224;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+/* Change the button colours when hovering */
+.dropdown-menu a:hover {
+    background-color: #fc3a14;
+}
+/* Ensure each dropdown button has no padding, there's enough padding already. */
+.dropdown-item {
+    padding: 0;
+}
+/* override all other CSS to ensure that there is enough padding on the buttons here. Using important is bad, but it must override bootstrap. */
+.dropdown-item a {
+    padding-left: 1.5vh !important;
+    font-size: 18px;
+}
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+/* Set a scaling font size for the nav links */
+.nav-link {
+    color: #212224;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Raleway;
+}
+
+/* TODO old dropdowns */
   /* Links inside the dropdown */
   .dropdown-content a {
     color: #212224;

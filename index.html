@@ -5,12 +5,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Hiamo CSS -->
-    <link rel="stylesheet" href="css/hiamo.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Hiamo - Augmented Reality for Historic Sites</title>
+
+
+    <!-- Hiamo CSS -->
+    <link rel="stylesheet" href="css/hiamo.css">
 
     <!-- Favicon links -->
     <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./images/favicon/apple-touch-icon-57x57.png" />
@@ -52,7 +54,7 @@
 </head>
 <body class="page-bg">
 <!-- Place the nav bar at the top of the page -->
-<nav class="navbar navbar-expand-lg navbar-light hiamo-nav fixed-top">
+<nav class="navbar navbar-expand-lg hiamo-nav fixed-top">
     <!-- Place logo in corner -->
     <!-- TODO this needs to change on other pages to link to home -->
     <a class="navbar-brand" href="#">
@@ -60,17 +62,18 @@
         <img src="images/Icons/logo_name.png" height="50" style="padding-left: 3vw;">
     </a>
     <!-- Todo ARIA accessibility. Also research it. -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
+    <!-- TODO close on link click -->
     <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav absolute-x-right" style="right: 4%;">
             <li class="nav-item">
                 <a class="nav-link" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a id="about-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });">About</a>
-                <!-- Todo these need new styles, and to link to other items -->
+                <a class="nav-link dropdown-toggle" id="about-dropdown" data-toggle="dropdown" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });">About</a>
+                <!-- Todo Style for mobile -->
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
                         <a class="nav-link" onclick="document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team">Team</a>
@@ -104,79 +107,6 @@
         </ul>
     </div>
 </nav>
-    <!--<nav class="navbar navbar-expand-lg navbar-light hiamo-nav fixed-top">-->
-        <!--&lt;!&ndash; Place the logo &ndash;&gt;-->
-        <!--<a class="navbar-brand" href="#">-->
-            <!--&lt;!&ndash; Height will be 60, logo will be changed to logo without name &ndash;&gt;-->
-            <!--<img src="images/Icons/logo_name.png" style="padding-left: 3vw; height: 80px">-->
-        <!--</a>-->
-        <!--&lt;!&ndash; TODO this is still here. Either put it somewhere, or remove it. Unsure where it would go though. &ndash;&gt;-->
-        <!--&lt;!&ndash;  <div class="col-lg-4 hiamo-col">-->
-            <!--<h1 class="hiamo-grey-header centre-text hiamo-header-padding">Hiamo Meaning</h1>-->
-            <!--<p class="hiamo-small-text">-->
-                <!--Hiamo is a te reo Māori word which has many meanings, depending on the context it is used in.-->
-                <!--The Te Aka Online Māori Dictionary lists some definitions as: <br><br>-->
-                <!--<span style="font-weight: bold">1. (verb)</span> to be thrilled, excited, exciting.-->
-                <!--<br>-->
-                <!--<span style="font-weight: bold">2. (verb)</span> to be elevated, exalted, impressed.-->
-                <!--<br><br>-->
-
-                <!--More information can be found <a href="http://maoridictionary.co.nz/search?idiom=&phrase=&proverb=&loan=&histLoanWords=&keywords=hiamo">here</a>.-->
-
-            <!--</p>-->
-        <!--</div> &ndash;&gt;-->
-        <!--&lt;!&ndash; Create a button to toggle the dropdown menu &ndash;&gt;-->
-        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-            <!--<span class="navbar-toggler-icon"></span>-->
-        <!--</button>-->
-        <!--<div class="collapse navbar-collapse" id="navbarNav"> &lt;!&ndash; Container to hold all nav links, even when they are open &ndash;&gt;-->
-            <!--<ul class="navbar-nav"> &lt;!&ndash; List of all nav links &ndash;&gt;-->
-                <!--<li class="nav-item active"> &lt;!&ndash; List entry for the next link &ndash;&gt;-->
-                    <!--<a onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home" class="nav-link">-->
-                        <!--Home <span class="sr-only">(current)</span> &lt;!&ndash; Current denotes the link we are looking at right now. &ndash;&gt;-->
-                    <!--</a>-->
-                <!--</li>-->
-                <!--<li class="nav-item active">-->
-                    <!--<a onclick="document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team" class="nav-link" >-->
-                        <!--Team-->
-                    <!--</a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-        <!--&lt;!&ndash; Place all the links around the page &ndash;&gt;-->
-        <!--<div class="collapse navbar-collapse" id="nav-list">-->
-            <!--<ul class="navbar-nav  absolute-x-right" style="right: 4%;">-->
-                <!--<li class="nav-item active" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">-->
-                    <!--&lt;!&ndash; <a class="nav-link" href="#Home">Home <span class="sr-only">(current)</span></a> &ndash;&gt;-->
-                    <!--<a onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" class="nav-link" title="Go to home" style="margin-top:5px; cursor:pointer;font-family: Raleway;">Home <span class="sr-only">(current)</span></a>-->
-                <!--</li>-->
-                <!--<li class="nav-item active" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">-->
-                    <!--<div class="dropdown" style="cursor:pointer; background-color: transparent;">-->
-                        <!--<button class="dropbtn" style="margin-top:5px; cursor:pointer; display: block; padding: .5rem; font-size: 1.5vw; background-color: transparent; font-family: Raleway;" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">About</button>-->
-                        <!--<div class="dropdown-content" style="max-width: 20%;">-->
-                          <!--<a onclick="document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" class="nav-link" title="Go to team" style="cursor:pointer; font-size: 1vw;; font-family: Raleway;">Team<span class="sr-only">(current)</span></a>-->
-                          <!--<a onclick="document.querySelector('#values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" class="nav-link" title="Go to values" style="cursor:pointer;font-size: 1vw; font-family: Raleway;">Values<span class="sr-only">(current)</span></a>-->
-                          <!--<a onclick="document.querySelector('#market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" class="nav-link" title="Go to market" style="cursor:pointer;font-size: 1vw; font-family: Raleway;">The Market<span class="sr-only">(current)</span></a>-->
-                          <!--<a href="https://www.instagram.com/hiamo_nz/" class="nav-link" style="cursor:pointer; text-decoration: none; font-size: 1vw; font-family: Raleway;">Gallery<span class="sr-only">(current)</span></a>-->
-                          <!--<a href="blog.html" class="nav-link" style="cursor:pointer; font-size: 1vw; font-family: Raleway; text-decoration: none;">Blog<span class="sr-only">(current)</span></a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                 <!--</li>-->
-                <!--<li class="nav-item active" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">-->
-                    <!--<div class="dropdown" style="cursor:pointer; background-color: transparent;">-->
-                        <!--<button class="dropbtn" style="margin-top:5px; cursor:pointer; display: block; padding: .5rem; font-size: 1.5vw; background-color: transparent; font-family: Raleway;" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">Projects</button>-->
-                        <!--<div class="dropdown-content" style="max-width: 20%">-->
-                          <!--<a onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="futureprojects" class="nav-link" title="Go to projects" style="cursor:pointer;font-size:1vw; font-family: Raleway;">Future Plans<span class="sr-only">(current)</span></a>-->
-                        <!--</div>-->
-                      <!--</div>-->
-                 <!--</li>-->
-                <!--<li class="nav-item active dropdown" style="background: transparent; font-size: 1.5vw; padding-right: 3%;">-->
-                    <!--&lt;!&ndash; TODO contact id is a double up &ndash;&gt;-->
-                   <!--<a onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="contact" class="nav-link" title="Go to contact" style="margin-top:5px; cursor:pointer; font-family: Raleway;">Contact <span class="sr-only">(current)</span></a>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</nav>-->
 
      <!-- Slideshow container -->
 <div class="slideshow-container" id="Home">
