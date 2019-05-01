@@ -32,8 +32,24 @@ body {
     background-color: #f7f8fa;
 }
 
+/* Setup text colours */
+.hiamo-orange { color: #fc3a14; }
+.hiamo-dark-orange { color: #e63815; }
+.hiamo-white { color: #f7f8fa; }
+.hiamo-black { color: #212224; }
+.hiamo-grey { color: #282a2c; }
+.hiamo-mid-grey { color: #4c4d4f; }
+
+/* Setup positions */
+.centre-text-inline {
+    text-align: center;
+    width: 100%;
+}
+
+
 /*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
 @media (min-width: 768px) {
+
     .absolute-x-center {
         left: 50%;
         position: absolute;
@@ -67,6 +83,26 @@ body {
         font-weight: bold;
         font-size: 2.5vw;
     }
+    /* Font Sizes for mobile */
+    .hiamo-small-text {
+        font-size: 20px;
+        font-family: Work Sans;
+    }
+    .hiamo-title {
+        font-weight: bolder;
+        font-size: 75px;
+        font-family: Raleway;
+    }
+    .hiamo-header {
+
+    }
+    .hiamo-subheader {
+
+    }
+    .hiamo-emphasis {
+        font-family: Playfair Display;
+    }
+
 }
 /* If we are within the mobile screen size, apply custom styling */
 @media (max-width: 768px) {
@@ -94,8 +130,26 @@ body {
         font-weight: bold;
         font-size: 3vw;
     }
-}
+    /* Font Sizes for mobile */
+    .hiamo-small-text {
+        font-size: 16px;
+        font-family: Work Sans;
+    }
+    .hiamo-title {
 
+    }
+    .hiamo-header {
+
+    }
+    .hiamo-subheader {
+
+    }
+    .hiamo-emphasis {
+        /* Set font and get right sizes */
+
+    }
+}
+/* TODO remove this */
 /* Fort Dorset image */
 .hiamo-header-image {
     background-image: url("../images/DorsetBackground.png");
@@ -276,7 +330,7 @@ img {vertical-align: middle;}
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1x.5s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
     animation-fill-mode: forwards;
@@ -311,15 +365,6 @@ img {vertical-align: middle;}
     margin: auto;
   }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f7f8fa;
-    min-width: 102%;
-    box-shadow: 0 8px 16px 0 #4c4d4f;
-    z-index: 1;
-  }
 /* Style the dropdown content */
 .dropdown-menu {
     padding: 1px;
@@ -361,37 +406,6 @@ img {vertical-align: middle;}
     font-family: Raleway;
 }
 
-/* TODO old dropdowns */
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: #212224;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #fc3a14;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #ddd;}
-
-  .dropbtn {
-    color: #212224;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-  }
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
   @font-face {
     font-family: 'Raleway';
     src: URL('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
