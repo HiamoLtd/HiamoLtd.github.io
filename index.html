@@ -52,51 +52,54 @@
 </head>
 <body class="page-bg">
 <!-- Place the nav bar at the top of the page -->
-<nav class="navbar navbar-expand-lg navbar-light hiamo-nav">
+<nav class="navbar navbar-expand-lg navbar-light hiamo-nav fixed-top">
     <!-- Place logo in corner -->
-    <a class="navbar-brand">
+    <!-- TODO this needs to change on other pages to link to home -->
+    <a class="navbar-brand" href="#">
+        <!-- TODO change image size so that it doesn't take so long to load -->
         <img src="images/Icons/logo_name.png" height="50" style="padding-left: 3vw;">
     </a>
+    <!-- Todo ARIA accessibility. Also research it. -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item">
+                <a class="nav-link" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <!-- TOdo this should link to just about when you click it -->
-                <a id="about-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle">About</a>
+                <a id="about-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });">About</a>
                 <!-- Todo these need new styles, and to link to other items -->
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
-                        <a href="#">Team</a>
+                        <a class="nav-link" onclick="document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team">Team</a>
                     </li>
                     <li class="dropdown-item">
-                        <a href="#">Values</a>
+                        <a class="nav-link" onclick="document.querySelector('#values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" title="Go to values">Values</a>
                     </li>
                     <li class="dropdown-item">
-                        <a href="#">The Market</a>
+                        <a class="nav-link" onclick="document.querySelector('#market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" title="Go to market">The Market</a>
                     </li>
                     <li class="dropdown-item">
-                        <a href="#">Gallery</a>
+                        <a class="nav-link" href="https://www.instagram.com/hiamo_nz/">Gallery</a>
                     </li>
                     <li class="dropdown-item">
-                        <a href="#">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
             </li>
+            <!-- todo Dropdown smooth, cursor -->
             <li class="nav-item dropdown">
-                <a id="project-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle">Projects</a>
+                <a id="project-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">Projects</a>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
-                        <a href="#">Future Plans</a>
+                        <a class="nav-link" onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="gotofuture" title="Go to future projects">Future Plans</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact">Contact</a>
             </li>
         </ul>
     </div>
