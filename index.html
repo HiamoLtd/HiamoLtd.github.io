@@ -65,14 +65,38 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+            <li class="nav-item dropdown">
+                <!-- TOdo this should link to just about when you click it -->
+                <a id="about-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle">About</a>
+                <!-- Todo these need new styles, and to link to other items -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">Team</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Values</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">The Market</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <a href="#">Blog</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a id="project-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle">Projects</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a href="#">Future Plans</a>
+                    </li>
+                </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
+                <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
     </div>
