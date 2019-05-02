@@ -50,6 +50,12 @@ body {
     display: block;
     margin: auto;
 }
+/* Setup images */
+.value-img {
+    filter: invert(100%);
+    margin: auto;
+    display: block;
+}
 
 
 /*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
@@ -252,7 +258,7 @@ body {
 }
 
 .hiamo-header-padding {
-    padding: 1vw 1vw 0vw 1vw;
+    padding: 1vw 1vw 0 1vw;
 }
 
 .centre-text {
@@ -260,10 +266,12 @@ body {
 }
 
 .hiamo-div-button {
+    padding: 1vw 2vw 1vw 2vw;
+    border-radius: 30px;
+    box-shadow: 1px 4px 10px 5px #121213;
     align-content: center;
     text-align: center;
     margin-left: 1vw;
-    padding: .5vw;
     color: #f7f8fa;
 }
 
@@ -272,12 +280,13 @@ body {
     color: #fc3a14;
 }
 
-.hiamo-white-button-title {
+.hiamo-button-title {
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 30px;
     padding: 0;
     margin: 0;
     text-decoration: none;
+    font-family: Raleway;
 }
 
 /*slideshow on home*/
