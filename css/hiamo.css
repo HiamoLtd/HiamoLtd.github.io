@@ -13,7 +13,7 @@ html {
 }
 body {
     /* Margin bottom by footer height */
-    padding-bottom: 115px;
+    /*padding-bottom: 115px;*/
     /*padding-top: 90px;*/
 }
 
@@ -145,6 +145,9 @@ body {
 .bot-padding-5 {
     padding-bottom: 5%;
 }
+.bot-padding-10 {
+    padding-bottom: 10%;
+}
 /* If we are within the mobile screen size, apply custom styling */
 @media (max-width: 768px) {
     .hiamo-orange-smaller {
@@ -195,6 +198,9 @@ body {
         padding-top: 8%;
         padding-bottom: 8%;
     }
+    .value-img {
+        width: 25%;
+    }
 }
 /* TODO remove this */
 /* Fort Dorset image */
@@ -217,16 +223,20 @@ body {
 }
 
 .hiamo-social-footer {
-    width: 5vh;
+    width: 40px;
     padding: 0;
 }
 
 .hiamo-footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: #fc3a14;
     color: #212224;
+    padding: 0;
+    margin: 0;
+}
+.footer-row {
+    padding: 0;
+    margin: 0;
 }
 
 .hiamo-col, .hiamo-row {
@@ -279,12 +289,12 @@ body {
 }
 
 .hiamo-div-button {
-    padding: 1vw 2vw 1vw 2vw;
     border-radius: 30px;
+    padding: 5% 0 5% 0;
+    width:80%;
     box-shadow: 1px 4px 10px 5px #121213;
     align-content: center;
     text-align: center;
-    margin-left: 1vw;
     color: #f7f8fa;
 }
 
@@ -295,7 +305,6 @@ body {
 
 .hiamo-button-title {
     font-weight: bold;
-    font-size: 30px;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -526,4 +535,19 @@ img {vertical-align: middle;}
 .hiamo-footer-header {
     font-family: Raleway;
     font-weight: bolder;
+}
+.centre-social-footer {
+    margin: auto;
+    width: 100%;
+}
+.footer-list {
+    padding: 0;
+    margin: auto;
+    width: 90%;
+}
+.list-inline-item {
+    filter: invert(100%);
+}
+.list-inline-item:hover {
+    filter: invert(0%);
 }
