@@ -70,20 +70,20 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav absolute-x-right" style="right: 4%;">
             <li class="nav-item">
-                <a class="nav-link" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link query-select" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="about-dropdown" data-toggle="dropdown" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });">About</a>
+                <a class="nav-link dropdown-toggle query-select" id="about-dropdown" data-toggle="dropdown" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });">About</a>
                 <!-- Todo Style for mobile -->
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team">Team</a>
+                        <a class="nav-link" onclick="document.querySelector('#Team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team">Team</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" title="Go to values">Values</a>
+                        <a class="nav-link" onclick="document.querySelector('#Values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" title="Go to values">Values</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" title="Go to market">The Market</a>
+                        <a class="nav-link" onclick="document.querySelector('#Market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" title="Go to market">The Market</a>
                     </li>
                     <li class="dropdown-item">
                         <a class="nav-link" href="https://www.instagram.com/hiamo_nz/">Gallery</a>
@@ -95,7 +95,7 @@
             </li>
             <!-- todo Dropdown smooth, cursor -->
             <li class="nav-item dropdown">
-                <a id="project-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">Projects</a>
+                <a id="project-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle query-select" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">Projects</a>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
                         <a class="nav-link" onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="gotofuture" title="Go to future projects">Future Plans</a>
@@ -103,7 +103,7 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact">Contact</a>
+                <a class="nav-link query-select" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -291,7 +291,7 @@
         <div class="col-2"></div>
     </div>
     <!-- Team details -->
-    <div class="row top-margin-5" id="team">
+    <div class="row top-margin-5" id="Team">
         <div class="col-1"></div>
         <div class="col-lg-10 hiamo-rounded-div hiamo-bg-white box-shadow-std">
             <h3 class="hiamo-header hiamo-grey">The Team</h3>
@@ -307,7 +307,7 @@
         <div class="col-1"></div>
     </div>
     <!-- Values details -->
-    <div class="row" id="values">
+    <div class="row" id="Values">
         <div class="col-2"></div><!-- Use padding cols to make a dynamic change when the website scale alters. -->
         <div class="col-lg-8">
             <h3 class="hiamo-header hiamo-white centre-text-inline top-margin-10">Our Values</h3>
@@ -345,7 +345,7 @@
         <div class="col-2"></div>
     </div>
     <!-- Market details TODO spell check. Also, do wew want this section? Also, style check. Text on right? Centre? Justify? -->
-    <div class="row top-margin-5" id="market">
+    <div class="row top-margin-5" id="Market">
         <div class="col-1"></div>
         <div class="col-lg-10 hiamo-rounded-div hiamo-bg-white box-shadow-std">
             <h3 class="hiamo-header hiamo-grey">The Market</h3>

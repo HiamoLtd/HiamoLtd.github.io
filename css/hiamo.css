@@ -17,6 +17,13 @@ body {
     /*padding-bottom: 115px;*/
     /*padding-top: 90px;*/
 }
+/* Change all decoration on hover */
+a:hover, a:active, a:focus {
+    text-decoration: none;
+    color: #fc3a14;
+    outline: none;
+}
+
 /* Set up nav bar colours */
 .hiamo-nav {
     background-color: #f7f8fa;
@@ -448,6 +455,9 @@ img {vertical-align: middle;}
     cursor: pointer;
     font-family: Raleway;
 }
+.query-select:hover {
+    color: #fc3a14 !important;
+}
 
   @font-face {
     font-family: 'Raleway';
@@ -485,12 +495,15 @@ img {vertical-align: middle;}
 }
 
 .hiamo-blog-box {
-    max-width: 80%;
-    padding: 2.5%;
-    flex: none;
-    margin: 5% auto;
+    cursor: pointer;
+    padding: 5%;
     background-color: #f7f8fa;
-    border-radius: 10px;
+    max-width: 95%;
+    height: 100%;
+}
+.hiamo-blog-box:hover {
+    background-color: #e63815;
+    color: #f7f8fa;
 }
 
 .box-shadow-std {
