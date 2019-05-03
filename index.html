@@ -49,7 +49,7 @@
     <meta name="msvalidate.01" content="B5495FF3397F54309CC820FCE5B6EFC8" />
     <meta name="google-site-verification" content="Jdrg0gP79_iVUYf9koHYt1ZmW_jIBrx6g7P4fSIoNZY" />
 
-    <!-- Description for the page TODO check this, I think it's too long-->
+    <!-- Description for the page TODO check this, I think it's too long. Also add one for other pages -->
     <meta name="description" content="Hiamo is a New Zealand based company building Augmented Reality experiences for the heritage sector and beyond. Using AR, we can visualise lost objects, rebuild long-gone structures, and tell the stories of a historic site."/>
 </head>
 <body class="hiamo-bg-white">
@@ -57,7 +57,6 @@
 <!-- TODO add nav to other pages -->
 <nav class="navbar navbar-expand-lg hiamo-nav fixed-top">
     <!-- Place logo in corner -->
-    <!-- TODO this needs to change on other pages to link to home -->
     <a class="navbar-brand" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" style="cursor: pointer">
         <!-- TODO change image size so that it doesn't take so long to load -->
         <img src="images/Icons/logo_name.png" height="50" style="padding-left: 3vw;" alt="Hiamo Limited logo.">
@@ -73,9 +72,13 @@
                 <a class="nav-link query-select" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle query-select" id="about-dropdown" data-toggle="dropdown" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });">About</a>
+                <!-- TODO this isn't perfect. Ideally,m you should be able to click on "about" to go to the about section on it's own. But that breaks mobile. onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });" -->
+                <a class="nav-link dropdown-toggle query-select" id="about-dropdown" data-toggle="dropdown">About</a>
                 <!-- Todo Style for mobile -->
                 <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a class="nav-link" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });" id="gotoabout" title="Go to about">Mission</a>
+                    </li>
                     <li class="dropdown-item">
                         <a class="nav-link" onclick="document.querySelector('#Team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team">Team</a>
                     </li>
@@ -95,8 +98,11 @@
             </li>
             <!-- todo Dropdown smooth, cursor -->
             <li class="nav-item dropdown">
-                <a id="project-dropdown" data-toggle="dropdown" class="nav-link dropdown-toggle query-select" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });">Projects</a>
+                <a class="nav-link dropdown-toggle query-select" id="projects-dropdown" data-toggle="dropdown">Projects</a>
                 <ul class="dropdown-menu">
+                    <li class="dropdown-item">
+                        <a class="nav-link" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });" id="gotoprojects" title="Go to current projects">Current Projects</a>
+                    </li>
                     <li class="dropdown-item">
                         <a class="nav-link" onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="gotofuture" title="Go to future projects">Future Plans</a>
                     </li>
