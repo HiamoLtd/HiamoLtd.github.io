@@ -74,6 +74,13 @@ a:active, a:focus {
     text-decoration: none;
     font-family: Raleway;
 }
+.hiamo-banner-text {
+    font-family: Work Sans;
+    font-weight: bolder;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 30vh 0;
+}
 
 /** -- Positional Styling -- **/
 /* Setup positions */
@@ -107,7 +114,8 @@ a:active, a:focus {
 .top-margin-2 { margin-top: 2%; }
 .bot-padding-10 { padding-bottom: 10%; }
 .bot-padding-5 { padding-bottom: 5%; }
-/* Other positions */
+.top-padding-10 { padding-top: 5% }
+    /* Other positions */
 .centre-text { text-align: center; }
 .center {
     width: 90%;
@@ -131,7 +139,7 @@ a:active, a:focus {
 }
 
 /*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
-@media (min-width: 768px) {
+@media (min-width: 813px) {
     /* TODO this is what is breaking the kindle, there needs to be an intermediate width. EIther this stays and the navbar only collapses later, or this goes to a bigger screen size. **/
     /* For the nav bar in desktop mode largely, hence why it is inside this media tag. */
     .absolute-x-right {
@@ -150,6 +158,7 @@ a:active, a:focus {
     .hiamo-header { font-size: 48px; }
     .hiamo-subheader { font-size: 35px; }
     .hiamo-emphasis { font-size: 32px; }
+    .hiamo-banner-text { font-size: 70px }
     /* Setup div types */
     .hiamo-rounded-div {
         border-radius: 10px;
@@ -161,7 +170,7 @@ a:active, a:focus {
     }
 }
 /* If we are within the mobile screen size, apply custom styling */
-@media (max-width: 768px) {
+@media (max-width: 813px) {
     .hiamo-white-title {
         color: #f7f8fa;
         font-weight: bold;
@@ -173,6 +182,7 @@ a:active, a:focus {
     .hiamo-header { font-size: 32px; }
     .hiamo-subheader { font-size: 22px; }
     .hiamo-emphasis { font-size: 20px; }
+    .hiamo-banner-text { font-size: 30px; }
     /* Rounded divs have less padding on mobile, and none on the side */
     .hiamo-rounded-div {
         border-radius: 10px;
@@ -205,14 +215,14 @@ img {vertical-align: middle;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+.prev, .next, .prev:not([href]):not([tabindex]), .next:not([href]):not([tabindex]) {
     cursor: pointer;
     position: absolute;
     top: 50%;
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: white;
+    color: #f7f8fa;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
@@ -227,8 +237,9 @@ img {vertical-align: middle;}
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
+  .prev:hover, .next:hover, .prev:not([href]):not([tabindex]):hover, .next:not([href]):not([tabindex]):hover {
+      color: #fc3a14;
+      background-color: rgba(0,0,0,0.8);
   }
 
 /* Caption text */
@@ -359,28 +370,29 @@ img {vertical-align: middle;}
     font-family: Playfair Display;
 }
 /* TODO remove this, only used in slideshow */
-.hiamo-banner-holder {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    margin: 0 auto;
-    width: 50%;
-}
-/* TODO remove this, only used in slideshow */
-.hiamo-stroke
-{
-    color: #f7f8fa;
+.hiamo-stroke {
     text-shadow:
-            -1px -1px 0 #212224,
-            1px -1px 0 #212224,
-            -1px 1px 0 #212224,
-            1px 1px 0 #212224;
+            -1px -1px 1px #212224,
+            1px -1px 1px #212224,
+            -1px 1px 1px #212224,
+            1px 1px 1px #212224;
 }
-
-/** TOdo this should container other styling **/
+.hiamo-jumbo-inner {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(33, 34, 36, 0.2);
+}
 /** -- Slideshow Styling -- **/
 .hiamo-banner-image {
-    background-size: 100% 100%;
+    height: 90.5vh;
+    background-size: cover;
+    background: no-repeat fixed center center;
+}
+.fixed-aspect-img {
+    width: auto;
 }
 
 /**  -- Blog related styles -- **/
