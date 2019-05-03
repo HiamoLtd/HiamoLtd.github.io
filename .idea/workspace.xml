@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf9df1f1-6a60-47fd-90da-c7d9fa3af360" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/blog.html" afterPath="$PROJECT_DIR$/blog.html" />
-      <change beforePath="$PROJECT_DIR$/blog_one.html" afterPath="$PROJECT_DIR$/blog_one.html" />
-      <change beforePath="$PROJECT_DIR$/blog_two.html" afterPath="$PROJECT_DIR$/blog_two.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change beforePath="$PROJECT_DIR$/css/hiamo.css" afterPath="$PROJECT_DIR$/css/hiamo.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -98,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="blog_one.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="blog_one.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog_one.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+            <state relative-caret-position="187">
+              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
               <folding>
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -143,23 +139,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hiamo.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="hiamo.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/hiamo.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
+            <state relative-caret-position="390">
+              <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
               <folding>
                 <element signature="e#14#264#0" expanded="false" />
-                <element signature="e#3168#4090#0" expanded="false" />
-                <element signature="e#4159#4771#0" expanded="false" />
-                <element signature="e#8929#9039#0" expanded="false" />
-                <element signature="e#9062#9116#0" expanded="false" />
-                <element signature="e#9175#9229#0" expanded="false" />
-                <element signature="e#9243#9296#0" expanded="false" />
-                <element signature="e#9343#9405#0" expanded="false" />
-                <element signature="e#9433#9460#0" expanded="false" />
-                <element signature="e#9538#9640#0" expanded="false" />
-                <element signature="e#9653#9687#0" expanded="false" />
+                <element signature="e#9118#9228#0" expanded="false" />
+                <element signature="e#9251#9305#0" expanded="false" />
+                <element signature="e#9364#9418#0" expanded="false" />
+                <element signature="e#9432#9485#0" expanded="false" />
+                <element signature="e#9532#9594#0" expanded="false" />
+                <element signature="e#9622#9649#0" expanded="false" />
+                <element signature="e#9727#9829#0" expanded="false" />
+                <element signature="e#9842#9876#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -217,11 +211,11 @@
         <option value="$PROJECT_DIR$/js/hiamo.js" />
         <option value="$PROJECT_DIR$/OldNav.html" />
         <option value="$PROJECT_DIR$/BackupOld.html" />
-        <option value="$PROJECT_DIR$/css/hiamo.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/blog.html" />
         <option value="$PROJECT_DIR$/blog_one.html" />
         <option value="$PROJECT_DIR$/blog_two.html" />
+        <option value="$PROJECT_DIR$/css/hiamo.css" />
       </list>
     </option>
   </component>
@@ -322,12 +316,12 @@
       <workItem from="1549865758345" duration="885000" />
       <workItem from="1556495224185" duration="1443000" />
       <workItem from="1556585731784" duration="24504000" />
-      <workItem from="1556796844874" duration="13253000" />
+      <workItem from="1556796844874" duration="13804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103389000" />
+    <option name="totallyTimeSpent" value="103940000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -906,26 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/hiamo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="118" column="17" lean-forward="true" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
-          <folding>
-            <element signature="e#14#264#0" expanded="false" />
-            <element signature="e#3168#4090#0" expanded="false" />
-            <element signature="e#4159#4771#0" expanded="false" />
-            <element signature="e#8929#9039#0" expanded="false" />
-            <element signature="e#9062#9116#0" expanded="false" />
-            <element signature="e#9175#9229#0" expanded="false" />
-            <element signature="e#9243#9296#0" expanded="false" />
-            <element signature="e#9343#9405#0" expanded="false" />
-            <element signature="e#9433#9460#0" expanded="false" />
-            <element signature="e#9538#9640#0" expanded="false" />
-            <element signature="e#9653#9687#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -1019,8 +993,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blog_one.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="100" column="6" lean-forward="false" selection-start-line="100" selection-start-column="6" selection-end-line="100" selection-end-column="6" />
+        <state relative-caret-position="187">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#a#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1034,6 +1008,24 @@
             <element signature="n#style#0;n#span#1;n#p#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#p#1;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/hiamo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="170" column="42" lean-forward="true" selection-start-line="170" selection-start-column="42" selection-end-line="170" selection-end-column="42" />
+          <folding>
+            <element signature="e#14#264#0" expanded="false" />
+            <element signature="e#9118#9228#0" expanded="false" />
+            <element signature="e#9251#9305#0" expanded="false" />
+            <element signature="e#9364#9418#0" expanded="false" />
+            <element signature="e#9432#9485#0" expanded="false" />
+            <element signature="e#9532#9594#0" expanded="false" />
+            <element signature="e#9622#9649#0" expanded="false" />
+            <element signature="e#9727#9829#0" expanded="false" />
+            <element signature="e#9842#9876#0" expanded="false" />
           </folding>
         </state>
       </provider>

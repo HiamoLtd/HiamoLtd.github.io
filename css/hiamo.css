@@ -116,9 +116,6 @@ a:active, a:focus {
 
 /* TOdo maybe mov below? */
 /** -- Other Styling -- **/
-.box-shadow-std {
-    box-shadow: 1px 4px 10px 5px #000;
-}
 .hiamo-div-button {
     border-radius: 30px;
     padding: 5% 0 5% 0;
@@ -158,6 +155,10 @@ a:active, a:focus {
         border-radius: 10px;
         padding: 8%;
     }
+    /* Shadows for any given box. Lighter on mobile */
+    .box-shadow-std {
+        box-shadow: 1px 4px 10px 5px #000;
+    }
 }
 /* If we are within the mobile screen size, apply custom styling */
 @media (max-width: 768px) {
@@ -180,6 +181,10 @@ a:active, a:focus {
     /* Alter width of images for mobile */
     .value-img {
         width: 25%;
+    }
+    /* Shadows for any given box. Lighter on mobile */
+    .box-shadow-std {
+        box-shadow: 0 0 10px 2px #000;
     }
 }
 
