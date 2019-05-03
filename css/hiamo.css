@@ -13,35 +13,31 @@ html {
 }
 /* TODO remove this? */
 body {
+    /*<!-- TODO get the right height for the top margin to avoid the nav bar*/
+    /*margin-top: 6vh;*/
     /* Margin bottom by footer height */
     /*padding-bottom: 115px;*/
-    /*padding-top: 90px;*/
+    padding-top: 70px;
 }
-/* Change all decoration on hover */
-a:hover, a:active, a:focus {
+
+/* Change all link decoration on hover */
+a:hover {
     text-decoration: none;
     color: #fc3a14;
     outline: none;
 }
+a:active, a:focus {
+    text-decoration: none;
+    outline: none;
+}
 
+/** -- Colour Styling -- **/
 /* Set up nav bar colours */
 .hiamo-nav {
     background-color: #f7f8fa;
     color: #212224;
     border-bottom: 5px solid #fc3a14;
 }
-
-/* TODO remove this? */
-/*Light background*/
-.hiamo-light {
-    background-color: #eaeaea;
-}
-
-/* TODO replace this? */
-.page-bg {
-    background-color: #f7f8fa;
-}
-
 /* Setup text colours */
 .hiamo-orange { color: #fc3a14; }
 .hiamo-dark-orange { color: #e63815; }
@@ -49,10 +45,15 @@ a:hover, a:active, a:focus {
 .hiamo-black { color: #212224; }
 .hiamo-grey { color: #282a2c; }
 .hiamo-mid-grey { color: #4c4d4f; }
+/* Setup background colours */
+.hiamo-bg-grey { background-color: #212224; }
+.hiamo-bg-orange { background-color: #fc3a14; }
+.hiamo-bg-dark-orange { background-color: #e63815; }
+.hiamo-bg-white { background-color: #f7f8fa; }
+
+/** -- Font Styling (base) -- **/
 /* Setup text types */
-.hiamo-small-text {
-    font-family: Work Sans;
-}
+.hiamo-small-text { font-family: Work Sans; }
 .hiamo-title {
     font-family: Raleway;
     font-weight: bolder;
@@ -65,10 +66,16 @@ a:hover, a:active, a:focus {
     font-weight: bolder;
     font-family: Work Sans;
 }
-.hiamo-emphasis {
-    font-family: Playfair Display;
+.hiamo-emphasis { font-family: Playfair Display; }
+.hiamo-button-title {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Raleway;
 }
 
+/** -- Positional Styling -- **/
 /* Setup positions */
 .centre-text-inline {
     text-align: center;
@@ -84,198 +91,34 @@ a:hover, a:active, a:focus {
     display: block;
     margin: auto;
 }
+
+/** -- Image Styling -- **/
 /* Setup images */
 .value-img {
     filter: invert(100%);
     margin: auto;
     display: block;
 }
-/* TODO move to other sections */
+
+/** -- Positional Styling -- **/
 /* Padding levels for headers and related */
 .top-margin-10 { margin-top: 10%; }
 .top-margin-5 { margin-top: 5%; }
 .top-margin-2 { margin-top: 2%; }
-.bot-padding-5 { padding-bottom: 5%; }
 .bot-padding-10 { padding-bottom: 10%; }
-
-/*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
-@media (min-width: 768px) {
-    .absolute-x-center {
-        left: 50%;
-        position: absolute;
-        transform: translateX(-50%);
-    }
-    .absolute-x-right {
-        right: 10%;
-        position: absolute;
-    }
-    .hiamo-orange-smaller {
-        color: #f7f8fa;
-        font-weight: bold;
-        font-size: 2.3vw;
-    }
-    /* In desktop mode, or tablet mode, this will align text to the left */
-    .hiamo-mission {
-        width: 40%;
-        padding: 2vw;
-        padding-top: 1vw;
-    }
-
-    .hiamo-white-title {
-        color: #f7f8fa;
-        font-weight: bold;
-        font-size: 2.5vw;
-    }
-
-    .hiamo-orange-title {
-        color: #fc3a14;
-        font-weight: bold;
-        font-size: 2.5vw;
-    }
-    /* Font Sizes for mobile */
-    .hiamo-small-text {
-        font-size: 20px;
-    }
-    .hiamo-title {
-        font-size: 75px;
-    }
-    .hiamo-header {
-        font-size: 48px;
-    }
-    .hiamo-subheader {
-        font-size: 35px;
-    }
-    .hiamo-emphasis {
-        font-size: 32px;
-    }
-    /* Setup div types */
-    .hiamo-rounded-div {
-        border-radius: 10px;
-        box-shadow: 1px 4px 10px 5px #000;
-        padding: 8%;
-        /* TODO should have much less padding for mobile */
-    }
-}
-/* If we are within the mobile screen size, apply custom styling */
-@media (max-width: 768px) {
-    .hiamo-orange-smaller {
-        color: #f7f8fa;
-        font-weight: bold;
-        font-size: 4vw;
-    }
-    /* The mission container aligns text and content to center in mobile mode */
-    .hiamo-mission {
-        width: 100%;
-        padding: 0;
-        text-align: center;
-        align-content: center;
-    }
-
-    .hiamo-white-title {
-        color: #f7f8fa;
-        font-weight: bold;
-        font-size: 3vw;
-    }
-
-    .hiamo-orange-title {
-        color: #fc3a14;
-        font-weight: bold;
-        font-size: 3vw;
-    }
-    /* Font Sizes for mobile */
-    .hiamo-small-text {
-        font-size: 16px;
-    }
-    .hiamo-title {
-        font-size: 40px;
-    }
-    .hiamo-header {
-        font-size: 32px;
-    }
-    .hiamo-subheader {
-        font-size: 22px;
-    }
-    .hiamo-emphasis {
-        font-size: 20px;
-    }
-    /* Setup div types */
-    .hiamo-rounded-div {
-        border-radius: 10px;
-        padding-top: 8%;
-        padding-bottom: 8%;
-    }
-    /* Alter width of images for mobile */
-    .value-img {
-        width: 25%;
-    }
-}
-/* TODO remove this */
-/* Fort Dorset image */
-.hiamo-header-image {
-    background-image: url("../images/DorsetBackground.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    /*padding-bottom: 37.5%;*/
-    background-size: 100% auto;
+.bot-padding-5 { padding-bottom: 5%; }
+/* Other positions */
+.centre-text { text-align: center; }
+.center {
+    width: 90%;
+    margin: auto;
 }
 
-/* TODO remove this */
-.hiamo-center-container {
-    align-content: center;
-    text-align: center;
+/* TOdo maybe mov below? */
+/** -- Other Styling -- **/
+.box-shadow-std {
+    box-shadow: 1px 4px 10px 5px #000;
 }
-
-/* TODO remove this */
-.hiamo-social {
-    width: 4vw;
-    padding: 0;
-}
-
-.hiamo-col, .hiamo-row {
-    background-color: inherit;
-    color: inherit;
-}
-
-.hiamo-bg-grey {
-    background-color: #212224;
-}
-
-.hiamo-bg-orange {
-    background-color: #fc3a14;
-}
-.hiamo-bg-dark-orange {
-    background-color: #e63815;
-}
-
-.hiamo-bg-white {
-    background-color: #f7f8fa;
-}
-
-/* Header Styles */
-.hiamo-orange-header {
-    color: #fc3a14;
-    font-weight: bolder;
-    font-size: 60px;
-}
-
-.hiamo-grey-header {
-    color: #212224;
-    font-weight: bolder;
-}
-
-.hiamo-email {
-    font-size: 30px;
-}
-
-
-.hiamo-header-padding {
-    padding: 1vw 1vw 0 1vw;
-}
-
-.centre-text {
-    text-align: center;
-}
-
 .hiamo-div-button {
     border-radius: 30px;
     padding: 5% 0 5% 0;
@@ -285,20 +128,64 @@ a:hover, a:active, a:focus {
     text-align: center;
     color: #f7f8fa;
 }
-
 .hiamo-div-button:hover {
     background-color: #4c4d4f;
     color: #fc3a14;
 }
 
-.hiamo-button-title {
-    font-weight: bold;
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    font-family: Raleway;
+/*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
+@media (min-width: 768px) {
+    /* TODO this is what is breaking the kindle, there needs to be an intermediate width. EIther this stays and the navbar only collapses later, or this goes to a bigger screen size. **/
+    /* For the nav bar in desktop mode largely, hence why it is inside this media tag. */
+    .absolute-x-right {
+        right: 10%;
+        position: absolute;
+    }
+    /* TODO remove this. Only used in depricated code and the image switcher. */
+    .hiamo-white-title {
+        color: #f7f8fa;
+        font-weight: bold;
+        font-size: 2.5vw;
+    }
+    /* Font Sizes for large screens */
+    .hiamo-small-text { font-size: 20px; }
+    .hiamo-title { font-size: 75px; }
+    .hiamo-header { font-size: 48px; }
+    .hiamo-subheader { font-size: 35px; }
+    .hiamo-emphasis { font-size: 32px; }
+    /* Setup div types */
+    .hiamo-rounded-div {
+        border-radius: 10px;
+        padding: 8%;
+    }
+}
+/* If we are within the mobile screen size, apply custom styling */
+@media (max-width: 768px) {
+    .hiamo-white-title {
+        color: #f7f8fa;
+        font-weight: bold;
+        font-size: 3vw;
+    }
+    /* Font Sizes for mobile */
+    .hiamo-small-text { font-size: 16px; }
+    .hiamo-title { font-size: 40px; }
+    .hiamo-header { font-size: 32px; }
+    .hiamo-subheader { font-size: 22px; }
+    .hiamo-emphasis { font-size: 20px; }
+    /* Rounded divs have less padding on mobile, and none on the side */
+    .hiamo-rounded-div {
+        border-radius: 10px;
+        padding: 0 8%;
+    }
+    /* Alter width of images for mobile */
+    .value-img {
+        width: 25%;
+    }
 }
 
+
+
+/* TODO slideshow styling */
 /*slideshow on home*/
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -407,14 +294,7 @@ img {vertical-align: middle;}
   .prev, .next,.text {font-size: 11px}	
 }
 
-.center {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto; */
-    width: 90%;
-    margin: auto;
-  }
-
+/** -- Dropdown Specific Styling -- **/
 /* Style the dropdown content */
 .dropdown-menu {
     padding: 1px;
@@ -448,30 +328,32 @@ img {vertical-align: middle;}
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-/* Set a scaling font size for the nav links */
+/* Set styles for nav-link text and cursor */
 .nav-link {
     color: #212224;
     font-size: 20px;
     cursor: pointer;
     font-family: Raleway;
 }
+/* Ensure selectors that do not open new links highlight on hover */
 .query-select:hover {
     color: #fc3a14 !important;
 }
 
-  @font-face {
+/** -- Font Definitions -- **/
+@font-face {
     font-family: 'Raleway';
     src: URL('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
-  }
+}
 
-
+/* TODO remove this, only used in slideshow */
 .hiamo-banner-title {
     text-align: center;
     padding: 0;
     /* Potentially use this one instead Raleway */
     font-family: Playfair Display;
 }
-
+/* TODO remove this, only used in slideshow */
 .hiamo-banner-holder {
     position: absolute;
     top: 10%;
@@ -479,7 +361,7 @@ img {vertical-align: middle;}
     margin: 0 auto;
     width: 50%;
 }
-
+/* TODO remove this, only used in slideshow */
 .hiamo-stroke
 {
     color: #f7f8fa;
@@ -490,10 +372,13 @@ img {vertical-align: middle;}
             1px 1px 0 #212224;
 }
 
+/** TOdo this should container other styling **/
+/** -- Slideshow Styling -- **/
 .hiamo-banner-image {
     background-size: 100% 100%;
 }
 
+/**  -- Blog related styles -- **/
 .hiamo-blog-box {
     cursor: pointer;
     padding: 5%;
@@ -506,50 +391,26 @@ img {vertical-align: middle;}
     color: #f7f8fa;
 }
 
-.box-shadow-std {
-    box-shadow: 0.5px 4px 10px 5px #000;
-}
-
-.hiamo-bg-img {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    filter: blur(4px);
-    -webkit-filter: blur(4px);
-}
-
-.crop {
-    width: 100%;
-    height: 10%;
-    overflow: hidden;
-}
-
-/* Footer related styles */
+/** -- Footer related styles -- **/
 .hiamo-footer-header {
     font-family: Raleway;
     font-weight: bolder;
-}
-.centre-social-footer {
-    margin: auto;
-    width: 100%;
 }
 .footer-list {
     padding: 0;
     margin: auto;
     width: 90%;
 }
-.list-inline-item {
-    filter: invert(100%);
-}
-.list-inline-item:hover {
-    filter: invert(0%);
-}
+/* Style social items */
 .hiamo-social-footer {
+    filter: invert(100%);
     width: 40px;
     padding: 0;
 }
-
+.hiamo-social-footer:hover {
+    filter: invert(0%);
+}
+/* Style containers for footer so they don't widen the page */
 .hiamo-footer {
     width: 100%;
     background-color: #fc3a14;
