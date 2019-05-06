@@ -11,13 +11,8 @@ html {
     position: relative;
     min-height: 100%;
 }
-/* TODO remove this? */
 body {
-    /*<!-- TODO get the right height for the top margin to avoid the nav bar*/
-    /*margin-top: 6vh;*/
-    /* Margin bottom by footer height */
-    /*padding-bottom: 115px;*/
-    padding-top: 70px;
+    padding-top: 65px;
 }
 
 /* Change all link decoration on hover */
@@ -122,7 +117,6 @@ a:active, a:focus {
     margin: auto;
 }
 
-/* TOdo maybe mov below? */
 /** -- Other Styling -- **/
 .hiamo-div-button {
     border-radius: 30px;
@@ -137,6 +131,17 @@ a:active, a:focus {
     background-color: #4c4d4f;
     color: #fc3a14;
 }
+/* Set styles for nav-link text and cursor */
+.nav-link {
+    color: #212224;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: Raleway;
+}
+/* Ensure selectors that do not open new links highlight on hover */
+.query-select:hover {
+    color: #fc3a14 !important;
+}
 
 /*Make it so that if we are above the minimum width (mobile / collapse width) then we center the nav items absoloutely in the center*/
 @media (min-width: 813px) {
@@ -145,12 +150,6 @@ a:active, a:focus {
     .absolute-x-right {
         right: 10%;
         position: absolute;
-    }
-    /* TODO remove this. Only used in depricated code and the image switcher. */
-    .hiamo-white-title {
-        color: #f7f8fa;
-        font-weight: bold;
-        font-size: 2.5vw;
     }
     /* Font Sizes for large screens */
     .hiamo-small-text { font-size: 20px; }
@@ -198,13 +197,9 @@ a:active, a:focus {
     }
 }
 
-
-
-/* TODO slideshow styling */
 /*slideshow on home*/
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
-.mySlides {display: none;}
 img {vertical-align: middle;}
 
 /* Slideshow container */
@@ -290,17 +285,31 @@ img {vertical-align: middle;}
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .1}
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .4} 
+  from {opacity: .1}
   to {opacity: 1}
 }
 
-.fade:not(.show) {
-    /*opacity: inherit !important;*/
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    -webkit-animation-duration: .2s;
+    animation-name: fadeOut;
+    animation-duration: .2s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .1}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1}
+    to {opacity: .1}
 }
 
 
@@ -344,17 +353,6 @@ img {vertical-align: middle;}
 .dropdown:hover .dropdown-menu {
     display: block;
 }
-/* Set styles for nav-link text and cursor */
-.nav-link {
-    color: #212224;
-    font-size: 20px;
-    cursor: pointer;
-    font-family: Raleway;
-}
-/* Ensure selectors that do not open new links highlight on hover */
-.query-select:hover {
-    color: #fc3a14 !important;
-}
 
 /** -- Font Definitions -- **/
 @font-face {
@@ -362,14 +360,13 @@ img {vertical-align: middle;}
     src: URL('/fonts/Raleway/Raleway-Regular.ttf') format('truetype');
 }
 
-/* TODO remove this, only used in slideshow */
+/** -- Slideshow Styling -- **/
 .hiamo-banner-title {
     text-align: center;
     padding: 0;
     /* Potentially use this one instead Raleway */
     font-family: Playfair Display;
 }
-/* TODO remove this, only used in slideshow */
 .hiamo-stroke {
     text-shadow:
             -1px -1px 1px #212224,
@@ -385,7 +382,6 @@ img {vertical-align: middle;}
     text-align: center;
     background-color: rgba(33, 34, 36, 0.2);
 }
-/** -- Slideshow Styling -- **/
 .hiamo-banner-image {
     height: 90.5vh;
     background-size: cover;
