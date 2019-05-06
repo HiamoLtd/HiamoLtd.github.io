@@ -54,7 +54,6 @@
 </head>
 <body class="hiamo-bg-grey">
 <!-- Place the nav bar at the top of the page -->
-<!-- TODO add nav to other pages -->
 <nav class="navbar navbar-expand-lg hiamo-nav fixed-top">
     <!-- Place logo in corner -->
     <a class="navbar-brand" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" style="cursor: pointer">
@@ -69,53 +68,60 @@
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav absolute-x-right" style="right: 4%;">
             <li class="nav-item">
-                <a class="nav-link query-select" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link query-select" onclick="document.querySelector('#Home').scrollIntoView({ behavior: 'smooth' });" id="gotohome" title="Go to home" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
-                <!-- TODO this isn't perfect. Ideally,m you should be able to click on "about" to go to the about section on it's own. But that breaks mobile. onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });" -->
                 <a class="nav-link dropdown-toggle query-select" id="about-dropdown" data-toggle="dropdown">About</a>
-                <!-- Todo Style for mobile -->
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });" id="gotoabout" title="Go to about">Mission</a>
+                        <a class="nav-link" onclick="document.querySelector('#About').scrollIntoView({ behavior: 'smooth' });" id="gotoabout" title="Go to about" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Mission</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#Team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team">Team</a>
+                        <a class="nav-link" onclick="document.querySelector('#Team').scrollIntoView({ behavior: 'smooth' });" id="gototeam" title="Go to team" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Team</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#Values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" title="Go to values">Values</a>
+                        <a class="nav-link" onclick="document.querySelector('#Values').scrollIntoView({ behavior: 'smooth' });" id="gotovalues" title="Go to values" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Values</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#Market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" title="Go to market">The Market</a>
+                        <a class="nav-link" onclick="document.querySelector('#Market').scrollIntoView({ behavior: 'smooth' });" id="gotomarket" title="Go to market" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            The Market</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" href="https://www.instagram.com/hiamo_nz/">Gallery</a>
+                        <a class="nav-link" href="https://www.instagram.com/hiamo_nz/" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Gallery</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
+                        <a class="nav-link" href="blog.html" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Blog</a>
                     </li>
                 </ul>
             </li>
-            <!-- todo Dropdown smooth, cursor -->
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle query-select" id="projects-dropdown" data-toggle="dropdown">Projects</a>
                 <ul class="dropdown-menu">
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });" id="gotoprojects" title="Go to current projects">Current Projects</a>
+                        <a class="nav-link" onclick="document.querySelector('#Projects').scrollIntoView({ behavior: 'smooth' });" id="gotoprojects" title="Go to current projects" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Current Projects</a>
                     </li>
                     <li class="dropdown-item">
-                        <a class="nav-link" onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="gotofuture" title="Go to future projects">Future Plans</a>
+                        <a class="nav-link" onclick="document.querySelector('#Future').scrollIntoView({ behavior: 'smooth' });" id="gotofuture" title="Go to future projects" data-toggle="collapse" data-target=".navbar-collapse.show">
+                            Future Plans</a>
                     </li>
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link query-select" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact">Contact</a>
+                <a class="nav-link query-select" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    Contact</a>
             </li>
         </ul>
     </div>
 </nav>
 
-     <!-- Slideshow container -->
+<!-- Slideshow container -->
 <div class="slideshow-container" id="Home">
     <!-- Full-width images with number and caption text -->
     <div class="fade hiamo-banner-image hiamo-jumbo-inner top-padding-10" style="background-image: url('./images/slideshow/img1.jpg')" id="slideDisplay">
