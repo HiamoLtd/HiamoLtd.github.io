@@ -52,7 +52,6 @@
     <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- TODO close on link click -->
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav absolute-x-right" style="right: 4%;">
             <li class="nav-item">
@@ -94,7 +93,8 @@
                 </ul>
             </li>
             <li class="nav-item">
-                <a class="nav-link query-select" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact">Contact</a>
+                <a class="nav-link query-select" onclick="document.querySelector('#Contact').scrollIntoView({ behavior: 'smooth' });" id="gotocontact" title="Go to contact" data-toggle="collapse" data-target=".navbar-collapse.show">
+                    Contact</a>
             </li>
         </ul>
     </div>
