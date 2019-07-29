@@ -83,6 +83,11 @@ a:active, a:focus {
     text-align: center;
     width: 100%;
 }
+.centre-width-60 {
+    max-width: 60%;
+    display: block;
+    margin: auto;
+}
 .centre-width-80 {
     max-width: 80%;
     display: block;
