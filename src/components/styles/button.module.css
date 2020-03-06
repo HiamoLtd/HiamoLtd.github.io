@@ -1,0 +1,55 @@
+/* Button styling */
+.hiamo-btn {
+    transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -webkit-transition: background-color .2s ease-in-out;
+    border-radius: 30px;
+    padding: 20px 50px;
+    box-shadow: 1px 4px 10px 1px #000;
+    align-content: center;
+    cursor: pointer;
+}
+/* Button text styling */
+.hiamo-btn-text {
+    text-align: center;
+    text-decoration: none;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 32px;
+}
+/* Hover states */
+.hiamo-btn-text:hover {
+    text-decoration: none;
+}
+.hiamo-btn:hover {
+    background-color: var(--color-secondary);
+}
+/*A specific button text type for form inputs, removes form styling*/
+.label-btn {
+    border: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    background: none;
+}
+/*A submit button from a form is wider and has mildly different styling*/
+.submit-btn {
+    border-radius: 20px;
+    padding: 10px 0px;
+    box-shadow: 1px 2px 8px 2px var(--color-shadow);
+    width: 95%;
+    color:var(--color-text-light);
+    background-color: var(--color-trim);
+}
+/* Scale for mobile */
+@media (max-width: 813px) {
+    .hiamo-btn-text {
+        font-size: 22px;
+    }
+    .hiamo-btn {
+        padding: 10px 25px;
+        box-shadow: 0 0 10px 2px #000;
+        border-radius: 15px;
+    }
+}

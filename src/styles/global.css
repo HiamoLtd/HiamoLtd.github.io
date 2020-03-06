@@ -1,0 +1,130 @@
+/* Define some custom colours for the app */
+:root {
+    --color-primary: #f7f8fa;
+    --color-secondary: #212224;
+    --color-tertiary: #F2F2F2;
+    --color-secondary-light: #4c4d4f;
+    --color-trim: #fc3a14;
+    --color-trim-dark: #e63815;
+    --color-text-dark: #212224;
+    --color-text-light: #f7f8fa;
+    --color-text-trim: #fc3a14;
+    --color-shadow: #4c4d4f;
+}
+/** Introduce custom fonts **/
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    src: local('Raleway'),
+    url("../fonts/Raleway/Raleway-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Open-Sans';
+    font-style: normal;
+    src: local('Open-Sans'), local('OpenSans'),
+    url("../fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Playfair';
+    font-style: normal;
+    src: local('Playfair'), local('Playfair-Display'),
+    url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Poiret-One';
+    font-style: normal;
+    src: local('Poiret'), local('Poiret-One'),
+    url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format('truetype');
+}
+/* Set any page wide settings */
+html {
+    background-color: var(--color-secondary-light);
+}
+p {
+    font-family: Open-Sans;
+    font-size: 20px;
+    margin: 0;
+}
+/*Form styling*/
+label {
+    float: left;
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 22px;
+}
+input, textarea {
+    width:100%;
+    padding:12px;
+    font-family: Open-Sans;
+    /*border: none;*/
+    /*background-color: inherit;*/
+    border: 1px solid var(--color-shadow);
+    /*border-radius: 5px;*/
+}
+textarea {
+    height:150px;
+}
+input:focus, textarea:focus {
+    border: 1px solid var(--color-trim);
+    outline: none;
+}
+/* Positional shared settings */
+.centre {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    float: none;
+    text-align: center;
+}
+.right {
+    margin-right: 0;
+    justify-content: right;
+    display: flex;
+    float: right;
+    text-align: right;
+}
+.team-image {
+    width: 20%;
+    box-shadow: 1px 2px 5px 2px #000;
+    margin-bottom: 5%;
+}
+.display-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 1px 2px 5px 2px #000;
+}
+.video {
+    width: 100%;
+    box-shadow: 1px 2px 5px 2px #000;
+}
+.embed-responsive-19by9 {
+    max-height: 80%;
+    /*padding-top: 210% !important;*/
+    padding: 190% 0 0 0 !important;
+    margin: 0 5% 0 5%;
+}
+.vertical-centre {
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+}
+/* Scale font sizes when in the mobile screen size */
+@media (max-width: 813px) {
+    p {
+        font-size: 16px;
+    }
+    .team-image {
+        box-shadow: 0 0 10px 2px #000;
+    }
+    /*Add padding to the images if we are in mobile, otherwise they collapse too much*/
+    .display-image {
+        margin-bottom: 3%;
+    }
+}
+/*Scale sizes of content when set to a tablet screen or below */
+@media (max-width: 1999px) {
+    .video {
+        margin-bottom: 3%;
+    }
+}

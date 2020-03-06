@@ -1,0 +1,12 @@
+/* Shadows for any given image. Lighter on mobile */
+.image {
+    box-shadow: 1px 4px 10px 5px #000;
+}
+.rounded-image {
+    border-radius: 50%;
+}
+@media (max-width: 813px) {
+    .image {
+        box-shadow: 0 0 10px 2px #000;
+    }
+}
