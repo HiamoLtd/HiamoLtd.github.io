@@ -76,14 +76,12 @@ export default () => (
           width="4" headerAlign="centre" innerAlign="centre"
           header="Storytelling"
         >
-          <p>
             At Hiamo, we are storytellers, and augmented reality is our paper. History is created and connected
             by its stories, and the objects those before us have left behind.
             <br/>
             We bring these stories to life by visualising
             them exactly where the events occurred, and connect people with the tales by letting them be a part of
             the history through gamification."
-          </p>
         </DisplayCol>
         <DisplayCol
           color="--color-primary" headerColor="--color-text-dark" innerTextColor="--color-text-dark"

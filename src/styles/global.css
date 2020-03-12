@@ -134,19 +134,68 @@ input:focus, textarea:focus {
     overflow: hidden;
     height: auto;
     max-height: 200px;
-    -webkit-transition: max-height 0.5s ease-in;
-    -moz-transition: max-height 0.5s ease-in;
-    -o-transition: max-height 0.5s ease-in;
-    -ms-transition: max-height 0.5s ease-in;
-    transition: max-height 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
 }
 
 .close-collapse {
     max-height: 0;
     overflow: hidden;
-    -webkit-transition: max-height 0.5s ease-out;
-    -moz-transition: max-height 0.5s ease-out;
-    -o-transition: max-height 0.5s ease-out;
-    -ms-transition: max-height 0.5s ease-out;
-    transition: max-height 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -ms-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+.collapse-button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    background: none;
+    width: 100%;
+
+}
+i {
+    border: solid black;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 6px;
+}
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -webkit-transition: transform 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out;
+    -ms-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+.up {
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -webkit-transition: transform 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out;
+    -ms-transition: transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+}
+.collapse-children-text {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+    margin-left: 5%;
+}
+.collapse-title-text {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
+}
+.collapse-text {
+    padding-bottom: 0;
+    padding-top: 0;
+    margin: 0;
 }
