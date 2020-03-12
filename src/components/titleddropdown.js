@@ -21,5 +21,14 @@ export default props => (
 {/*TODO need a dropdown button*/}
       </Col>
     </Row>
+    {/*Expanding row section*/}
+    <Row>
+      {/*Filler col to match the header col from above*/}
+      <Col md={4}/>
+      <Col md={7}>
+        
+      </Col>
+    </Row>
   </div>
+
 )

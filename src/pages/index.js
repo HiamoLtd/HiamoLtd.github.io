@@ -15,6 +15,7 @@ import ContactForm from "../components/contactform"
 import LargeButton from "../components/largebutton"
 import TitledDropdown from "../components/titleddropdown"
 import { Image } from "react-bootstrap"
+import Collapsable from "../components/collapsable"
 
 // These navbar links will populate the navbar itself. Using these as props lets us
 // dictate if a link goes to a new page or simply a section, while reusing the nav
@@ -51,16 +52,18 @@ export default () => (
       <SubSection color="--color-primary">
         {/*TODO make a reusable "About" sectiopn that is a title col on the left with the padding of a "p", and a dropdown on the right with no borders and a single input.*/}
         {/*Storytelling Description*/}
-        <TitledDropdown
+        <Collapsable
           header="Storytelling" headerColor="--color-text-dark"
           collapsedText="At Hiamo, we are storytellers, and we bring your content to life." collapsedTextColor="--color-text-dark"
           expandedTextColor="--color-text-dark">
+          <p>
             History is created and connected by its stories, and the objects those before us have left behind.
             <br/>
             <br/>
             We bring these stories to life by visualising them exactly where the events occurred, and connect people
             with the tales by letting them be a part of the history through gamification.
-        </TitledDropdown>
+          </p>
+        </Collapsable>
         {/*Visualisation Description*/}
         {/*Experience Description*/}
         {/*Heritage Description*/}
