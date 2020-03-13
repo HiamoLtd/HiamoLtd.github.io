@@ -50,7 +50,6 @@ export default () => (
       </SubHeader>
       {/*About section container*/}
       <SubSection color="--color-primary">
-        {/*TODO make a reusable "About" sectiopn that is a title col on the left with the padding of a "p", and a dropdown on the right with no borders and a single input.*/}
         {/*Storytelling Description*/}
         <Collapsable
           header="Storytelling" headerColor="--color-text-dark"
@@ -65,52 +64,37 @@ export default () => (
           </p>
         </Collapsable>
         {/*Visualisation Description*/}
-        {/*Experience Description*/}
-        {/*Heritage Description*/}
-        {/*Flexibility (Beyond? Other work? Commercial?) Description*/}
-        {/*Why "Hiamo" Description*/}
-      </SubSection>
-      <SubSection color="--color-primary" alignType="centre">
-        <DisplayCol
-          color="--color-primary" headerColor="--color-text-dark" innerTextColor="--color-text-dark"
-          width="4" headerAlign="centre" innerAlign="centre"
-          header="Storytelling"
-        >
-            At Hiamo, we are storytellers, and augmented reality is our paper. History is created and connected
-            by its stories, and the objects those before us have left behind.
-            <br/>
-            We bring these stories to life by visualising
-            them exactly where the events occurred, and connect people with the tales by letting them be a part of
-            the history through gamification."
-        </DisplayCol>
-        <DisplayCol
-          color="--color-primary" headerColor="--color-text-dark" innerTextColor="--color-text-dark"
-          width="4" headerAlign="centre" innerAlign="centre"
-          header="Visualisation"
-        >
+        <Collapsable
+          header="Visualisation" headerColor="--color-text-dark"
+          collapsedText="We can visualise stories, people, environments, buildings, and more." collapsedTextColor="--color-text-dark"
+          expandedTextColor="--color-text-dark">
           <p>
             Using augmented reality (AR), we can create things that never were, or recreate something which
-            has since disappeared. We can visualise stories, people, environments, buildings, and more, the sky is the limit.
+            has since disappeared.
+            <br/>
             <br/>
             By leveraging AR we are able to visualise whatever is necessary for the experience you require. This could mean
             using AR to digitally recreate an interactive, expandable, and environmentally friendly version of a heritage
             site or item, or to visualise a new product that hasn't been built yet.
           </p>
-        </DisplayCol>
-        <DisplayCol
-          color="--color-primary" headerColor="--color-text-dark" innerTextColor="--color-text-dark"
-          width="4" headerAlign="centre" innerAlign="centre"
-          header="AR Experiences"
-        >
+        </Collapsable>
+        {/*Experience Description*/}
+        <Collapsable
+          header="AR Experiences" headerColor="--color-text-dark"
+          collapsedText="We don't just create applications, we create experiences." collapsedTextColor="--color-text-dark"
+          expandedTextColor="--color-text-dark">
           <p>
-            Our expertise lends us to a variety of different jobs. We don't just create applications, we
-            create experiences, and each experience is uniquely tied to its subject.
+            Each experience we build is uniquely tied to its subject or target industry. Our skillset lends us to a variety of jobs
+            and approaches, both in the culture and heritage sector and beyond.
+            <br/>
             <br/>
             We build experiences that visitors and users will remember, and ones that deeply connect them to the
             content they are seeing in front of them.
-            content they are seeing in front of them.
           </p>
-        </DisplayCol>
+        </Collapsable>
+        {/*Heritage Description*/}
+        {/*Flexibility (Beyond? Other work? Commercial?) Description*/}
+        {/*Why "Hiamo" Description*/}
       </SubSection>
     </Section>
     {/*Supported by Section*/}

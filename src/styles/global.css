@@ -133,7 +133,7 @@ input:focus, textarea:focus {
 .open-collapse {
     overflow: hidden;
     height: auto;
-    max-height: 200px;
+    max-height: 300px;
     -webkit-transition: all 0.5s ease-in;
     -moz-transition: all 0.5s ease-in;
     -o-transition: all 0.5s ease-in;
@@ -157,7 +157,6 @@ input:focus, textarea:focus {
     text-decoration: none;
     background: none;
     width: 100%;
-
 }
 i {
     border: solid black;
@@ -198,4 +197,44 @@ i {
     padding-bottom: 0;
     padding-top: 0;
     margin: 0;
+}
+/*The overarching div that holds all the collapsable item*/
+.collapsable {
+    padding: 2% 0;
+    margin: 0 15px;
+
+}
+.align-about {
+    justify-content: right;
+    display: flex;
+    float: right;
+    text-align: right;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 813px) {
+    .align-about, .align-about-text {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        display: flex;
+        float: none;
+        text-align: center;
+    }
+    .align-about {
+        margin: 2% 0;
+    }
+    .arrow-container {
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        display: flex;
+        float: none;
+        text-align: center;
+        width: 100%;
+        padding: 2% 0;
+    }
+    i {
+        padding: 5px;
+    }
 }
