@@ -1,5 +1,5 @@
 import React from "react"
-import footerStyles from "./styles/footer.module.css"
+import footerStyles from "../styles/footer.module.css"
 import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col"
 import Image from "react-bootstrap/Image"
@@ -27,26 +27,26 @@ export default () => (
       </span>
       </p>
     </Col>
-    <Col md={2} className="vertical-centre">
+    <Col md={2} className="vertical-centre centre">
       <Link to={"/"}>
         <div style={{ backgroundColor:"var(--color-primary)" }} className={ footerStyles.imageContainer + " centre"}>
-          <Image src={require("../images/icons/logo_svg.svg")} className={ footerStyles.footerLogo }/>
+          <Image src={require("../../images/icons/logo_svg.svg")} className={ footerStyles.footerLogo }/>
         </div>
       </Link>
     </Col>
     <Col md={4} className="vertical-centre">
       <div className={ footerStyles.socialWrapper }>
         <a href="https://www.instagram.com/hiamo_nz/">
-          <Image src={require("../images/icons/social/instagram.svg")} className={ footerStyles.socialIcon }/>
+          <Image src={require("../../images/icons/social/instagram.svg")} className={ footerStyles.socialIcon }/>
         </a>
         <a href="https://www.facebook.com/HiamoNZ/">
-          <Image src={require("../images/icons/social/facebook.svg")} className={ footerStyles.socialIcon }/>
+          <Image src={require("../../images/icons/social/facebook.svg")} className={ footerStyles.socialIcon }/>
         </a>
         <a href="https://twitter.com/HiamoNZ">
-          <Image src={require("../images/icons/social/twitter.svg")} className={ footerStyles.socialIcon }/>
+          <Image src={require("../../images/icons/social/twitter.svg")} className={ footerStyles.socialIcon }/>
         </a>
         <a href="https://www.linkedin.com/company/hiamo/">
-          <Image src={require("../images/icons/social/linkedin.svg")} className={ footerStyles.socialIcon }/>
+          <Image src={require("../../images/icons/social/linkedin.svg")} className={ footerStyles.socialIcon }/>
         </a>
       </div>
     </Col>

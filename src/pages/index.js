@@ -1,7 +1,7 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import HiamoNav from "../components/hiamonav"
-import Footer from "../components/footer"
+import Footer from "../components/sectioncomponents/footer"
 import Section from "../components/sectioncomponents/section"
 import SubSection from "../components/sectioncomponents/subsection"
 import HighlightSection from "../components/sectioncomponents/highlight-section"
@@ -66,7 +66,7 @@ export default () => (
         {/*Visualisation Description*/}
         <Collapsable
           header="Visualisation" headerColor="--color-text-dark"
-          collapsedText="We can visualise stories, people, environments, buildings, and more." collapsedTextColor="--color-text-dark"
+          collapsedText="We visualise stories, people, environments, buildings, and more." collapsedTextColor="--color-text-dark"
           expandedTextColor="--color-text-dark">
           <p>
             Using augmented reality (AR), we can create things that never were, or recreate something which
@@ -257,7 +257,7 @@ export default () => (
           width="6" headerAlign="centre" innerAlign="centre"
           header="Alex Hockley"
           image={
-            <Image src={require('../images/icons/logo.png')} roundedCircle className="team-image"/>
+            <Image src={require('../images/team/alex.jpg')} roundedCircle className="team-image"/>
           }
         >
           <p>Chief Executive Officer</p>
@@ -267,7 +267,7 @@ export default () => (
           width="6" headerAlign="centre" innerAlign="centre"
           header="Shaika Khan"
           image={
-            <Image src={require('../images/icons/logo.png')} roundedCircle className="team-image"/>
+            <Image src={require('../images/team/shaika.jpg')} roundedCircle className="team-image"/>
           }
         >
           <p>Chief Technology Officer</p>

@@ -1,7 +1,7 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import HiamoNav from "../components/hiamonav"
-import Footer from "../components/footer"
+import Footer from "../components/sectioncomponents/footer"
 import Section from "../components/sectioncomponents/section"
 import SubSection from "../components/sectioncomponents/subsection"
 import Title from "../components/textcomponents/title"
