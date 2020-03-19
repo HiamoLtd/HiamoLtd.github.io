@@ -13,7 +13,6 @@ import DisplayCol from "../components/displaycol"
 import Video from "../components/video"
 import ContactForm from "../components/contactform"
 import LargeButton from "../components/largebutton"
-import TitledDropdown from "../components/titleddropdown"
 import { Image } from "react-bootstrap"
 import Collapsable from "../components/collapsable"
 
@@ -59,37 +58,34 @@ export default () => (
             History is created and connected by its stories, and the objects those before us have left behind.
             <br/>
             <br/>
-            We bring these stories to life by visualising them exactly where the events occurred, and connect people
+            We bring these stories to life by visualizing them exactly where the events occurred and connect people
             with the tales by letting them be a part of the history through gamification.
           </p>
         </Collapsable>
-        {/*Visualisation Description*/}
+        {/*Visualization Description*/}
         <Collapsable
-          header="Visualisation" headerColor="--color-text-dark"
-          collapsedText="We visualise stories, people, environments, buildings, and more." collapsedTextColor="--color-text-dark"
+          header="Visualization" headerColor="--color-text-dark"
+          collapsedText="We visualize stories, people, environments, buildings, and more." collapsedTextColor="--color-text-dark"
           expandedTextColor="--color-text-dark">
           <p>
-            Using augmented reality (AR), we can create things that never were, or recreate something which
-            has since disappeared.
+            Using Augmented Reality (AR), we can create things that never were, or recreate something which has since disappeared.
             <br/>
             <br/>
-            By leveraging AR we are able to visualise whatever is necessary for the experience you require. This could mean
-            using AR to digitally recreate an interactive, expandable, and environmentally friendly version of a heritage
-            site or item, or to visualise a new product that hasn't been built yet.
+            AR lets us visualize whatever is necessary for the experience you want. This could mean using AR to digitally recreate
+            an interactive and expandable replica of a heritage site or item, or to visualize a new product which hasn't been built yet.
           </p>
         </Collapsable>
         {/*Experience Description*/}
         <Collapsable
           header="AR Experiences" headerColor="--color-text-dark"
-          collapsedText="We don't just create applications, we create experiences." collapsedTextColor="--color-text-dark"
+          collapsedText="We don't create applications; we create experiences." collapsedTextColor="--color-text-dark"
           expandedTextColor="--color-text-dark">
           <p>
-            Each experience we build is uniquely tied to its subject or target industry. Our skillset lends us to a variety of jobs
-            and approaches, both in the culture and heritage sector and beyond.
+            Each experience we build is uniquely tied to the subject or target industry. We build experiences that
+            visitors and users will remember, and ones that deeply connect them to the content they are seeing in front of them.
             <br/>
             <br/>
-            We build experiences that visitors and users will remember, and ones that deeply connect them to the
-            content they are seeing in front of them.
+            Our skillset can also be applied to a variety of opportunities in the culture and heritage sector and beyond.
           </p>
         </Collapsable>
         {/*Heritage Description*/}
@@ -141,7 +137,7 @@ export default () => (
           width="6"
         >
           <p>
-            New Zealand is covered in coastal defence sites, but many of them lack the naval guns that they were built for.
+            New Zealand is covered in abandoned coastal defence sites, but many of them lack the guns which they were built for.
             <br/>
             <br/>
             We bring these objects back digitally, returning context to the site and enabling lifelong learning through
@@ -187,8 +183,8 @@ export default () => (
           width="8"
         >
           <p>
-            For Wellington Heritage Week 2019, Hiamo gave a new insight into the tragic sinking of the T.E.V Wahine
-            by using augmented reality to visualse the event by the Wahine memorial mast.
+            For Wellington Heritage Week 2019, Hiamo gave a new insight into the tragic sinking of the T.E.V Wahine by
+            using augmented reality to visualize the event by the Wahine memorial mast.
             <br/>
             <br/>
             We shared this story by displaying a map of the path the vessel took when entering Wellington harbour,
@@ -196,7 +192,7 @@ export default () => (
             <br/>
             <br/>
             Our application used AR, alongside traditional narrative techniques, to explain the ordeal that the passengers
-            went through and to help memorialise those lost in the disaster.
+            went through and to help memorialize those lost in the disaster.
           </p>
           <DisplayCol
             headerColor="--color-text-dark" innerTextColor="--color-text-dark"
@@ -219,21 +215,22 @@ export default () => (
           width="8"
         >
           <p>
-            As mentioned, our augmented reality skillset does not only apply to heritage. We have branched out to look at some other areas of interest,
-            in this case it was tourism and education.
+            As mentioned, our augmented reality skillset does not only apply to heritage. We have branched out to look
+            at some other areas of interest, such as tourism and education.
             <br/>
             <br/>
-            Hiamo was asked to solve the problem of what a stargazing business could do if it was too cloudy to see the stars on a given night. Our answer? Bring
-            the stars to earth.
+            Hiamo was asked to solve the problem of what a stargazing business could do if it was too cloudy to see the
+            stars on a given night. Our answer? Bring the stars to earth.
             <br/>
             <br/>
-            Using AR, we visualised space on specifically built image targets, which could be deployed wherever needed. These images could be the design we created,
-            or they could be almost any pattern or image a client required.
+            Using AR, we visualized space on specifically built image targets, which could be deployed where needed.
+            These images could be the design we created, or they could be almost any pattern or image a client required.
             <br/>
             <br/>
-            We took this interactive experience to a community event to increase youth engagement with the stars, allowing visitors to see all the planets in our
-            solar system and interact with them. These visualisations were accompanied by information about the planets, providing users with a memorable experience and an
-            avenue to lifelong learning about the final frontier.
+            We took this interactive experience to a community event to increase youth engagement with the stars,
+            allowing visitors to see all the planets in our solar system and interact with them. These visualizations
+            were accompanied by information about the planets, providing users with a memorable experience and an avenue
+            to lifelong learning about the final frontier.
           </p>
         </DisplayCol>
         <DisplayCol

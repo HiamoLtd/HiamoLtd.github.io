@@ -85,7 +85,7 @@ input:focus, textarea:focus {
     text-align: right;
 }
 .team-image {
-    width: 20%;
+    width: 25%;
     box-shadow: 1px 2px 5px 2px #000;
     margin-bottom: 5%;
 }
@@ -157,12 +157,14 @@ input:focus, textarea:focus {
     text-decoration: none;
     background: none;
     width: 100%;
+    cursor: pointer;
 }
 i {
     border: solid black;
     border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 6px;
+    cursor: pointer;
 }
 .down {
     transform: rotate(45deg);
@@ -202,8 +204,8 @@ i {
 .collapsable {
     padding: 2% 0;
     margin: 0 15px;
-
 }
+
 .align-about {
     justify-content: right;
     display: flex;

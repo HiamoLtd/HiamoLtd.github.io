@@ -19,8 +19,8 @@ const navbarLinks = [
   { link:'/#about/', content:'About' },
   { link:'/#projects/', content:'Projects' },
   { link:'/#team/', content:'Team' },
-  { link:'#future-plans', content:'Future Plans' },
-  { link:'/blog/', content:'Blog' }
+  { link:'/future-plans/', content:'Future Plans' },
+  { link:'#', content:'Blog' }
 ]
 
 export default () => (
@@ -28,7 +28,7 @@ export default () => (
     <HiamoNav brandLink="/" links={navbarLinks}/>
     <Section color="--color-primary">
       <Title color="--color-text-trim" alignType="centre">
-        Future Plans
+        Blogs
       </Title>
       <p style={{ paddingTop:'3%' }}>
         While we may primarily focus on heritage work, Hiamo is by no means trapped by it.

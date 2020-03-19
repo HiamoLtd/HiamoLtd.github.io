@@ -31,13 +31,14 @@ export default () => (
         Future Plans
       </Title>
       <p style={{ paddingTop:'3%' }}>
-        While we may primarily focus on heritage work, Hiamo is by no means trapped by it.
-        Our team is open to working in a number of industries, so if you have project beyond the culture and heritage sector, do not hesitate to reach out.
+        While we may focus on heritage work, Hiamo is by no means trapped by it. Our team is open to working in several
+        industries, so if you have project beyond the culture and heritage sector, do not hesitate to reach out.
         <br/>
         <br/>
-        Augmented Reality offers a path to many new and exciting oppourtunities.
-        We can use our skills of visualisation, storytelling, and building interactive experiences in numerous fashions to create applications that suit the needs of almost any project you are working on.
-        Get in touch with us to find out how augmented reality can help you see objects without building them, engage your customers, assist your visualisation processes, and more.
+        Augmented Reality (AR) offers a path to many new and exciting opportunities. We can use our skills of
+        visualization, storytelling, and building interactive experiences to create applications that suit the needs of
+        the project you have in mind. Get in touch with us to find out how augmented reality can help you see objects
+        without building them, engage your customers, assist your visualization processes, and more.
         <br/>
         <br/>
         Below are some examples of the project ideas Hiamo is looking at for future potential work.
@@ -95,12 +96,18 @@ export default () => (
           verticalCentre
           width="6">
           <p>
-            There are many other features and possibilities which could expand upon our current work. This could include:
+            There are several other features which we may look at, including:
           </p>
           <ul>
-            <li style={{ paddingBottom:"1%" }} key="storypoint1">Storytelling and site touring using a virtual guide and audio narration.</li>
-            <li style={{ paddingBottom:"1%" }} key="storypoint2">Using geo-location to provide users with an interactive and evolving storytelling experience as they walk around an area.</li>
-            <li style={{ paddingBottom:"1%" }} key="storypoint3">Time-lapse features which allow users to view the change in a landscape over time.</li>
+            <li style={{ paddingBottom:"1%" }} key="storypoint1">
+              Storytelling and site tours using an AR guide and audio narration.
+            </li>
+            <li style={{ paddingBottom:"1%" }} key="storypoint2">
+              Using geo-location to provide users with an interactive and evolving storytelling experience as they walk around an area.
+            </li>
+            <li style={{ paddingBottom:"1%" }} key="storypoint3">
+              Time-lapse features to allow users to view the change in a landscape over time.
+            </li>
           </ul>
         </DisplayCol>
       </SubSection>
@@ -115,14 +122,14 @@ export default () => (
           color="--color-primary" headerColor="--color-text-dark" innerTextColor="--color-text-dark"
           width="6">
           <p>
-            Hiamo are open to exploring the many ways to we can bring the life and energy of the outdoors into a smaller
-            and more controlled indoor environment. Our technology can create animated sculptures, virtual museums,
-            and interactive table top environments.
+            Hiamo is open to exploring the many ways we can bring the life and energy of the outdoors into a smaller and
+            more controlled indoor environment. Our technology can create animated sculptures, virtual museums, and
+            interactive tabletop environments.
             <br/>
             <br/>
-            These can be utilised in transit areas, such as waiting rooms and boarding areas, or used as interactive
-            models of structures and objects including building and floor plans. This will allow users to learn and
-            understand material in a more impactful and tactile manner.
+            These can be utilised in waiting rooms and boarding areas or used as interactive models of structures and
+            objects, including building and floor plans. This allows users to understand provided content in a more
+            impactful and tactile manner.
           </p>
         </DisplayCol>
         <DisplayCol
@@ -145,17 +152,16 @@ export default () => (
           color="--color-primary" headerColor="--color-text-dark" innerTextColor="--color-text-dark"
           width="6">
           <p>
-            Our augmented reality approach can lend itself to numerous industries, both on a small and a large scale.
-            Hiamo's focus on creating outdoor and indoor experiences opens us up to exploring these industries even more
-            going forward.
+            Our AR approach can lend itself to numerous industries, both on a small and a large scale. Hiamo's focus on
+            creating outdoor and indoor experiences opens us up to exploring more of these industries going forward.
             <br/>
             <br/>
-            This could include displaying architectural documents on site as 3D models, visualising infrastructure projects,
-            or creating interactive product mock-ups before the physical object has been made.
+            This could include displaying architectural documents on-site as 3D models, visualizing infrastructure
+            projects, or creating interactive product mock-ups before a physical object has been made.
             <br/>
             <br/>
-            The possibilities are almost endless! We are excited about the oppourtunities the future presents, and to work
-            with you to make the most of them.
+            The possibilities are almost endless! We are excited about the opportunities the future presents, and to
+            work with you to make the most of them.
           </p>
         </DisplayCol>
         <DisplayCol
