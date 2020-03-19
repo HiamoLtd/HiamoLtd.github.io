@@ -39,17 +39,62 @@ export default () => (
       </p>
     </Section>
     {/*Blog Links*/}
-    <HighlightSection bgColor="--color-secondary" color="--color-primary" id="#bridgingreality">
+    <HighlightSection bgColor="--color-secondary" color="--color-primary" id="#presenceofwar">
       <Header alignType="centre" padding={0} color="--color-trim">
         The Presence of War
       </Header>
-      <SubHeader alignType="centre" padding={0} >
+      <SubHeader padding={0} alignType="centre">
         Heritage Highlight
       </SubHeader>
-      <Section>
-        <p>
-
+        <p style={{ paddingTop:'3%' }} className="centre">
+          The story of New Zealand's 4-inch coastal defence guns, from the battles of Europe to the shores of New Zealand.
         </p>
+      <Section padding={0}>
+        <SubSection alignType="centre">
+          <LargeButton link="/blog/presence-of-war" text="Read More!"
+                       color="--color-trim"
+                       hoverColor="--color-secondary-light"
+                       textColor="--color-text-light"/>
+        </SubSection>
+      </Section>
+    </HighlightSection>
+    <HighlightSection bgColor="--color-secondary" color="--color-primary" id="#continuingthemission">
+      <Header alignType="centre" padding={0} color="--color-trim">
+        Continuing the Mission
+      </Header>
+      <SubHeader padding={0} alignType="centre">
+        January 2019
+      </SubHeader>
+      <p style={{ paddingTop:'3%' }} className="centre">
+        A new year brings new challenges and opportunities; we reflect on a busy first month of 2019.
+      </p>
+      <Section padding={0}>
+        <SubSection alignType="centre">
+          <LargeButton link="/blog/continuing-the-mission" text="Read More!"
+                       color="--color-trim"
+                       hoverColor="--color-secondary-light"
+                       textColor="--color-text-light"/>
+        </SubSection>
+      </Section>
+    </HighlightSection>
+    <HighlightSection bgColor="--color-secondary" color="--color-primary" id="#ayearoffirsts">
+      <Header alignType="centre" padding={0} color="--color-trim">
+        A Year of Firsts
+      </Header>
+      <SubHeader padding={0} alignType="centre">
+        2018
+      </SubHeader>
+      <p style={{ paddingTop:'3%' }} className="centre">
+        After an eventful year of many great events and changes, we look back on all that has happened
+        in the short months since our company was first started.
+      </p>
+      <Section padding={0}>
+        <SubSection alignType="centre">
+          <LargeButton link="/blog/a-year-of-firsts" text="Read More!"
+                       color="--color-trim"
+                       hoverColor="--color-secondary-light"
+                       textColor="--color-text-light"/>
+        </SubSection>
       </Section>
     </HighlightSection>
     <Footer/>

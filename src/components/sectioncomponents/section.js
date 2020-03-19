@@ -10,7 +10,7 @@ export function checkWidth(originalWidth) {
 }
 
 export default props => (
-  <div style={{ backgroundColor:'var(' + props.color + ')' }} className={ "row " + containerStyles.section}>
+  <div style={{ backgroundColor:'var(' + props.color + ')', paddingTop: props.padding }} className={ "row " + containerStyles.section}>
     <div className={ "col-md-" + ((12 - checkWidth(props.width)) / 2)}/>
     <div className={ "col-lg-" + checkWidth(props.width) }>
       { props.children }
