@@ -1,0 +1,52 @@
+/* --- Absolute base CSS --- */
+/* Define some custom colours for the app */
+:root {
+    --color-primary: #f7f8fa;
+    --color-secondary: #212224;
+    --color-tertiary: #F2F2F2;
+    --color-secondary-light: #4c4d4f;
+    --color-trim: #fc3a14;
+    --color-trim-dark: #e63815;
+    --color-text-dark: #212224;
+    --color-text-light: #f7f8fa;
+    --color-text-trim: #fc3a14;
+    --color-shadow: #4c4d4f;
+}
+
+/** Introduce custom fonts **/
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    src: local('Raleway'),
+    url("../fonts/Raleway/Raleway-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Open-Sans';
+    font-style: normal;
+    src: local('Open-Sans'), local('OpenSans'),
+    url("../fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Playfair';
+    font-style: normal;
+    src: local('Playfair'), local('Playfair-Display'),
+    url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: 'Poiret-One';
+    font-style: normal;
+    src: local('Poiret'), local('Poiret-One'),
+    url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format('truetype');
+}
+
+/* Style the base components */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
