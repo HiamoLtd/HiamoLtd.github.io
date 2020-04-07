@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Header } from '../header';
+import { Footer } from '../footer';
 import styles from './screen.module.css';
 
 const Screen = ({ children }) => (
@@ -10,9 +11,8 @@ const Screen = ({ children }) => (
     <Header />
     <div className={styles.pageWrapper}>
       <main>{children}</main>
-      {/* TODO add footer */}
-      {/* <Footer /> */}
     </div>
+    <Footer />
   </>
 );
 

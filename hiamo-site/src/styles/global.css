@@ -11,6 +11,7 @@
     --color-text-light: #f7f8fa;
     --color-text-trim: #fc3a14;
     --color-shadow: #4c4d4f;
+    --color-shadow-dark: #000;
 }
 
 /** Introduce custom fonts **/
