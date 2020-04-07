@@ -1,0 +1,16 @@
+.container {
+  border-radius: 15px;
+  padding: 8% 5%;
+}
+
+.title {
+  color: var(--color-trim);
+}
+
+.subtitle {
+  color: var(--color-trim);
+}
+
+.text {
+
+}

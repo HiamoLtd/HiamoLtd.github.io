@@ -1,11 +1,9 @@
 /* Main container section */
 .container {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  margin: 0;
-  padding: 2% 5%;
   background-color: var(--color-secondary);
+  margin: 0;
+  padding: 2% 0;
+  box-sizing: border-box;
   display: flex;
 }
 
@@ -13,6 +11,9 @@
 .column {
   width: 33.33%;
   width: calc(100% / 3);
+}
+.wrapper {
+  display: flex;
 }
 
 /* Style the contact section */
