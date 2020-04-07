@@ -45,9 +45,24 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: var(--color-secondary-light);
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style specific text elements */
+p {
+  font-family: Open-Sans;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-dark);
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--color-text-dark);
 }
