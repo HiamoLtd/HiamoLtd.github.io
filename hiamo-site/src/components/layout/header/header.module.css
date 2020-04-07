@@ -1,20 +1,29 @@
 /* Navbar styling */
 /* Set up nav bar colours and bottom border */
 .nav {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  z-index:100;
+  width: 100%;
   background-color: var(--color-primary);
   color: var(--color-secondary);
   /*border-bottom: 1px solid var(--color-trim);*/
   box-shadow: 0 0 15px 0 var(--color-shadow);
 }
 
+.brandWrapper {
+  margin: 0;
+}
 .brand {
-  padding: 0 0 0 3vw;
-  margin: 5px 0;
+  padding: 0;
+  margin: 10px 0;
 }
 
 /* Style the nav link buttons */
 .link-wrapper {
-  padding-right: 3vw;
+  padding: 0;
+  margin: 0;
 }
 
 .link {

@@ -21,32 +21,34 @@ const NavLink = ({ content, link }) => (
 );
 
 const Header = () => (
-  <Navbar className={ styles.nav } expand="lg" sticky="top">
-    {/*Brand sign*/}
-    { /* TODO links, and loading image */}
-    <Link to={getLink('Home', '/')}>
-      <Navbar.Brand>
-        <img
-          src={require('../../../images/icons/logo_name.png')}
-          height="60"
-          className={`${styles.brand} d-inline-block align-top`}
-          alt="Hiamo navbar logo"
-        />
-      </Navbar.Brand>
-    </Link>
-    {/*Collapse controls*/}
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    {/* TODO styling */}
-    <Navbar.Collapse id="basic-navbar-nav" className={`${styles.linkWrapper} justify-content-end`}>
-      {/*Links*/}
-      {/* TODO sort the links so they either go to the index or to the specific page spot */}
-      <NavLink content="HOME" link={getLink('Home', '/')} />
-      <NavLink content="ABOUT" link={getLink('About', '/')} />
-      <NavLink content="PROJECTS" link={getLink('Projects', '/')} />
-      <NavLink content="TEAM" link={getLink('Team', '/')} />
-      <NavLink content="BLOG" link={getLink('Blog', '/')} />
-    </Navbar.Collapse>
-  </Navbar>
+  <div className={styles.nav}>
+    <Navbar className={`content align-items-end`} expand="lg" sticky="top">
+        {/*Brand sign*/}
+        { /* TODO links, and loading image */}
+        <Link to={getLink('Home', '/')}>
+          <Navbar.Brand className={styles.brandWrapper}>
+            <img
+              src={require('../../../images/icons/logo_name.png')}
+              height="60"
+              className={`${styles.brand} d-inline-block align-top`}
+              alt="Hiamo navbar logo"
+            />
+          </Navbar.Brand>
+        </Link>
+        {/*Collapse controls*/}
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        {/* TODO styling */}
+        <Navbar.Collapse id="basic-navbar-nav" className={`${styles.linkWrapper} align-items-end justify-content-end`}>
+          {/*Links*/}
+          {/* TODO sort the links so they either go to the index or to the specific page spot */}
+          <NavLink content="HOME" link={getLink('Home', '/')} />
+          <NavLink content="ABOUT" link={getLink('About', '/')} />
+          <NavLink content="PROJECTS" link={getLink('Projects', '/')} />
+          <NavLink content="TEAM" link={getLink('Team', '/')} />
+          <NavLink content="BLOG" link={getLink('Blog', '/')} />
+        </Navbar.Collapse>
+    </Navbar>
+  </div>
 );
 
 NavLink.propTypes = {
