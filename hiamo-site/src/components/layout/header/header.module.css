@@ -1,0 +1,33 @@
+/* Navbar styling */
+/* Set up nav bar colours and bottom border */
+.nav {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  /*border-bottom: 1px solid var(--color-trim);*/
+  box-shadow: 0 0 15px 0 var(--color-shadow);
+}
+
+.brand {
+  padding: 0 0 0 3vw;
+  margin: 5px 0;
+}
+
+/* Style the nav link buttons */
+.link-wrapper {
+  padding-right: 3vw;
+}
+
+.link {
+  color: var(--color-text-dark);
+  transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: var(--color-trim);
+}
