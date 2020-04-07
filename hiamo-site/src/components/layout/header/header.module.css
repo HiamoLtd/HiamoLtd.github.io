@@ -1,6 +1,6 @@
 /* Navbar styling */
 /* Set up nav bar colours and bottom border */
-.nav {
+.container {
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
@@ -8,8 +8,11 @@
   width: 100%;
   background-color: var(--color-primary);
   color: var(--color-secondary);
-  /*border-bottom: 1px solid var(--color-trim);*/
   box-shadow: 0 0 15px 0 var(--color-shadow);
+}
+
+.nav {
+  /* border-bottom: 1px solid var(--color-trim); */
 }
 
 .brandWrapper {

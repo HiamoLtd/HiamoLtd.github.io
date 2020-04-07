@@ -45,12 +45,13 @@ html {
   font-family: Open-Sans;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background-color: var(--color-secondary-light);
+  background-color: var(--color-primary);
 }
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-primary) !important;
 }
 
 /* Style specific text elements */

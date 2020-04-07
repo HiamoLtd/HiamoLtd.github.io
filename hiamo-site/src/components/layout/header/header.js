@@ -21,8 +21,8 @@ const NavLink = ({ content, link }) => (
 );
 
 const Header = () => (
-  <div className={styles.nav}>
-    <Navbar className={`content align-items-end`} expand="lg" sticky="top">
+  <div className={styles.container}>
+    <Navbar className={`content align-items-end ${styles.nav}`} expand="lg" sticky="top">
         {/*Brand sign*/}
         { /* TODO links, and loading image */}
         <Link to={getLink('Home', '/')}>
