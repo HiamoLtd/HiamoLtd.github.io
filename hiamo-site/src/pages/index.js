@@ -4,7 +4,7 @@ import React from "react";
 import Row from "react-bootstrap/Row"
 
 // TODO we should be able to import these all from components
-import { Screen, Team, ProjectBox } from '../components';
+import { Screen, Team, ProjectBox, BlogBox } from '../components';
 import { SEO } from '../components/shared';
 import { Section } from "../components/sections";
 
@@ -53,6 +53,36 @@ const IndexPage = () => (
           email="shaika@hiamo.nz"
           linkedIn="https://www.linkedin.com/in/khanshai/"
         /> 
+      </Row>
+    </Section>
+    <Section title="PROJECTS" hasLine>
+      <Row>
+        {/* // TODO go through all colours anre remove "color", just set it to "text-dark" or whatever */}
+        <BlogBox
+          title="The Presence of War"
+          type="Heritage Highlight"
+          content="The story of Aotearoa's 4-inch coastal defence guns, from the battles of Europe to the shores of New Zealand."
+          date="dd/mm/yy"
+          bgColor="color-secondary"
+          textColor="color-text-light"
+          slug="the-presence-of-war"
+        />
+        <BlogBox
+          title="Continuing the Mission"
+          content="A new year brings new challenges and oppourtunities; we reflect on the busy first month of 2019."
+          date="dd/mm/yy"
+          bgColor="color-tertiary"
+          textColor="color-text-dark"
+          slug="continuing-the-mission"
+        />
+        <BlogBox
+          title="A Year of Firsts"
+          date="dd/mm/yy"
+          content="After an eventful year filled with great events and changes, we look back on all that has happened since our company first launched."
+          bgColor="color-secondary"
+          textColor="color-text-light"
+          slug="a-year-of-first"
+        />
       </Row>
     </Section>
   </Screen>

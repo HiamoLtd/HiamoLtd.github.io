@@ -1,0 +1,27 @@
+.title {
+  color: var(--color-trim);
+}
+
+.type {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: Roboto;
+}
+
+.date, .text {
+  font-size: 18px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.link {
+  color: var(--color-trim);
+  text-decoration: none;
+}
+
+.link:hover {
+  color: var(--color-text-dark);
+  text-decoration: none;
+}
