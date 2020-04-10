@@ -6,7 +6,7 @@ import { Row, Col } from "react-bootstrap";
 // TODO we should be able to import these all from components
 import { Screen, Team, ProjectBox, BlogBox, About, Banner } from '../components';
 import { SEO } from '../components/shared';
-import { Section } from "../components/sections";
+import { Section, Contact } from "../components/sections";
 
 import styles from './index.module.css';
 
@@ -18,6 +18,7 @@ const IndexPage = () => (
       subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
       imageRef=""
     />
+    <Contact />
     <Section title="ABOUT">
       <Row>
         <About title="STORY TELLING">

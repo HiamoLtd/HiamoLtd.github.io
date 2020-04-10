@@ -1,0 +1,73 @@
+/* Style main container  */
+.container {
+  padding-bottom: 50px;
+}
+
+/* Style title section */
+.title-wrapper {
+  padding: 0;
+  margin: 0;
+}
+.title {
+  font-size: 60px;
+  color: var(--color-trim);
+}
+.subtitle {
+  color: var(--color-text-dark);
+  font-weight: normal;
+  font-size: 26px;
+}
+
+/* Style the contact section */
+.contact-wrapper {
+  border-top: 1px solid var(--color-trim);
+  padding: 10px 0 0 15px;
+}
+
+/* Style the contact form */
+.input-wrapper {
+  padding: 5px 0;
+  width: 100%;
+  display: flex;
+}
+.label {
+  white-space: nowrap;
+  margin-right: 10px;
+  color: var(--color-trim);
+  font-weight: bold;
+  font-size: 24px;
+}
+.input {
+  width: 100%;
+  flex-grow: 1;
+  border: none;
+  background-color: var(--color-tertiary);
+  padding: 0 10px;
+}
+.message {
+  width: 100%;
+  flex-grow: 1;
+  border: none;
+  background-color: var(--color-tertiary);
+}
+/* Style the submit button */
+.submit {
+  width: 100%;
+}
+.submit-btn {
+  transition: background-color .2s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  box-shadow: 1px 2px 4px 1px var(--color-shadow);
+  width: 100%;
+  border: none;
+  background-color: var(--color-trim);
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--color-text-light);
+}
+.submit-btn:hover {
+  background-color: var(--color-secondary);
+}
