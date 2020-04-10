@@ -35,7 +35,7 @@ const BlogBox = ({ title, type, date, content, bgColor, textColor, width, slug }
 BlogBox.propTypes = {
   title: PropTypes.string.isRequired,
   type: PropTypes.string,
-  date: PropTypes.isRequired,
+  date: PropTypes.string.isRequired,
   content: PropTypes.string.isRequired,
   bgColor: PropTypes.string.isRequired,
   textColor: PropTypes.string.isRequired,

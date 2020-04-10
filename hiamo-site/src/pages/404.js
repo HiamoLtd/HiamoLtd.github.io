@@ -1,16 +1,16 @@
 import React from "react"
 
-import Layout from "../components/shared/layout"
-import SEO from "../components/shared/seo"
+import { Screen } from "../components";
+import { Section } from "../components/sections";
+import { SEO } from "../components/shared";
 
 const NotFoundPage = () => (
-  <Layout>
+  <Screen>
     <SEO title="404: Not found" />
-    <h1>Page Not Found</h1>
-    <p>It seems there is nothing here! If this seems like an error, let us know!</p>
-    {/* TODO This */}
-    {/* <EmailContactBtn /> */}
-  </Layout>
+    <Section title="Page Not Found">
+      <p>We commend your explorative nature, but it seems there is nothing here!</p>
+    </Section>
+  </Screen>
 )
 
 export default NotFoundPage
