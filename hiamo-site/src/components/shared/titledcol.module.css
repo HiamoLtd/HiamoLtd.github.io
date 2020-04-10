@@ -1,0 +1,21 @@
+/* Style outer wrapper */
+.container {
+  display: initial;
+}
+
+/* Style header section */
+.header-wrapper {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.header {
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style info components */
+.content-wrapper {
+  padding-top: 15px ;
+}
