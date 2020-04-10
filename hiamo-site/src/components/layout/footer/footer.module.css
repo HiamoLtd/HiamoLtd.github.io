@@ -1,7 +1,7 @@
 /* Main container section */
 .container {
   background-color: var(--color-secondary);
-  margin: 0;
+  margin: 200px 0 0 0;
   padding: 2% 0;
   box-sizing: border-box;
   display: flex;

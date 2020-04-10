@@ -20,7 +20,7 @@ const IndexPage = () => (
     />
     <Contact />
     <Section title="ABOUT">
-      <Row>
+      <Row className={styles.aboutWrapper}>
         <About title="STORY TELLING">
           <p>
             History is created and connected by its stories, and the objects those before us have left behind.
@@ -69,7 +69,7 @@ const IndexPage = () => (
       </Row>
     </Section>
     <Section title="PROJECTS">
-      <Row>
+      <Row className={styles.projectWrapper}>
         <ProjectBox
           title="COASTAL DEFENCE"
           subtitle="VISUALISATION"
@@ -94,7 +94,7 @@ const IndexPage = () => (
       </Row>
     </Section>
     <Section title="TEAM">
-      <Row>
+      <Row className={styles.teamWrapper}>
         <Team
           name="Alex Hockley"
           job="CEO"
@@ -109,8 +109,8 @@ const IndexPage = () => (
         /> 
       </Row>
     </Section>
-    <Section title="PROJECTS">
-      <Row>
+    <Section title="BLOG">
+      <Row className={styles.blogWrapper}>
         {/* // TODO go through all colours anre remove "color", just set it to "text-dark" or whatever */}
         <BlogBox
           title="The Presence of War"
