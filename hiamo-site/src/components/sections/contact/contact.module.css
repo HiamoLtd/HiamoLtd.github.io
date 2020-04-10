@@ -1,6 +1,7 @@
 /* Style main container  */
 .container {
   padding-bottom: 50px;
+  padding: 0 15px 50px 15px;
 }
 
 /* Style title section */
