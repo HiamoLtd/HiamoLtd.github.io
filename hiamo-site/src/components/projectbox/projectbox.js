@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Import Bootstrap components
-import Col from "react-bootstrap/Col"
+import { Box } from '../shared';
 
 import styles from './projectbox.module.css';
 
 const ProjectBox = ({ title, subtitle, content, bgColor, textColor, width }) => (
-  <Col md={width || 4} className={styles.container} style={{backgroundColor: `var(--${bgColor})`}}>
+  <Box width={width} bgColor={bgColor}>
     <h3 className={styles.title}>
       {title}
     </h3>
@@ -17,7 +16,7 @@ const ProjectBox = ({ title, subtitle, content, bgColor, textColor, width }) => 
     <p className={styles.text} style={{color: `var(--${textColor})`}}>
       {content}
     </p>
-  </Col>
+  </Box>
 );
 
 ProjectBox.propTypes = {
