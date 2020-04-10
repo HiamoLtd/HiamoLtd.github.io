@@ -10,9 +10,9 @@ const ProjectBox = ({ title, subtitle, content, bgColor, textColor, width }) => 
     <h3 className={styles.title}>
       {title}
     </h3>
-    <h3 className={styles.subtitle}>
+    <h4 className={styles.subtitle}>
       {subtitle}
-    </h3>
+    </h4>
     <p className={styles.text} style={{color: `var(--${textColor})`}}>
       {content}
     </p>
