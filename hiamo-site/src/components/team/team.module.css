@@ -1,0 +1,33 @@
+/* Style outer wrapper */
+.container {
+  display: initial;
+}
+
+/* Style header section */
+.header-wrapper {
+  padding: 2px 30px;
+}
+
+.header {
+  font-size: 26px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style info components */
+.content-wrapper {
+  padding: 15px 30px;
+}
+.email, .link, .job {
+  color: var(--color-text-dark);
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0;
+}
+.email, .link {
+  display: table;
+}
+.email:hover, .link:hover {
+  color: var(--color-trim);
+  text-decoration: none;
+}

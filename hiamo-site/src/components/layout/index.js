@@ -1,1 +1,3 @@
-export { default as Screen } from './screen/screen.js';
+import Screen from './screen/screen.js';
+
+export default Screen;

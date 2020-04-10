@@ -4,10 +4,9 @@ import React from "react";
 import Row from "react-bootstrap/Row"
 
 // TODO we should be able to import these all from components
-import { Screen } from '../components/layout';
+import { Screen, Team, ProjectBox } from '../components';
 import { SEO } from '../components/shared';
 import { Section } from "../components/sections";
-import ProjectBox from "../components/projectbox";
 
 const IndexPage = () => (
   <Screen>
@@ -40,7 +39,23 @@ const IndexPage = () => (
         />
       </Row>
     </Section>
+    <Section title="TEAM" hasLine>
+      <Row>
+        <Team
+          name="Alex Hockley"
+          job="CEO"
+          email="alex@hiamo.nz"
+          linkedIn="https://www.linkedin.com/in/alexjhockley/"
+        />
+        <Team
+          name="Shaika Khan"
+          job="CTO"
+          email="shaika@hiamo.nz"
+          linkedIn="https://www.linkedin.com/in/khanshai/"
+        /> 
+      </Row>
+    </Section>
   </Screen>
 )
 
-export default IndexPage
+export default IndexPage;
