@@ -1,20 +1,73 @@
 import React from "react";
 
 // Import bootstrap components
-import Row from "react-bootstrap/Row"
+import { Row, Col } from "react-bootstrap";
 
 // TODO we should be able to import these all from components
-import { Screen, Team, ProjectBox, BlogBox } from '../components';
+import { Screen, Team, ProjectBox, BlogBox, About, Banner } from '../components';
 import { SEO } from '../components/shared';
 import { Section } from "../components/sections";
+
+import styles from './index.module.css';
 
 const IndexPage = () => (
   <Screen>
     <SEO title="Home" />
-    <Section title="ABOUT" hasLine>
-      <p>About some stuff. Woo</p>
+    <Banner
+      title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
+      subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
+      imageRef=""
+    />
+    <Section title="ABOUT">
+      <Row>
+        <About title="STORY TELLING">
+          <p>
+            History is created and connected by its stories, and the objects those before us have left behind.
+            <br/>
+            <br/>
+            We bring these stories to life by visualizing them exactly where the events occurred and connect people
+            with the tales by letting them be a part of the history through gamification.     
+          </p>
+        </About>
+        <About title="VISUALIZATION">
+          <p>
+            Using Augmented Reality (AR), we can create things that never were, or recreate something which has since disappeared.
+            <br/>
+            <br/>
+            AR lets us visualize whatever is necessary for the experience you want. This could mean using AR to digitally recreate
+            an interactive and expandable replica of a heritage site or item, or to visualize a new product which hasn't been built yet.
+          </p>
+        </About>
+        <About title="AR EXPERIENCES">
+          <p>
+            Each experience we build is uniquely tied to the subject or target industry. We build experiences that
+            visitors and users will remember, and ones that deeply connect them to the content they are seeing in front of them.
+            <br/>
+            <br/>
+            Our skillset can also be applied to a variety of opportunities in the culture and heritage sector and beyond. 
+          </p>
+          {/* TODO this is also an option */}
+          {/* <p>
+            We don't just create applications, we create experiences, and each experience is uniquely tied to its subject.
+            Hiamo crafts experiences thatvisitors and users will remember, and ones that deeply connect them to the content
+            they are seeing in front of them.
+            <br/>
+            <br/>
+            This skillset can be applied to a variety of opportunities in the culture and heritage sector and beyond. 
+          </p> */}
+        </About>
+      </Row>
+      <Row>
+        {/* Empty column for spaciong out the motto section */}
+        <Col md={5}/>
+        <Col md={7} className={styles.mottoWrapper}>
+          <h3 className={styles.motto}>
+            "RECONNECTING EXPLORERS WITH HISTORIC LANDMARKS THROUGH THE LENS OF TODAYS INNOVATION."
+          </h3>
+        </Col>
+      </Row>
     </Section>
-    <Section title="PROJECTS" hasLine>
+    <Section title="PROJECTS">
       <Row>
         <ProjectBox
           title="COASTAL DEFENCE"
@@ -39,7 +92,7 @@ const IndexPage = () => (
         />
       </Row>
     </Section>
-    <Section title="TEAM" hasLine>
+    <Section title="TEAM">
       <Row>
         <Team
           name="Alex Hockley"
@@ -55,7 +108,7 @@ const IndexPage = () => (
         /> 
       </Row>
     </Section>
-    <Section title="PROJECTS" hasLine>
+    <Section title="PROJECTS">
       <Row>
         {/* // TODO go through all colours anre remove "color", just set it to "text-dark" or whatever */}
         <BlogBox

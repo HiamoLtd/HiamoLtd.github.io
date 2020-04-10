@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 
 import styles from './titledcol.module.css'
 
-const TitledCol = ({ header, children, width=4, headerBgColor, headerColor, paddingSide=0 }) => (
+const TitledCol = ({ header, children, width, headerBgColor, headerColor, paddingSide=0 }) => (
   <Col md={width} className={styles.container}>
     <div className={styles.headerWrapper} style={{backgroundColor: `var(--${headerBgColor || 'color-trim'})`}}>
       <h3

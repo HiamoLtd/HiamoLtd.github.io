@@ -13,7 +13,7 @@ const Section = ({ children, hasLine, title }) => (
 Section.propTypes = {
   children: PropTypes.node.isRequired,
   hasLine: PropTypes.bool,
-  title: PropTypes.string.isRequired
+  title: PropTypes.string
 };
 
 export default Section;

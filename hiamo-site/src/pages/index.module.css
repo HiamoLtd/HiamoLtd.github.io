@@ -1,0 +1,8 @@
+/* Style the motto section in about */
+.motto {
+  color: var(--color-trim);
+  font-size: 35px;
+}
+.motto-wrapper {
+  padding: 80px 0;
+}
