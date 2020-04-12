@@ -34,19 +34,21 @@ const Footer = () => (
           </div>
         </Link>
       </div>
-      <div className={`${styles.column} ${styles.socialWrapper}`} key="footer-social">
-        <a href="https://www.instagram.com/hiamo_nz/">
-          <Image src={require("../../../images/icons/social/instagram.svg")} className={ styles.socialIcon }/>
-        </a>
-        <a href="https://www.facebook.com/HiamoNZ/">
-            <Image src={require("../../../images/icons/social/facebook.svg")} className={ styles.socialIcon }/>
-        </a>
-        <a href="https://twitter.com/HiamoNZ">
-          <Image src={require("../../../images/icons/social/twitter.svg")} className={ styles.socialIcon }/>
-        </a>
-        <a href="https://www.linkedin.com/company/hiamo/">
-          <Image src={require("../../../images/icons/social/linkedin.svg")} className={ styles.socialIcon }/>
-        </a>
+      <div className={styles.column} key="footer-social">
+        <div className={styles.socialWrapper}>
+          <a href="https://www.instagram.com/hiamo_nz/">
+            <Image src={require("../../../images/icons/social/instagram.svg")} className={ styles.socialIcon }/>
+          </a>
+          <a href="https://www.facebook.com/HiamoNZ/">
+              <Image src={require("../../../images/icons/social/facebook.svg")} className={ styles.socialIcon }/>
+          </a>
+          <a href="https://twitter.com/HiamoNZ">
+            <Image src={require("../../../images/icons/social/twitter.svg")} className={ styles.socialIcon }/>
+          </a>
+          <a href="https://www.linkedin.com/company/hiamo/">
+            <Image src={require("../../../images/icons/social/linkedin.svg")} className={ styles.socialIcon }/>
+          </a>
+        </div>
       </div>
       </div>
   </div>
