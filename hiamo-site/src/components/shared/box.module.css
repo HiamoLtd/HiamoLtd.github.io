@@ -11,3 +11,8 @@
   border-radius: 15px;
   padding: 30px;
 }
+
+.box:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 8px 1px var(--color-shadow);
+}

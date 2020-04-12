@@ -12,24 +12,26 @@ const BlogBox = ({ title, type, date, content, bgColor, textColor, width, slug }
     width={width}
     bgColor={bgColor}
   >
-    <div className={styles.titleWrapper}>
-      <h3 className={styles.title}>
-        {title}
-      </h3>
-      {type &&
-        <h4 className={styles.type} style={{color: `var(--${textColor})`}}>
-          {type}
-        </h4>
-      }
-      <p className={styles.date} style={{color: `var(--${textColor})`}}>
-        {date}
+    <Link  to={`/blogs/${slug}`} className={styles.link}>
+      <div className={styles.titleWrapper}>
+        <h3 className={styles.title}>
+          {title}
+        </h3>
+        {type &&
+          <h4 className={styles.type} style={{color: `var(--${textColor})`}}>
+            {type}
+          </h4>
+        }
+        <p className={styles.date} style={{color: `var(--${textColor})`}}>
+          {date}
+        </p>
+      </div>
+      <p className={styles.text} style={{color: `var(--${textColor})`}}>
+        {content}
       </p>
-    </div>
-    <p className={styles.text} style={{color: `var(--${textColor})`}}>
-      {content}
-    </p>
-    <Link to={`/blogs/${slug}`} className={styles.link}>
-      Read more...
+      <p className={styles.readMore}>
+        Read more...
+      </p>
     </Link>
   </Box>
 );
