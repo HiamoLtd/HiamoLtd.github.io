@@ -16,7 +16,7 @@ const IndexPage = () => (
     <Banner
       title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
       subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
-      imageRef=""
+      imageRef={require("../images/projects/forts/WrightsHill.jpg")}
     />
     <Contact />
     <Section title="ABOUT">
@@ -73,14 +73,14 @@ const IndexPage = () => (
         <ProjectBox
           title="COASTAL DEFENCE"
           subtitle="VISUALISATION"
-          content="New Zealand is littered with coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, creating an interactive and environmentally friendly alternative to physical replicas."
+          content="New Zealand is covered in coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, increasing interaction and engagement."
           bgColor="color-secondary"
           textColor="color-text-light"
         />
         <ProjectBox
           title="WAHINE DISASTER"
           subtitle="STORYTELLING"
-          content="For Wellington Heritage Week 2019, Hiamo gave a new insight into the tragic sinking of the T.E.V Wahine by using augmented reality to visualse the path of the ship by the Wahine memorial mast."
+          content="Hiamo shared the tragic story of the ill-fated ferry using Augmented Reality to visualse the path of the ship by the Wahine memorial mast."
           bgColor="color-tertiary"
           textColor="color-text-dark"
         />

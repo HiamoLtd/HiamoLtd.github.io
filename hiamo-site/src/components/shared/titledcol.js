@@ -38,7 +38,7 @@ TitledCol.propTypes = {
   width: PropTypes.number,
   headerBgColor: PropTypes.string,
   headerColor: PropTypes.string,
-  paddingSide: PropTypes.number,
+  paddingSide: PropTypes.string,
 }
 
 export default TitledCol;

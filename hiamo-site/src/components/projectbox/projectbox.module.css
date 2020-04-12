@@ -1,5 +1,9 @@
 .title {
+  padding-top: 40px;
+  margin: 0;
   color: var(--color-trim);
+  font-size: 33px;
+  font-weight: bolder;
 }
 
 .subtitle {
@@ -7,5 +11,6 @@
 }
 
 .text {
-
+  padding-top: 10px;
+  font-size: 16px;
 }
