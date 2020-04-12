@@ -28,11 +28,11 @@ const Footer = () => (
       </div>
       <div className={styles.column} key="footer-logo">
         {/* TODO this should also link based on the page */}
-        <Link to={"/"} className={styles.logoLink}>
-          <div className={styles.logoWrapper}>
-            <Image src={require("../../../images/icons/logo_svg.svg")} className={ styles.logo }/>
-          </div>
-        </Link>
+        <div className={styles.logoWrapper}>
+          <Link to={"/"} className={styles.logoLink}>
+              <Image src={require("../../../images/icons/logo_svg.svg")} className={styles.logo}/>
+          </Link>
+        </div>
       </div>
       <div className={styles.column} key="footer-social">
         <div className={styles.socialWrapper}>
