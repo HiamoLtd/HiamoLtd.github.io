@@ -1,5 +1,12 @@
 .container {
+  padding: 0 15px;
+  height: 350px;
+  min-height: 350px;
+  max-height: 350px;
+}
+
+.box {
+  height: 100%;
   border-radius: 15px;
-  padding: 8% 5%;
-  display: inline;
+  padding: 30px;
 }

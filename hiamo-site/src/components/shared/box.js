@@ -10,9 +10,13 @@ const Box = ({ children, width, bgColor }) => (
   <Col
     md={width || 4}
     className={styles.container}
-    style={{backgroundColor: `var(--${bgColor})`}}
   >
-    {children}
+    <div 
+      className={styles.box}
+      style={{backgroundColor: `var(--${bgColor})`}}
+    >
+      {children}
+    </div>
   </Col>
 );
 
