@@ -1,27 +1,35 @@
+.title-wrapper {
+  height: 140px;
+}
+
 .title {
+  font-weight: bolder;
   color: var(--color-trim);
+  margin: 0;
 }
 
 .type {
   font-weight: bold;
   font-size: 20px;
-  font-family: Roboto;
+  margin: 5px 0 0 0;
 }
 
-.date, .text {
-  font-size: 18px;
+.date {
+  font-size: 16px;
+  margin: 5px 0;
 }
-
 .text {
-  font-size: 18px;
+  height: 105px;
+  font-size: 16px;
 }
 
 .link {
+  float: right;
   color: var(--color-trim);
   text-decoration: none;
 }
 
 .link:hover {
-  color: var(--color-text-dark);
+  color: var(--color-text-trim);
   text-decoration: none;
 }
