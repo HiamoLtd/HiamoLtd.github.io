@@ -42,7 +42,6 @@
 
 /* Style the base components */
 html {
-  font-family: Open-Sans;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -64,6 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: var(--color-text-dark);
+  font-family: Raleway;
 }
 
 /* Set the MAXIMUM width for the page elements. 
