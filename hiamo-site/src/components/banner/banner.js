@@ -20,7 +20,7 @@ const Banner = ({ title, subtitle, imageRef }) => (
       </Col>
       <Col md={4} className={styles.imageWrapper}>
         <Image
-          src={require("../../images/icons/logo_svg.svg")}
+          src={imageRef}
           className={styles.image}
         />
       </Col>
