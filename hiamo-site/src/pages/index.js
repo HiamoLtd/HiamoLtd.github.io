@@ -76,6 +76,7 @@ const IndexPage = () => (
           content="New Zealand is covered in coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, increasing interaction and engagement."
           bgColor="color-secondary"
           textColor="color-text-light"
+          slug="coastal-defence"
         />
         <ProjectBox
           title="WAHINE DISASTER"
@@ -83,6 +84,7 @@ const IndexPage = () => (
           content="Hiamo shared the tragic story of the ill-fated ferry using Augmented Reality to visualse the path of the ship by the Wahine memorial mast."
           bgColor="color-tertiary"
           textColor="color-text-dark"
+          slug="wahine-disaster"
         />
         <ProjectBox
           title="SEEING STARS"
@@ -90,6 +92,7 @@ const IndexPage = () => (
           content="Hiamo was asked to solve the problem of what a stargazing business could do if it was too cloudy to see the stars on a given night. Our answer? Bring the stars to earth!"
           bgColor="color-secondary"
           textColor="color-text-light"
+          slug="seeing-stars"
         />
       </Row>
     </Section>
