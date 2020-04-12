@@ -17,7 +17,7 @@ const About = ({ title, children, width }) => (
 
 About.propTypes = {
   title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
   width: PropTypes.number
 }
 
