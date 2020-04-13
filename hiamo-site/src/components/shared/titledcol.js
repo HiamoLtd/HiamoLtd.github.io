@@ -8,11 +8,11 @@ import styles from './titledcol.module.css'
 
 const TitledCol = ({ header, children, width, headerBgColor, headerColor, paddingSide=0 }) => (
   <Col md={width || 4} className={styles.container}>
-    <div className={styles.headerWrapper} style={{backgroundColor: `var(--${headerBgColor || 'color-trim'})`}}>
+    <div className={styles.headerWrapper} style={{backgroundColor: `rgb(var(--${headerBgColor || 'color-trim'}))`}}>
       <h3
         className={styles.header} 
         style={{
-          color: `var(--${headerColor || 'color-text-light'})`,
+          color: `rgb(var(--${headerColor || 'color-text-light'}))`,
           paddingLeft:`${paddingSide}`,
           paddingRight:`${paddingSide}`
         }}

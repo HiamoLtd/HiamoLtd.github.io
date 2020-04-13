@@ -18,15 +18,15 @@ const BlogBox = ({ title, type, date, content, bgColor, textColor, width, slug }
           {title}
         </h3>
         {type &&
-          <h4 className={styles.type} style={{color: `var(--${textColor})`}}>
+          <h4 className={styles.type} style={{color: `rgb(var(--${textColor}))`}}>
             {type}
           </h4>
         }
-        <p className={styles.date} style={{color: `var(--${textColor})`}}>
+        <p className={styles.date} style={{color: `rgb(var(--${textColor}))`}}>
           {date}
         </p>
       </div>
-      <p className={styles.text} style={{color: `var(--${textColor})`}}>
+      <p className={styles.text} style={{color: `rgb(var(--${textColor}))`}}>
         {content}
       </p>
       <p className={styles.readMore}>

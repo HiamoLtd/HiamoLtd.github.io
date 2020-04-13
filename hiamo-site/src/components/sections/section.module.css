@@ -4,12 +4,12 @@
 }
 
 .after-line {
-  border-bottom: 1px solid var(--color-trim);
+  border-bottom: 1px solid rgb(var(--color-trim));
 }
 
 .title {
   padding: 20px 0 0 0;
   margin: 0;
   font-size: 70px;
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
 }

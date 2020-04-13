@@ -13,7 +13,7 @@ const Box = ({ children, width, bgColor }) => (
   >
     <div 
       className={styles.box}
-      style={{backgroundColor: `var(--${bgColor})`}}
+      style={{backgroundColor: `rgb(var(--${bgColor}))`}}
     >
       {children}
     </div>

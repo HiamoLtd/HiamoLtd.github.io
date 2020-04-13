@@ -11,17 +11,17 @@
 }
 .title {
   font-size: 60px;
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
 }
 .subtitle {
-  color: var(--color-text-dark);
+  color: rgb(var(--color-text-dark));
   font-weight: normal;
   font-size: 26px;
 }
 
 /* Style the contact section */
 .contact-wrapper {
-  border-top: 1px solid var(--color-trim);
+  border-top: 1px solid rgb(var(--color-trim));
   padding: 10px 0 0 15px;
 }
 
@@ -34,7 +34,7 @@
 .label {
   white-space: nowrap;
   margin-right: 10px;
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
   font-weight: bold;
   font-size: 24px;
 }
@@ -42,14 +42,14 @@
   width: 100%;
   flex-grow: 1;
   border: none;
-  background-color: var(--color-tertiary);
+  background-color: rgb(var(--color-tertiary));
   padding: 0 10px;
 }
 .message {
   width: 100%;
   flex-grow: 1;
   border: none;
-  background-color: var(--color-tertiary);
+  background-color: rgb(var(--color-tertiary));
 }
 /* Style the submit button */
 .submit {
@@ -59,16 +59,16 @@
   transition: background-color .2s ease-in-out;
   -moz-transition: background-color .2s ease-in-out;
   -webkit-transition: background-color .2s ease-in-out;
-  box-shadow: 1px 2px 4px 1px var(--color-shadow);
+  box-shadow: 1px 2px 4px 1px rgb(var(--color-shadow));
   width: 100%;
   border: none;
-  background-color: var(--color-trim);
+  background-color: rgb(var(--color-trim));
   border-radius: 10px;
   padding: 5px;
   font-weight: bold;
   font-size: 20px;
-  color: var(--color-text-light);
+  color: rgb(var(--color-text-light));
 }
 .submit-btn:hover {
-  background-color: var(--color-secondary);
+  background-color: rgb(var(--color-secondary));
 }

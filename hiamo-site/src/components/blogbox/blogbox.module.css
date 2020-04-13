@@ -14,7 +14,7 @@
 
 .title {
   font-weight: bolder;
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
   margin: 0;
 }
 
@@ -37,6 +37,6 @@
   font-size: 16px;
   margin: 0;
   float: right;
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
   text-decoration: none;
 }

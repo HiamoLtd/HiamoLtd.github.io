@@ -1,17 +1,17 @@
 /* --- Absolute base CSS --- */
 /* Define some custom colours for the app */
 :root {
-    --color-primary: #f7f8fa;
-    --color-secondary: #212224;
-    --color-tertiary: #F2F2F2;
-    --color-secondary-light: #4c4d4f;
-    --color-trim: #fc3a14;
-    --color-trim-dark: #e63815;
-    --color-text-dark: #212224;
-    --color-text-light: #f7f8fa;
-    --color-text-trim: #fc3a14;
-    --color-shadow: #4c4d4f;
-    --color-shadow-dark: #000;
+    --color-primary: 247,248,250;
+    --color-secondary: 33,34,36;
+    --color-tertiary: 242,242,242;
+    --color-secondary-light: 76,77,79;
+    --color-trim: 252,58,20;
+    --color-trim-dark: 230,56,21;
+    --color-text-dark: 33,34,36;
+    --color-text-light: 247,248,250;
+    --color-text-trim: 252,58,20;
+    --color-shadow: 76,77,79;
+    --color-shadow-dark: 0,0,0;
 }
 
 /** Introduce custom fonts **/

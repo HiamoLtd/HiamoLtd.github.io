@@ -15,7 +15,7 @@ const ProjectBox = ({ title, subtitle, content, bgColor, textColor, width, slug 
       <h4 className={styles.subtitle}>
         {subtitle}
       </h4>
-      <p className={styles.text} style={{color: `var(--${textColor})`}}>
+      <p className={styles.text} style={{color: `rgb(var(--${textColor}))`}}>
         {content}
       </p>
     </Link>

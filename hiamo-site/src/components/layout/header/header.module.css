@@ -4,11 +4,11 @@
   position: -webkit-sticky; /* for Safari */
   position: sticky;
   top: 0;
-  z-index:100;
+  z-index:1;
   width: 100%;
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-  box-shadow: 0 0 15px 0 var(--color-shadow);
+  background-color: rgb(var(--color-primary));
+  color: rgb(var(--color-secondary));
+  box-shadow: 0 0 15px 0 rgb(var(--color-shadow));
 }
 
 .nav {
@@ -30,7 +30,7 @@
 }
 
 .link {
-  color: var(--color-text-dark);
+  color: rgb(var(--color-text-dark));
   transition: color .2s ease-in-out;
   -moz-transition: color .2s ease-in-out;
   -webkit-transition: color .2s ease-in-out;
@@ -41,5 +41,5 @@
 }
 
 .link:hover {
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
 }

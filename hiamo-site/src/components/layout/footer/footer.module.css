@@ -1,6 +1,6 @@
 /* Main container section */
 .container {
-  background-color: var(--color-secondary);
+  background-color: rgb(var(--color-secondary));
   margin: 200px 0 0 0;
   padding: 2% 0;
   box-sizing: border-box;
@@ -19,7 +19,7 @@
 
 /* Style the contact section */
 .info {
-  color: var(--color-text-light);
+  color: rgb(var(--color-text-light));
   font-family: Raleway;
   padding: 0;
   margin: 0;
@@ -36,7 +36,7 @@
   text-decoration: none;
 }
 .link:hover {
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
   text-decoration: none;
 }
 
@@ -46,10 +46,10 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 0 10px 5px var(--color-shadow-dark);
+  box-shadow: 0 0 10px 5px rgb(var(--color-shadow-dark));
   opacity: 1;
   transition: opacity .25s ease-in-out;
-  background-color: var(--color-primary);
+  background-color: rgb(var(--color-primary));
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
