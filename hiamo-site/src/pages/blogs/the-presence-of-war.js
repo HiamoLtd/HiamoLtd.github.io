@@ -15,7 +15,7 @@ const Blog = () => (
     <SEO title="The Presence of War | Blog" />
     <Section title="The Presence of War" mainHeader>
       {/* Title section */}
-      <Row>
+      <Row className={styles.titleRow}>
         <Col md={12}>
           <h2 className={styles.type}>
             Heritage Highlight
@@ -40,21 +40,43 @@ const Blog = () => (
             battlecruiser HMS New Zealand, a warship which the New Zealand government paid for Britain to
             build to help defend our shores<sup>[2]</sup>.
           </p>
-          <ModalImage
-            image={require('../../images/blogs/the-presence-of-war/newzealand.jpg')}
-            caption={
-              <>
-                <p id="caption">
-                  The HMS New Zealand seen in Scotland, during World War I.
-                  <br/>
-                  <span>Image reference:</span>
-                </p>
-                <a href="https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614"  id="ref">
-                  https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614
-                </a>
-              </>
-            }
-          />
+          <div className={styles.imageRow}>
+            <div className={styles.imageCol} style={{height:'190px'}}>
+              <ModalImage
+                image={require('../../images/blogs/the-presence-of-war/newzealand.jpg')}
+                caption={
+                  <>
+                    <p id="caption">
+                      The HMS New Zealand seen in Scotland, during World War I.
+                      <br/>
+                      <span>Image reference:</span>
+                    </p>
+                    <a href="https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614"  id="ref">
+                      https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614
+                    </a>
+                  </>
+                }
+              />
+            </div>
+            <div className={styles.imageCol} style={{height:'190px'}}>
+              <ModalImage
+                image={require('../../images/blogs/the-presence-of-war/crowds.jpg')}
+                caption={
+                  <>
+                    <p id="caption">
+                      Photograph of a crowd gathered by the British Battlecruiser HMS New Zealand, 
+                      Lyttelton.
+                      <br/>
+                      <span>Image reference:</span>
+                    </p>
+                    <a href="https://natlib.govt.nz/records/22525840"  id="ref">
+                      https://natlib.govt.nz/records/22525840
+                    </a>
+                  </>
+                }
+              />
+            </div>
+          </div>
           <p>
             Despite this initial plan, the HMS New Zealand only went to its namesake country twice. Almost
             half a million people went to see the ship when it first visited in 1913, just under half the
@@ -74,7 +96,16 @@ const Blog = () => (
         </Col>
         {/* Right side text */}
         <Col md={6} className={styles.mainCol}>
-          IMAGE GOES HERE. SORT.
+          <ModalImage
+            image={require('../../images/blogs/the-presence-of-war/screenshot.jpg')}
+            caption={
+              <>
+                <p id="caption">
+                  The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.
+                </p>
+              </>
+            }
+          />
           <p>
           The HMS New Zealand was scrapped in 1922, only 10 years after entering service and 23 years before the
           New Zealand government would finish paying back the purchase in 1945<sup>[4]</sup>. The 4-inch secondary guns were
@@ -96,12 +127,28 @@ const Blog = () => (
           during the 1950s-60s. Two examples remain outside the Auckland War Memorial Museum,
           although they have lost many pieces over time<sup>[7]</sup>.
           </p>
+          <ModalImage
+            image={require('../../images/blogs/the-presence-of-war/dorset.gif')}
+            caption={
+              <>
+                <p id="caption">
+                  A 4-inch gun of the Fort Dorset Gap Battery in operation. This gun was just down the hill from where the augmented reality
+                  photo was taken.
+                    <br/>
+                    <span>Image reference:</span>
+                  </p>
+                  <a href="https://paperspast.natlib.govt.nz/newspapers/EP19390912.2.49.8"  id="ref">
+                    https://paperspast.natlib.govt.nz/newspapers/EP19390912.2.49.8
+                  </a>
+              </>
+            }
+          />
         </Col>
       </Row>
       {/* Exta info section, if needed. */}
       <Row>
         <Col md={6} className={styles.mainCol}>
-          <h3>Recreating Objects</h3>
+          <h3 className={styles.subheading}>Recreating Objects</h3>
           <p>
             When we at Hiamo set about recreating these historic items we faced many problems sourcing
             the information, getting consistent reference photographs, and finding out exactly what the
@@ -112,8 +159,9 @@ const Blog = () => (
         </Col>
       </Row>
       {/* References section, if needed. */}
-      <Row>
+      <Row className={styles.endRow}>
         <Col md={12} className={styles.mainCol}>
+          <h5 className={`${styles.references} ${styles.subheading}`}>References</h5>
           <p>
             [1] (2017) 4”/50 (10.2 cm) bl mark vii. NavWeaps. [Online].
                     Available: <a href="http://www.navweaps.com/Weapons/WNBR">http://www.navweaps.com/Weapons/WNBR</a> 4-50 mk7.ph
@@ -135,16 +183,6 @@ const Blog = () => (
                     [7] V. Yakubov. British bl 4-inch mk vii naval gun, auckland war memorial museum, auckland, nz. [Online].
                     Available: <a href="">http://svsm.org/gallery/102mm_mk7</a>
           </p>
-          <h5>Image Sources</h5>
-          <p>
-            4-inch gun recreation in augmented reality, Hiamo Ltd. 2019.
-                    <br />
-            <a href="https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614">https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614</a>
-            <br />
-                    Photograph of a crowd gathered by the British Battlecruiser HMS New Zealand, Lyttelton. Ref: 1/1-002307-G. Alexander Turnbull Library, Wellington, New Zealand. <a href="https://natlib.govt.nz/records/22525840">/records/22525840</a>
-            <br />
-            <a href="https://paperspast.natlib.govt.nz/newspapers/EP19390912.2.49.8">https://paperspast.natlib.govt.nz/newspapers/EP19390912.2.49.8</a>
-          </p>
         </Col>
       </Row>
     </Section>
@@ -154,17 +192,17 @@ const Blog = () => (
           title="Continuing the Mission"
           content="A new year brings new challenges and oppourtunities; we reflect on the busy first month of 2019."
           date="dd/mm/yy"
-          bgColor="color-tertiary"
-          textColor="color-text-dark"
+          bgColor="color-secondary"
+          textColor="color-text-light"
           slug="continuing-the-mission"
         />
         <BlogBox
           title="A Year of Firsts"
           date="dd/mm/yy"
           content="After an eventful year filled with great events and changes, we look back on all that has happened since our company first launched."
-          bgColor="color-secondary"
-          textColor="color-text-light"
-          slug="a-year-of-first"
+          bgColor="color-tertiary"
+          textColor="color-text-dark"
+          slug="a-year-of-firsts"
         />
       </Row>
     </Section>

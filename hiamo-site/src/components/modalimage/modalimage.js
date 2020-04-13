@@ -35,18 +35,23 @@ const ModalImage = ({ image, caption }) => {
       >
         &times;
       </span>
-      {/* Modal image */}
-      <Image
-      onClick={(e) => modalEvent(e, setModal, true)}
-        src={image}
-        className={styles.modalImage}
-      />
-      {/* The image caption */}
       <div
-        className={styles.modalCaption}
-        onClick={(e) => modalEvent(e, setModal, true)}
+        id="modal-closer"
+        className={`content ${styles.modalContent}`}
       >
-        {caption}
+        {/* Modal image */}
+        <Image
+          onClick={(e) => modalEvent(e, setModal, true)}
+          src={image}
+          className={styles.modalImage}
+        />
+        {/* The image caption */}
+        <div
+          className={styles.modalCaption}
+          onClick={(e) => modalEvent(e, setModal, true)}
+        >
+          {caption}
+        </div>
       </div>
     </div>
     </>

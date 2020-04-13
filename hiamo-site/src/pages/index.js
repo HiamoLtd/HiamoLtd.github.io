@@ -138,7 +138,7 @@ const IndexPage = () => (
           content="After an eventful year filled with great events and changes, we look back on all that has happened since our company first launched."
           bgColor="color-secondary"
           textColor="color-text-light"
-          slug="a-year-of-first"
+          slug="a-year-of-firsts"
         />
       </Row>
     </Section>
