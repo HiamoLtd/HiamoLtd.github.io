@@ -5,37 +5,52 @@ import PropTypes from 'prop-types';
 import { Image } from 'react-bootstrap';
 import styles from './modalimage.module.css';
 
+const modalEvent = (e, setModal, desiredVal) => {
+  if (e.target.id === "modal-closer") {
+    setModal(desiredVal);
+  }
+}
 
 const ModalImage = ({ image, caption }) => {
   const [modalOpen, setModal] = useState(false);
-return (
-  <>
-  <Image
-    className={styles.image}
-    src={image}
-    onClick={() => setModal(true)}
-  />
-  {/* The modal to appear on click */}
-  <div className={styles.modal} style={{display: (modalOpen ? 'block' : 'none')}}>
-    {/* Close modal */}
-    <span
-      className={styles.modalCross}
-      onClick={() => setModal(false)}
-    >
-      &times;
-    </span>
-    {/* Modal image */}
+  return (
+    <>
     <Image
+      className={styles.image}
       src={image}
-      className={styles.modalImage}
+      onClick={() => setModal(true)}
     />
-    {/* The image caption */}
-    <div className={styles.modalCaption}>
-      {caption}
+    {/* The modal to appear on click */}
+    <div
+      className={styles.modal}
+      style={{display: (modalOpen ? 'block' : 'none')}}
+      onClick={(e) => modalEvent(e, setModal, false)}
+      id="modal-closer"
+    >
+      {/* Close modal */}
+      <span
+        id="modal-closer"
+        className={styles.modalCross}
+        onClick={(e) => modalEvent(e, setModal, false)}
+      >
+        &times;
+      </span>
+      {/* Modal image */}
+      <Image
+      onClick={(e) => modalEvent(e, setModal, true)}
+        src={image}
+        className={styles.modalImage}
+      />
+      {/* The image caption */}
+      <div
+        className={styles.modalCaption}
+        onClick={(e) => modalEvent(e, setModal, true)}
+      >
+        {caption}
+      </div>
     </div>
-  </div>
-  </>
-);
+    </>
+  );
 };
 
 export default ModalImage;

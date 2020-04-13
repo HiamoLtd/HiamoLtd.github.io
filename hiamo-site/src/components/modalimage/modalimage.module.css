@@ -20,7 +20,7 @@
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(var(--color-secondary, 0, 0, 0)); /* Fallback color */
-  background-color: rgba(var(--color-secondary, 0, 0, 0), .8);
+  background-color: rgba(var(--color-secondary, 0, 0, 0), .95);
 }
 
 /* Modal image styling */
@@ -29,10 +29,12 @@
   display: block;
   width: 80%;
   max-width: 700px;
+  border-radius: 5px;
 }
 
 /* Modal caption styling */
 .modal-caption {
+  z-index: 2;
   margin: auto;
   display: block;
   width: 80%;
@@ -41,6 +43,25 @@
   color: #ccc;
   padding: 10px 0;
   height: 150px;
+}
+.modal-caption p {
+  color:rgb(var(--color-text-light));
+  margin: 0;
+}
+.modal-caption a {
+  font-size: 20px;
+  color:rgb(var(--color-text-light));
+  text-decoration: none;
+}
+.modal-caption a:hover {
+  text-decoration: none;
+  color: rgb(var(--color-trim));
+}
+.modal-caption span {
+  color: rgb(var(--color-trim));
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /* TODO change clours */

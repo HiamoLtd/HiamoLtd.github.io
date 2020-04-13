@@ -41,8 +41,19 @@ const Blog = () => (
             build to help defend our shores<sup>[2]</sup>.
           </p>
           <ModalImage
-            image={require('../../images/projects/forts/WrightsHill.jpg')}
-            caption="IMAGE CAPTION TODO"
+            image={require('../../images/blogs/the-presence-of-war/newzealand.jpg')}
+            caption={
+              <>
+                <p id="caption">
+                  The HMS New Zealand seen in Scotland, during World War I.
+                  <br/>
+                  <span>Image reference:</span>
+                </p>
+                <a href="https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614"  id="ref">
+                  https://www.deviantart.com/asarigoddess/art/HMS-New-Zealand-689465614
+                </a>
+              </>
+            }
           />
           <p>
             Despite this initial plan, the HMS New Zealand only went to its namesake country twice. Almost
