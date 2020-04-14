@@ -10,8 +10,6 @@
     --color-text-dark: 33,34,36;
     --color-text-light: 247,248,250;
     --color-text-trim: 252,58,20;
-    --color-shadow: 76,77,79;
-    --color-shadow-dark: 0,0,0;
 }
 
 /** Introduce custom fonts **/
@@ -50,6 +48,7 @@ p {
   margin: 0;
   padding: 0;
   color: var(--color-text-dark);
+  /* text-rendering: optimizeLegibility; */
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;

@@ -46,7 +46,7 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  box-shadow: 0 0 10px 5px rgb(var(--color-shadow-dark));
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, .5);
   opacity: 1;
   transition: opacity .25s ease-in-out;
   background-color: rgb(var(--color-primary));
