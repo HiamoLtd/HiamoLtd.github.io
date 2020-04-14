@@ -6,7 +6,7 @@
 
 /* Style title section */
 .title-wrapper {
-  padding: 0;
+  padding: 0 20px 0 0;
   margin: 0;
 }
 .title {
@@ -14,6 +14,7 @@
   color: rgb(var(--color-trim));
 }
 .subtitle {
+  font-family: Noto-Sans;
   color: rgb(var(--color-text-dark));
   font-weight: normal;
   font-size: 26px;
@@ -22,7 +23,7 @@
 /* Style the contact section */
 .contact-wrapper {
   border-top: 1px solid rgb(var(--color-trim));
-  padding: 10px 0 0 15px;
+  padding: 30px 0 0 15px;
 }
 
 /* Style the contact form */
@@ -32,10 +33,11 @@
   display: flex;
 }
 .label {
+  font-family: Fjalla-One;
   white-space: nowrap;
   margin-right: 10px;
   color: rgb(var(--color-trim));
-  font-weight: bold;
+  font-weight: normal;
   font-size: 24px;
 }
 .input {

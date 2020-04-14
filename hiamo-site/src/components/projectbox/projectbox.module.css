@@ -12,7 +12,7 @@
   margin: 0;
   color: rgb(var(--color-trim));
   font-size: 32px;
-  font-weight: bolder;
+  font-weight: normal;
 }
 
 .subtitle {

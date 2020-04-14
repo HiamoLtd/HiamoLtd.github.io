@@ -16,28 +16,16 @@
 
 /** Introduce custom fonts **/
 @font-face {
-    font-family: 'Raleway';
-    font-style: normal;
-    src: local('Raleway'),
-    url("../fonts/Raleway/Raleway-Regular.ttf") format('truetype');
+  font-family: 'Noto-Sans';
+  font-style: normal;
+  src: local('NotoSans'), local('Noto-Sans'),
+  url("../fonts/Noto_Sans/NotoSans-Regular.ttf") format('truetype');
 }
 @font-face {
-    font-family: 'Open-Sans';
-    font-style: normal;
-    src: local('Open-Sans'), local('OpenSans'),
-    url("../fonts/Open_Sans/OpenSans-Regular.ttf") format('truetype');
-}
-@font-face {
-    font-family: 'Playfair';
-    font-style: normal;
-    src: local('Playfair'), local('Playfair-Display'),
-    url("../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf") format('truetype');
-}
-@font-face {
-    font-family: 'Poiret-One';
-    font-style: normal;
-    src: local('Poiret'), local('Poiret-One'),
-    url("../fonts/Poiret_One/PoiretOne-Regular.ttf") format('truetype');
+  font-family: 'Fjalla-One';
+  font-style: normal;
+  src: local('Fjalla_One'), local('Fjalla-One'),
+  url("../fonts/Fjalla_One/FjallaOne-Regular.ttf") format('truetype');
 }
 
 /* Style the base components */
@@ -46,14 +34,18 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: Noto-Sans;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* Style specific text elements */
+a, label, input, button {
+  font-family: Noto-Sans;
+}
 p {
-  font-family: Open-Sans;
+  font-family: Noto-Sans;
   font-size: 20px;
   margin: 0;
   padding: 0;
@@ -63,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
   color: var(--color-text-dark);
-  font-family: Raleway;
+  font-family: Fjalla-One;
 }
 
 /* Set the MAXIMUM width for the page elements. 

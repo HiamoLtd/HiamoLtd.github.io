@@ -20,7 +20,7 @@
 /* Style the contact section */
 .info {
   color: rgb(var(--color-text-light));
-  font-family: Raleway;
+  font-family: Noto-Sans;
   padding: 0;
   margin: 0;
 }
