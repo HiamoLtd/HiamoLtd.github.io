@@ -30,7 +30,7 @@ const Footer = () => (
         {/* TODO this should also link based on the page */}
         <div className={styles.logoWrapper}>
           <Link to={"/"} className={styles.logoLink}>
-              <Image src={require("../../../images/icons/logo_svg.svg")} className={styles.logo}/>
+              <Image src={require("../../../images/icons/logo.svg")} className={styles.logo}/>
           </Link>
         </div>
       </div>
