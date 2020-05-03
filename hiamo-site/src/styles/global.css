@@ -1,15 +1,15 @@
 /* --- Absolute base CSS --- */
 /* Define some custom colours for the app */
 :root {
-    --color-primary: 247,248,250;
-    --color-secondary: 33,34,36;
-    --color-tertiary: 242,242,242;
-    --color-secondary-light: 76,77,79;
-    --color-trim: 252,58,20;
-    --color-trim-dark: 230,56,21;
-    --color-text-dark: 33,34,36;
-    --color-text-light: 247,248,250;
-    --color-text-trim: 252,58,20;
+  --color-primary: 247,248,250;
+  --color-secondary: 33,34,36;
+  --color-tertiary: 242,242,242;
+  --color-secondary-light: 76,77,79;
+  --color-trim: 254,88,38;
+  --color-trim-dark: 239,79,23;
+  --color-text-dark: var(--color-secondary);
+  --color-text-light: var(--color-primary);
+  --color-text-trim: var(--color-trim);
 }
 
 /** Introduce custom fonts **/
@@ -28,6 +28,7 @@
 
 /* Style the base components */
 html {
+  scroll-behavior: smooth;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
