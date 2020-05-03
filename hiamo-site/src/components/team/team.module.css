@@ -1,13 +1,16 @@
 .email, .link, .job {
-  color: var(--color-text-dark);
+  color: rgb(var(--color-text-dark));
   font-weight: normal;
   font-size: 18px;
   margin: 0;
+  transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
 }
 .email, .link {
   display: table;
 }
 .email:hover, .link:hover {
-  color: var(--color-trim);
+  color: rgb(var(--color-trim));
   text-decoration: none;
 }

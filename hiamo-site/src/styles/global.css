@@ -47,13 +47,13 @@ p {
   font-size: 20px;
   margin: 0;
   padding: 0;
-  color: var(--color-text-dark);
+  color: rgb(var(--color-text-dark));
   /* text-rendering: optimizeLegibility; */
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
-  color: var(--color-text-dark);
+  color: rgb(var(--color-text-dark));
   font-family: Fjalla-One;
 }
 
