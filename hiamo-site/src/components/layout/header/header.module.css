@@ -36,9 +36,10 @@
   -moz-transition: color .2s ease-in-out;
   -webkit-transition: color .2s ease-in-out;
   font-family: Fjalla-One;
-  font-weight: bold;
-  font-size: 20px;
+  font-weight: normal;
+  font-size: 22px;
   cursor: pointer;
+  margin: 0 0 0 50px;
 }
 
 .link:hover {
