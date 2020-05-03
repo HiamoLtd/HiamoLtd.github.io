@@ -3,8 +3,9 @@ import PropTypes from 'prop-types';
 
 import styles from './section.module.css';
 
-const Section = ({ children, hasLine = true, title, mainHeader=false }) => (
+const Section = ({ children, hasLine = true, title, mainHeader=false, id }) => (
   <div className={`${styles.container} ${hasLine ? styles.afterLine : ''}`}>
+    <a className={styles.idLinkAnchor} id={id || title} />
     {(title && !mainHeader) &&
       <h2 className={styles.title}>{title}</h2>
     }

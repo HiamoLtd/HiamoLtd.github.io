@@ -17,9 +17,10 @@ const IndexPage = () => (
       title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
       subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
       imageRef={require("../images/projects/forts/WrightsHill.jpg")}
+      id="Home"
     />
     <Contact />
-    <Section title="ABOUT">
+    <Section title="ABOUT" id="About">
       <Row className={styles.aboutWrapper}>
         <About title="STORY TELLING">
           <p>
@@ -68,7 +69,7 @@ const IndexPage = () => (
         </Col>
       </Row>
     </Section>
-    <Section title="PROJECTS">
+    <Section title="PROJECTS" id="Projects">
       <Row className={styles.projectWrapper}>
         <ProjectBox
           title="COASTAL DEFENCE"
@@ -96,7 +97,7 @@ const IndexPage = () => (
         />
       </Row>
     </Section>
-    <Section title="TEAM">
+    <Section title="TEAM" id="Team">
       <Row className={styles.teamWrapper}>
         <Team
           name="Alex Hockley"
@@ -112,7 +113,7 @@ const IndexPage = () => (
         /> 
       </Row>
     </Section>
-    <Section title="BLOG">
+    <Section title="BLOG" id="Blog">
       <Row className={styles.blogWrapper}>
         {/* // TODO go through all colours anre remove "color", just set it to "text-dark" or whatever */}
         <BlogBox
