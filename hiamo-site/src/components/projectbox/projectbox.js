@@ -16,7 +16,7 @@ const ProjectBox = ({
   slug
 }) => (
   <Box width={ width } bgColor={ bgColor }>
-    <Link to={ `/projects/${slug}` } className={styles.link}>
+    <Link to={ `/project/${slug}` } className={styles.link}>
       <h3 className={styles.title}>{ title }</h3>
       <h4 className={styles.subtitle}>{ subtitle }</h4>
       <p className={styles.text} style={{ color: `rgb(var(--${ textColor }))` }}>
