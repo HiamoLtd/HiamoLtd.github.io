@@ -2,6 +2,7 @@ import React from 'react';
 
 import styles from './contact.module.css';
 
+// TODO need a confirmation for the user. Maybe contact form shouldnt reset page?
 const ContactForm = () => (
   // Attach Netlify form handling to form
   <form method="post"
