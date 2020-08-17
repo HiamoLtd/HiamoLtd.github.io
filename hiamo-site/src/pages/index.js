@@ -4,9 +4,9 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 // TODO we should be able to import these all from components
-import { Screen, Team, ProjectBox, BlogBox, About, Banner } from '../components';
+import { Screen, ProjectBox, BlogBox, Banner, Section } from '../components';
 import { SEO } from '../components/shared';
-import { Section, Contact } from "../components/sections";
+import { About, Contact, Team } from "../components/sections";
 
 import styles from './index.module.css';
 

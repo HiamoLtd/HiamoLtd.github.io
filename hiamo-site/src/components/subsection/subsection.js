@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import styles from './section.module.css';
+import styles from './subsection.module.css';
 
 const SubSection = ({ children, hasLine = true, title }) => (
   <div className={`${styles.container} ${hasLine ? styles.afterLine : ''}`}>

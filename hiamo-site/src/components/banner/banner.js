@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 // Import Bootstrap tools
 import { Row, Col, Image } from 'react-bootstrap';
-import { Section } from '../sections';
+import { Section } from '../index.js';
 
 import styles from './banner.module.css';
 

@@ -4,9 +4,8 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 // TODO we should be able to import these all from components
-import { Screen, BlogBox, ModalImage } from '../../components';
+import { Screen, BlogBox, ModalImage, Section } from '../../components';
 import { SEO } from '../../components/shared';
-import { Section } from "../../components/sections";
 
 import styles from './blog.module.css';
 
@@ -169,7 +168,7 @@ const Blog = () => (
                     [2] (2006) A Nation's Gift - The HMS New Zealand Story. New Zealand Defence Force, Scoop. [Online].
                     Available: <a href="http://www.scoop.co.nz/stories/PO0612/S00017/a-nations-gift-the-hms-new-zealand-story.htm">http://www.scoop.co.nz/stories/PO0612/S00017/a-nations-gift-the-hms-new-zealand-story.htm</a>
             <br />
-                    [3] (1913) Maori Chiefs Visit Warship. Evening Post. [Online].
+                    [3] (1913) Māori Chiefs Visit Warship. Evening Post. [Online].
                     Available: <a href="https://paperspast.natlib.govt.nz/newspapers/EP19130418.2.90">https://paperspast.natlib.govt.nz/newspapers/EP19130418.2.90</a>
             <br />
                     [4] HMS New Zealand: ‘A Grim and Formidable Fighting Machine’. Te Papa Tongarewa. [Online].

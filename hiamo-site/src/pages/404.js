@@ -1,7 +1,6 @@
 import React from "react"
 
-import { Screen } from "../components";
-import { Section } from "../components/sections";
+import { Screen, Section } from "../components";
 import { SEO } from "../components/shared";
 
 const NotFoundPage = () => (

@@ -2,10 +2,11 @@ import React from 'react';
 
 // Import Bootstrap tools
 import { Row, Col } from 'react-bootstrap';
-import { Section } from '../index.js';
+
+import { Section } from '../../index.js';
+import ContactForm from './contactform.js';
 
 import styles from './contact.module.css';
-import ContactForm from './contactform';
 
 const Contact = () => (
   <Section>

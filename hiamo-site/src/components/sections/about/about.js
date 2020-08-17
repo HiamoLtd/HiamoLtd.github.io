@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { TitledCol } from "../shared";
+import { TitledCol } from "../../shared";
 
 const About = ({ title, children, width }) => (
   <TitledCol

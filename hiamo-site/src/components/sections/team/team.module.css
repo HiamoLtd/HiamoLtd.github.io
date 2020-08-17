@@ -7,9 +7,11 @@
   -moz-transition: color .2s ease-in-out;
   -webkit-transition: color .2s ease-in-out;
 }
+
 .email, .link {
   display: table;
 }
+
 .email:hover, .link:hover {
   color: rgb(var(--color-trim));
   text-decoration: none;

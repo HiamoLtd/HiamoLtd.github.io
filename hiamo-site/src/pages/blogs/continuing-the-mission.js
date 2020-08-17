@@ -4,9 +4,8 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 
 // TODO we should be able to import these all from components
-import { Screen, BlogBox, ModalImage } from '../../components';
+import { Screen, BlogBox, Section } from '../../components';
 import { SEO } from '../../components/shared';
-import { Section } from "../../components/sections";
 
 import styles from './blog.module.css';
 
