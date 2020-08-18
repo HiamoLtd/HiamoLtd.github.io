@@ -8,29 +8,13 @@
   padding: 0;
   margin: 0;
 }
-/* If we do not have an image */
 .title {
-  padding: 0 0 10px 0;
-  color: rgb(var(--color-text-trim));
-  font-family: Fjalla-One;
-  font-weight: 500;
-  font-size: 70px;
-  text-align: center;
-}
-.subtitle {
-  font-family: Noto-Sans;
-  color: rgb(var(--color-text-dark));
-  font-size: 24px;
-  text-align: center;
-}
-/* If we do have an image in the banner */
-.image-title {
   padding: 0 0 10px 0;
   color: rgb(var(--color-text-dark));
   font-weight: normal;
   font-size: 62px;
 }
-.image-subtitle {
+.subtitle {
   font-family: Noto-Sans;
   padding-right: 110px;
   color: rgb(var(--color-text-dark));
