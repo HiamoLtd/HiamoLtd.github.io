@@ -14,10 +14,11 @@ import { SEO } from "../components/shared"
 
 import styles from "./project.module.css"
 
-const title = "AOTEAROA'S COASTAL DEFENCE"
+const title = "Aotearoa's Coastal Defence"
 const subtitle =
   "Recreating objects digitally & returning context to heritage landmarks."
 const bannerImageUrl = require("../images/blogs/the-presence-of-war/screenshot.jpg")
+const imageCaption = <p id="caption">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.</p>;
 
 const Project = () => (
   <Screen>
@@ -26,15 +27,9 @@ const Project = () => (
       title={title}
       subtitle={subtitle}
       imageRef={bannerImageUrl}
-      imageCaption={
-        <p id="caption">
-          The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.
-        </p>
-      }
+      imageCaption={imageCaption}
     />
     <Section>
-      {/* Intro image section */}
-      <Row className={styles.endRow}></Row>
       {/* Main text content section */}
       <Row className={styles.endRow}>
         {/* Left side text */}
