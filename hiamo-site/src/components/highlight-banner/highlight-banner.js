@@ -8,16 +8,14 @@ import { Section } from "../index.js"
 import styles from "./highlight-banner.module.css"
 import ModalImage from "../modalimage/index.js"
 
-const HighlightBanner = ({ title, subtitle, imageRef }) => (
+const HighlightBanner = ({ title, subtitle, imageRef, imageCaption }) => (
   <Section hasLine={false}>
     <Row className={styles.container}>
       <h1 className={styles.title}>{title}</h1>
       <h2 className={styles.subtitle}>{subtitle}</h2>
     </Row>
     <Row className={styles.imageContainer}>
-      <ModalImage
-        image={require("../../images/blogs/the-presence-of-war/screenshot.jpg")}
-      />
+      <ModalImage image={imageRef} caption={imageCaption} />
     </Row>
   </Section>
 )
