@@ -15,6 +15,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-plugin-eslint',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
