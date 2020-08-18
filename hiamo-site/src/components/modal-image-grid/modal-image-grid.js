@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 // Import Bootstrap tools
 import { Row, Col, Image } from "react-bootstrap"
-import { Section } from "../index.js"
+import { Section, ModalImage } from "../index.js"
 
 import styles from "./modal-image-grid.module.css"
 
@@ -20,14 +20,21 @@ const ModalImageGrid = ({ images = [], colCount = 2, hasLine = false }) => {
       currCol++;
     }
   }
-  console.log(rows);
   return (
+    // TODO style padding around things
+    // TODO add line after
+    // TODO centre hanging images
+    // TODO make into box displa,y not whatever this is. May need to refactor modal approach
     <Section hasLine={hasLine}>
-      { images.forEach((image, index) => {
-        console.log('Curr img:', image, index);
-      }
-      )}
-      Hi
+      { rows.map((row) => (
+        <Row>
+          { row.map((col) => (
+            <Col>
+              <ModalImage image={col.image} caption={col.caption} />
+            </Col>
+          )) }
+        </Row>
+      )) }
     </Section>
   );
 };

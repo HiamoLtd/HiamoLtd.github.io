@@ -12,6 +12,7 @@ const modalEvent = (e, setModal, desiredVal) => {
 }
 
 const ModalImage = ({ image, caption }) => {
+  console.log('I exist?', image, caption);
   const [modalOpen, setModal] = useState(false);
   return (
     <>
