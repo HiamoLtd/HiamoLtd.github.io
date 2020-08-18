@@ -12,7 +12,7 @@ const BlogBox = ({ title, type, date, content, bgColor, textColor, width, slug }
     width={width}
     bgColor={bgColor}
   >
-    <Link  to={`/blogs/${slug}`} className={styles.link}>
+    <Link  to={`/blog/${slug}`} className={styles.link}>
       <div className={styles.titleWrapper}>
         <h3 className={styles.title}>
           {title}

@@ -158,6 +158,7 @@ const Blog = () => (
         </Col>
       </Row>
       {/* References section, if needed. */}
+      {/* // TODO collapsable. Also, highlighting text. */}
       <Row className={styles.endRow}>
         <Col md={12} className={styles.mainCol}>
           <h5 className={`${styles.references} ${styles.subheading}`}>References</h5>
