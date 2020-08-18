@@ -60,7 +60,7 @@ const ModalImage = ({ image, caption }) => {
 
 ModalImage.propTypes = {
   image: PropTypes.string.isRequired,
-  caption: PropTypes.string
+  caption: PropTypes.node
 }
 
 export default ModalImage;

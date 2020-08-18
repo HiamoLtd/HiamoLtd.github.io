@@ -13,12 +13,51 @@ import {
 import { SEO } from "../components/shared"
 
 import styles from "./project.module.css"
+import ModalImageGrid from "../components/modal-image-grid/modal-image-grid"
 
 const title = "Aotearoa's Coastal Defence"
 const subtitle =
   "Recreating objects digitally & returning context to heritage landmarks."
 const bannerImageUrl = require("../images/blogs/the-presence-of-war/screenshot.jpg")
-const imageCaption = <p id="caption">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.</p>;
+const imageCaption = (
+  <p id="caption">
+    The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.
+  </p>
+)
+const gridImages = [
+  {
+    image: require("../images/blogs/the-presence-of-war/screenshot.jpg"),
+    caption: (
+      <p id="caption">
+        The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.
+      </p>
+    ),
+  },
+  {
+    image: require("../images/blogs/the-presence-of-war/newzealand.jpg"),
+    caption: (
+      <p id="caption">
+        XXXXXXXXXXXXXXX
+      </p>
+    ),
+  },
+  {
+    image: require("../images/blogs/the-presence-of-war/crowds.jpg"),
+    caption: (
+      <p id="caption">
+        XXXXXXXXXXXXXXX
+      </p>
+    ),
+  },
+  {
+    image: require("../images/blogs/the-presence-of-war/dorset.gif"),
+    caption: (
+      <p id="caption">
+        XXXXXXXXXXXXXXX
+      </p>
+    ),
+  },
+]
 
 const Project = () => (
   <Screen>
@@ -52,6 +91,8 @@ const Project = () => (
         </Col>
       </Row>
     </Section>
+    {/* Grid display all the images */}
+    <ModalImageGrid images={gridImages} />
     <Section title="OTHER PROJECTS">
       <Row className={styles.otherProjectsWrapper}>
         <ProjectBox
