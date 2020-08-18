@@ -7,23 +7,29 @@ import { Section } from '../index.js';
 
 import styles from './banner.module.css';
 
-const Banner = ({ title, subtitle, imageRef }) => (
+const Banner = ({
+  title,
+  subtitle,
+  imageRef
+}) => (
   <Section hasLine={false}>
     <Row className={styles.container}>
-      <Col md={8} className={styles.titleWrapper}>
-        <h1 className={styles.title}>
+      <Col md={imageRef ? 8 : 12} className={styles.titleWrapper}>
+        <h1 className={imageRef ? styles.imageTitle : styles.title}>
           {title}
         </h1>
-        <h2 className={styles.subtitle}>
+        <h2 className={imageRef ? styles.imageSubtitle : styles.subtitle}>
           {subtitle}
         </h2>
       </Col>
-      <Col md={4} className={styles.imageWrapper}>
-        <Image
-          src={imageRef}
-          className={styles.image}
-        />
-      </Col>
+      { imageRef &&
+        <Col md={4} className={styles.imageWrapper}>
+          <Image
+            src={imageRef}
+            className={styles.image}
+          />
+        </Col>
+      }
     </Row>
   </Section>
 );
