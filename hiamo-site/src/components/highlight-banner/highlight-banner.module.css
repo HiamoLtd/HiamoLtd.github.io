@@ -1,0 +1,28 @@
+/* Style outer row wrapper */
+.container {
+  padding: 80px 15px 40px 15px;
+  display: block;
+}
+
+/* Style header section and texts */
+.title {
+  padding: 0 0 10px 0;
+  color: rgb(var(--color-text-trim));
+  font-family: Fjalla-One;
+  font-weight: 500;
+  font-size: 70px;
+  text-align: center;
+}
+.subtitle {
+  font-family: Noto-Sans;
+  color: rgb(var(--color-text-dark));
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Style image section */
+.image-Container {
+  margin: 0 auto;
+  height: 400px;
+  width: 75%;
+}
