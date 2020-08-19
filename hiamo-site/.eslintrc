@@ -8,12 +8,11 @@
     "test": false
   },
   "rules": {
-    "react/forbid-prop-types": ["error", { "forbid": ["any"] }],
-    "react/require-default-props": ["error", { "ignoreFunctionalComponents": true }],
-    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/forbid-prop-types": ["warn", { "forbid": ["any"] }],
+    "react/require-default-props": ["warn", { "ignoreFunctionalComponents": true }],
+    "react/jsx-filename-extension": ["warn", { "extensions": [".js", ".jsx"] }],
     "react/no-did-mount-set-state": "off",
-    "no-unused-expressions": "off",
-    "babel/no-unused-expressions": "error",
+    "no-unused-expressions": "warn",
     "global-require": "off",
     "no-console": "off",
     "import/no-extraneous-dependencies": "off",
@@ -22,12 +21,10 @@
     "jsx-a11y/href-no-hash": "off",
     "jsx-a11y/img-has-alt": "off",
     "comma-dangle": "off",
-    "no-underscore-dangle": ["error", { "allow": ["_root"] }],
+    "no-underscore-dangle": ["warn", { "allow": ["_root"] }],
     "import/prefer-default-export": "off",
-    "promise/prefer-await-to-then": "error",
-    "promise/prefer-await-to-callbacks": "error",
-    "arrow-parens": ["error", "as-needed", { "requireForBlockBody": true }],
-    "react/jsx-props-no-spreading": ["error", { "html": "ignore" }]
+    "arrow-parens": ["warn", "as-needed", { "requireForBlockBody": true }],
+    "react/jsx-props-no-spreading": ["warn", { "html": "ignore" }]
   },
   "env": {
     "browser": true
