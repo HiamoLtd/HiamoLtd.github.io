@@ -35,6 +35,10 @@ const gridImages = [
     image: require('../images/blogs/the-presence-of-war/dorset.gif'),
     caption: <p id="caption">XXXXXXXXXXXXXXX</p>,
   },
+  {
+    image: require('../images/blogs/the-presence-of-war/dorset.gif'),
+    caption: <p id="caption">XXXXXXXXXXXXXXX</p>,
+  },
 ];
 
 const Project = () => (
