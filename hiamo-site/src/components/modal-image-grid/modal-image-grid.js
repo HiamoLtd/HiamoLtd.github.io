@@ -26,11 +26,11 @@ const ModalImageGrid = ({ images = [], colCount = 2, hasLine = false }) => {
     // TODO add line after
     // TODO centre hanging images
     // TODO make into box display not whatever this is. May need to refactor modal approach
-    <Section hasLine={hasLine}>
+    <Section hasLine={hasLine} className={styles.gridWrapper}>
       {rows.map(row => (
-        <Row>
+        <Row className={styles.gridRow}>
           {row.map(col => (
-            <Col>
+            <Col className={styles.gridCol}>
               <ModalImage image={col.image} caption={col.caption} imageClass={styles.gridImage} />
             </Col>
           ))}

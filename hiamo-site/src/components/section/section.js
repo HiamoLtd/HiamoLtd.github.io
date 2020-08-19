@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import styles from './section.module.css';
 
 const Section = ({
-  children, hasLine = true, title, mainHeader = false, id
+  children, hasLine = true, title, mainHeader = false, id, className
 }) => (
-  <div className={`${styles.container} ${hasLine ? styles.afterLine : ''}`}>
+  <div className={`${styles.container} ${hasLine ? styles.afterLine : ''} ${className || ''}`}>
     <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
       {`${id || title} section`}
     </a>
@@ -22,6 +22,7 @@ Section.propTypes = {
   title: PropTypes.string,
   mainHeader: PropTypes.bool,
   id: PropTypes.string,
+  className: PropTypes.string,
 };
 
 export default Section;
