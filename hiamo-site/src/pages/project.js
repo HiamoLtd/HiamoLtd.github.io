@@ -79,8 +79,9 @@ const Project = () => (
         </Col>
       </Row>
     </Section>
+    <Section title="GALLERY" hasLine={false} />
     {/* Grid display all the images */}
-    <ModalImageGrid images={gridImages} />
+    <ModalImageGrid images={gridImages} hasLine />
     <Section title="OTHER PROJECTS">
       <Row className={styles.otherProjectsWrapper}>
         <ProjectBox
