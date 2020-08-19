@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 
 // Import Bootstrap tools
 import { Row } from 'react-bootstrap';
-import Section from '../section/section.js';
+import Section from '../section';
+import Video from '../video';
+import ModalImage from '../modalimage';
 
 import styles from './highlight-banner.module.css';
-import ModalImage from '../modalimage';
-import Video from '../video/video.js';
 
 const HighlightBanner = ({
-  title, subtitle, imageRef, imageCaption, videoSource, videoTitle
+  title, subtitle, imageRef, imageCaption, videoSource, videoTitle, videoAspectRatio
 }) => (
   <Section hasLine={false}>
     <Row className={styles.container}>
@@ -18,8 +18,9 @@ const HighlightBanner = ({
       <h2 className={styles.subtitle}>{subtitle}</h2>
     </Row>
     <Row className={styles.imageContainer}>
+      {console.log('Video:', videoSource, title)}
       {videoSource ? (
-        <Video source={videoSource} title={videoTitle} />
+        <Video source={videoSource} title={videoTitle} aspectRatio={videoAspectRatio} />
       ) : (
         imageRef && <ModalImage image={imageRef} caption={imageCaption} />
       )}
@@ -33,6 +34,7 @@ HighlightBanner.propTypes = {
   imageRef: PropTypes.string,
   videoSource: PropTypes.string,
   videoTitle: PropTypes.string,
+  videoAspectRatio: PropTypes.string,
   imageCaption: PropTypes.string,
 };
 

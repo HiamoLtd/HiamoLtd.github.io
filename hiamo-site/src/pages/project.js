@@ -21,6 +21,7 @@ const subtitle = 'Recreating objects digitally & returning context to heritage l
 
 const bannerVideoTitle = 'Coastal Defence Demo';
 const bannerVideoUrl = 'https://www.youtube.com/embed/aWRgNYwCXuw';
+const bannerVideoAspectRatio = '16by10';
 const gridImages = [
   {
     image: require('../images/blogs/the-presence-of-war/screenshot.jpg'),
@@ -54,6 +55,7 @@ const Project = () => (
       // imageCaption={imageCaption}
       videoSource={bannerVideoUrl}
       videoTitle={bannerVideoTitle}
+      videoAspectRatio={bannerVideoAspectRatio}
     />
     <Section>
       {/* Main text content section */}
