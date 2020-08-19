@@ -21,13 +21,16 @@ const ModalImage = ({ image, imageClass, caption }) => {
         className={`${styles.image} ${imageClass || ''}`}
         src={image}
         onClick={() => setModal(true)}
+        onKeyPress={() => setModal(true)}
+        role="button"
+        tabIndex={0}
       />
       {/* The modal to appear on click */}
       <div
         className={styles.modal}
         style={{ display: modalOpen ? 'block' : 'none' }}
         onClick={e => modalEvent(e, setModal, false)}
-        onKeyUp={e => modalEvent(e, setModal, false)}
+        onKeyPress={e => modalEvent(e, setModal, false)}
         id="modal-closer"
         role="dialog"
       >
@@ -36,7 +39,7 @@ const ModalImage = ({ image, imageClass, caption }) => {
           id="modal-closer"
           className={styles.modalCross}
           onClick={e => modalEvent(e, setModal, false)}
-          onKeyUp={e => modalEvent(e, setModal, false)}
+          onKeyPress={e => modalEvent(e, setModal, false)}
           role="button"
           tabIndex={0}
         >
@@ -53,7 +56,7 @@ const ModalImage = ({ image, imageClass, caption }) => {
           <div
             className={styles.modalCaption}
             onClick={e => modalEvent(e, setModal, true)}
-            onKeyUp={e => modalEvent(e, setModal, false)}
+            onKeyPress={e => modalEvent(e, setModal, false)}
             role="button"
             tabIndex={0}
           >

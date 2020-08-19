@@ -12,7 +12,7 @@ const Collapsible = (startOpen = false, children, header, hasArrow = false) => {
       <div
         className={styles.headerWrapper}
         onClick={() => setOpen(!open)}
-        onKeyUp={() => setOpen(!open)}
+        onKeyPress={() => setOpen(!open)}
         id="modal-closer"
         role="dialog"
       >
