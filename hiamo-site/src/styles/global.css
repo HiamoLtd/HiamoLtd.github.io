@@ -75,3 +75,11 @@ This class wraps all main content in the site, ensuring there is whitespace on t
   padding: 0;
   margin: 0;
 }
+
+/* Handling custom video aspect ratios is done here because classNames need to be global for the embed. */
+.embed-responsive-19by9 {
+  max-height: 80%;
+  /*padding-top: 210% !important;*/
+  padding: 190% 0 0 0 !important;
+  margin: 0 5% 0 5%;
+}

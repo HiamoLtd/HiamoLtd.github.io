@@ -1,0 +1,9 @@
+.container {
+  width: 100%;
+  box-shadow: 1px 2px 5px 2px #000;
+}
+
+/* Tablet screen or below: TODO
+.container {
+  margin-bottom: 3%;
+} */
