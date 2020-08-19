@@ -13,11 +13,14 @@ import ModalImageGrid from '../components/modal-image-grid/modal-image-grid';
 
 const title = "Aotearoa's Coastal Defence";
 const subtitle = 'Recreating objects digitally & returning context to heritage landmarks.';
-const bannerImageUrl = require('../images/blogs/the-presence-of-war/screenshot.jpg');
 
-const imageCaption = (
-  <p id="caption">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.</p>
-);
+// const bannerImageUrl = require('../images/blogs/the-presence-of-war/screenshot.jpg');
+// const imageCaption = (
+//   <p id="caption">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.</p>
+// );
+
+const bannerVideoTitle = 'Coastal Defence Demo';
+const bannerVideoUrl = 'https://www.youtube.com/embed/aWRgNYwCXuw';
 const gridImages = [
   {
     image: require('../images/blogs/the-presence-of-war/screenshot.jpg'),
@@ -47,8 +50,10 @@ const Project = () => (
     <HighlightBanner
       title={title}
       subtitle={subtitle}
-      imageRef={bannerImageUrl}
-      imageCaption={imageCaption}
+      // imageRef={bannerImageUrl}
+      // imageCaption={imageCaption}
+      videoSource={bannerVideoUrl}
+      videoTitle={bannerVideoTitle}
     />
     <Section>
       {/* Main text content section */}

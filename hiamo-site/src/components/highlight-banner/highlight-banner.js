@@ -7,9 +7,10 @@ import Section from '../section/section.js';
 
 import styles from './highlight-banner.module.css';
 import ModalImage from '../modalimage';
+import Video from '../video/video.js';
 
 const HighlightBanner = ({
-  title, subtitle, imageRef, imageCaption
+  title, subtitle, imageRef, imageCaption, videoSource, videoTitle
 }) => (
   <Section hasLine={false}>
     <Row className={styles.container}>
@@ -17,7 +18,11 @@ const HighlightBanner = ({
       <h2 className={styles.subtitle}>{subtitle}</h2>
     </Row>
     <Row className={styles.imageContainer}>
-      <ModalImage image={imageRef} caption={imageCaption} />
+      {videoSource ? (
+        <Video source={videoSource} title={videoTitle} />
+      ) : (
+        imageRef && <ModalImage image={imageRef} caption={imageCaption} />
+      )}
     </Row>
   </Section>
 );
@@ -25,8 +30,10 @@ const HighlightBanner = ({
 HighlightBanner.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  imageRef: PropTypes.string.isRequired,
-  imageCaption: PropTypes.string
+  imageRef: PropTypes.string,
+  videoSource: PropTypes.string,
+  videoTitle: PropTypes.string,
+  imageCaption: PropTypes.string,
 };
 
 export default HighlightBanner;
