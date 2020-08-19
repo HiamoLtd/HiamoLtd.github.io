@@ -7,20 +7,15 @@ import { Box } from '../shared';
 import styles from './projectbox.module.css';
 
 const ProjectBox = ({
-  title,
-  subtitle,
-  content,
-  bgColor,
-  textColor,
-  width,
-  slug
+  title, subtitle, content, bgColor, textColor, width, slug
 }) => (
-  <Box width={ width } bgColor={ bgColor }>
-    <Link to={ `/project` } className={styles.link}>
-      <h3 className={styles.title}>{ title }</h3>
-      <h4 className={styles.subtitle}>{ subtitle }</h4>
-      <p className={styles.text} style={{ color: `rgb(var(--${ textColor }))` }}>
-        { content }
+  <Box width={width} bgColor={bgColor}>
+    <Link to="/project" className={styles.link}>
+      {console.log(`TODO: ${slug}`)}
+      <h3 className={styles.title}>{title}</h3>
+      <h4 className={styles.subtitle}>{subtitle}</h4>
+      <p className={styles.text} style={{ color: `rgb(var(--${textColor}))` }}>
+        {content}
       </p>
     </Link>
   </Box>
@@ -33,7 +28,7 @@ ProjectBox.propTypes = {
   bgColor: PropTypes.string.isRequired,
   textColor: PropTypes.string.isRequired,
   width: PropTypes.number,
-  slug: PropTypes.string.isRequired
-}
+  slug: PropTypes.string.isRequired,
+};
 
 export default ProjectBox;

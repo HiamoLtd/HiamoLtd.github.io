@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+// TODO fix above
 import React from 'react';
 
 import styles from './contact.module.css';
@@ -5,34 +7,22 @@ import styles from './contact.module.css';
 // TODO need a confirmation for the user. Maybe contact form shouldnt reset page?
 const ContactForm = () => (
   // Attach Netlify form handling to form
-  <form method="post"
-    netlify-honeypot="bot-field"
-    data-netlify="true">
-    <input type="hidden" name="bot-field"/>
-    {/*A row for name and organisation*/}
+  <form method="post" netlify-honeypot="bot-field" data-netlify="true">
+    <input type="hidden" name="bot-field" />
+    {/* A row for name and organisation */}
     <div className={styles.inputWrapper}>
       <label htmlFor="name" className={styles.label}>
         Name
       </label>
-      <input
-        type="text"
-        name="name"
-        id="name"
-        className={styles.input}
-      />
+      <input type="text" name="name" id="name" className={styles.input} />
     </div>
     <div className={styles.inputWrapper}>
       <label htmlFor="company" className={styles.label}>
         Company / Organisation
       </label>
-      <input
-        type="text"
-        name="company"
-        id="company"
-        className={styles.input}
-      />
+      <input type="text" name="company" id="company" className={styles.input} />
     </div>
-    {/*A row for email*/}
+    {/* A row for email */}
     <div className={styles.inputWrapper}>
       <label htmlFor="email" className={styles.label}>
         Email
@@ -46,28 +36,20 @@ const ContactForm = () => (
         className={styles.input}
       />
     </div>
-    {/*A row for content*/}
+    {/* A row for content */}
     <div className={styles.inputWrapper}>
-        <label htmlFor="message" className={styles.label}>
-          Message
-        </label>
-        <textarea
-          name="message"
-          className={styles.message}
-        />
+      <label htmlFor="message" className={styles.label}>
+        Message
+      </label>
+      <textarea name="message" className={styles.message} />
     </div>
-    {/*A row for a submission button*/}
+    {/* A row for a submission button */}
     <div className={styles.inputWrapper}>
       <div className={styles.submit}>
-        <input
-          className={styles.submitBtn}
-          type="submit"
-          id="contact-send"
-          value="Send"
-        />
+        <input className={styles.submitBtn} type="submit" id="contact-send" value="Send" />
       </div>
     </div>
   </form>
-)
+);
 
 export default ContactForm;

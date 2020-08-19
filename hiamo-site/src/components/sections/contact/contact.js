@@ -12,9 +12,7 @@ const Contact = () => (
   <Section>
     <Row className={styles.container}>
       <Col md={4} className={styles.titleWrapper}>
-        <h3 className={styles.title}>
-          CONTACT US
-        </h3>
+        <h3 className={styles.title}>CONTACT US</h3>
         <h5 className={styles.subtitle}>
           Get in touch to hear how we can help with your heritage site, project, or idea.
         </h5>

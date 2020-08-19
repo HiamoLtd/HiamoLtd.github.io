@@ -2,19 +2,24 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 // Import Bootstrap components
-import Col from "react-bootstrap/Col";
+import Col from 'react-bootstrap/Col';
 
-import styles from './titledcol.module.css'
+import styles from './titledcol.module.css';
 
-const TitledCol = ({ header, children, width, headerBgColor, headerColor, paddingSide=0 }) => (
+const TitledCol = ({
+  header, children, width, headerBgColor, headerColor, paddingSide = 0
+}) => (
   <Col md={width || 4} className={styles.container}>
-    <div className={styles.headerWrapper} style={{backgroundColor: `rgb(var(--${headerBgColor || 'color-trim'}))`}}>
+    <div
+      className={styles.headerWrapper}
+      style={{ backgroundColor: `rgb(var(--${headerBgColor || 'color-trim'}))` }}
+    >
       <h3
-        className={styles.header} 
+        className={styles.header}
         style={{
           color: `rgb(var(--${headerColor || 'color-text-light'}))`,
-          paddingLeft:`${paddingSide}`,
-          paddingRight:`${paddingSide}`
+          paddingLeft: `${paddingSide}`,
+          paddingRight: `${paddingSide}`,
         }}
       >
         {header}
@@ -23,8 +28,8 @@ const TitledCol = ({ header, children, width, headerBgColor, headerColor, paddin
     <div
       className={styles.contentWrapper}
       style={{
-        paddingLeft:`${paddingSide}`,
-        paddingRight:`${paddingSide}`
+        paddingLeft: `${paddingSide}`,
+        paddingRight: `${paddingSide}`,
       }}
     >
       {children}
@@ -39,6 +44,6 @@ TitledCol.propTypes = {
   headerBgColor: PropTypes.string,
   headerColor: PropTypes.string,
   paddingSide: PropTypes.string,
-}
+};
 
 export default TitledCol;

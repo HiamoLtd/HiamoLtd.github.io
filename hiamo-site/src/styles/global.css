@@ -65,3 +65,11 @@ This class wraps all main content in the site, ensuring there is whitespace on t
   margin-left: auto;
   margin-right: auto;
 }
+
+/* There are screen readable id link anchors around the site. Make them invisible, they're navigation only. */
+.id-link-anchor {
+  visibility: hidden;
+  height: 0;
+  padding: 0;
+  margin: 0;
+}

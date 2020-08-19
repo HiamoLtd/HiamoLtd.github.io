@@ -4,20 +4,14 @@ import PropTypes from 'prop-types';
 import styles from './section.module.css';
 
 const Section = ({
-  children,
-  hasLine = true,
-  title,
-  mainHeader = false,
-  id
+  children, hasLine = true, title, mainHeader = false, id
 }) => (
   <div className={`${styles.container} ${hasLine ? styles.afterLine : ''}`}>
-    <a className={styles.idLinkAnchor} id={id || title} />
-    {(title && !mainHeader) &&
-      <h2 className={styles.title}>{title}</h2>
-    }
-    {(title && mainHeader) &&
-      <h1 className={styles.title}>{title}</h1>
-    }
+    <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
+      {`${id || title} section`}
+    </a>
+    {title && !mainHeader && <h2 className={styles.title}>{title}</h2>}
+    {title && mainHeader && <h1 className={styles.title}>{title}</h1>}
     {children}
   </div>
 );
@@ -25,7 +19,9 @@ const Section = ({
 Section.propTypes = {
   children: PropTypes.node.isRequired,
   hasLine: PropTypes.bool,
-  title: PropTypes.string
+  title: PropTypes.string,
+  mainHeader: PropTypes.bool,
+  id: PropTypes.string,
 };
 
 export default Section;

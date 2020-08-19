@@ -1,11 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react';
+import PropTypes from 'prop-types';
 
 // Import Bootstrap tools
-import { Row, Col, Image } from "react-bootstrap"
-import { Section } from "../index.js"
+import { Row, Col, Image } from 'react-bootstrap';
+import Section from '../section';
 
-import styles from "./banner.module.css"
+import styles from './banner.module.css';
 
 const Banner = ({ title, subtitle, imageRef }) => (
   <Section hasLine={false}>
@@ -21,12 +21,12 @@ const Banner = ({ title, subtitle, imageRef }) => (
       )}
     </Row>
   </Section>
-)
+);
 
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   imageRef: PropTypes.string.isRequired,
-}
+};
 
-export default Banner
+export default Banner;

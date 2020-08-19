@@ -1,7 +1,7 @@
-import React from "react"
+import React from 'react';
 
-import { Screen, Section } from "../components";
-import { SEO } from "../components/shared";
+import { Screen, Section } from '../components';
+import { SEO } from '../components/shared';
 
 const NotFoundPage = () => (
   <Screen>
@@ -10,6 +10,6 @@ const NotFoundPage = () => (
       <p>We commend your explorative nature, but it seems there is nothing here!</p>
     </Section>
   </Screen>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;
