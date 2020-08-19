@@ -176,7 +176,7 @@ const Blog = () => (
           <p>
             When we at Hiamo set about recreating these historic items we faced many problems
             sourcing the information, getting consistent reference photographs, and finding out
-            exactly what the Oruaiti / Fort Dorset’s guns looked like. To learn more about how we
+            exactly what Oruaiti / Fort Dorset’s guns looked like. To learn more about how we
             are overcoming these issues and using exciting new technologies to accurately
             reconstruct these 100-year-old machines, keep an eye out for our next blog on our
             recreation process!
