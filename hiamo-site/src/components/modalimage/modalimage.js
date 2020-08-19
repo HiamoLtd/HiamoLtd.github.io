@@ -11,13 +11,13 @@ const modalEvent = (e, setModal, desiredVal) => {
   }
 }
 
-const ModalImage = ({ image, caption }) => {
-  console.log('I exist?', image, caption);
+const ModalImage = ({ image, imageClass, caption }) => {
   const [modalOpen, setModal] = useState(false);
+
   return (
     <>
     <Image
-      className={styles.image}
+      className={`${styles.image} ${imageClass || ''}`}
       src={image}
       onClick={() => setModal(true)}
     />
