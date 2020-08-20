@@ -22,8 +22,10 @@
 
 /* Style image section */
 .image-Container {
+  display: block;
+  position: relative;
   margin: 0 auto;
-  height: 400px;
+  padding: 0;
   width: 75%;
   margin-bottom: 60px;
 }

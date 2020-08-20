@@ -17,14 +17,13 @@ const HighlightBanner = ({
       <h1 className={styles.title}>{title}</h1>
       <h2 className={styles.subtitle}>{subtitle}</h2>
     </Row>
-    <Row className={styles.imageContainer}>
-      {console.log('Video:', videoSource, title)}
+    <div className={styles.imageContainer}>
       {videoSource ? (
         <Video source={videoSource} title={videoTitle} aspectRatio={videoAspectRatio} />
       ) : (
         imageRef && <ModalImage image={imageRef} caption={imageCaption} />
       )}
-    </Row>
+    </div>
   </Section>
 );
 

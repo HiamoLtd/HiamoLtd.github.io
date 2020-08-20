@@ -5,6 +5,7 @@ import styles from './video.module.css';
 
 const Video = ({ aspectRatio = '16by9', source, title }) => (
   <div className={`${styles.container} embed-responsive embed-responsive-${aspectRatio}`}>
+    {console.log(aspectRatio)}
     <iframe
       src={source}
       title={title}
