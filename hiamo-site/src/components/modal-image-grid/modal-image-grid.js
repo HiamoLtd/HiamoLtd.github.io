@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -22,15 +23,11 @@ const ModalImageGrid = ({ images = [], colCount = 2, hasLine = false }) => {
     }
   });
   return (
-    // TODO style padding around things
-    // TODO add line after
-    // TODO centre hanging images
-    // TODO make into box display not whatever this is. May need to refactor modal approach
     <Section hasLine={hasLine} className={styles.gridWrapper}>
-      {rows.map(row => (
-        <Row className={styles.gridRow}>
+      {rows.map((row, i) => (
+        <Row className={styles.gridRow} key={i}>
           {row.map(col => (
-            <Col className={styles.gridCol}>
+            <Col className={styles.gridCol} key={`${i}_${col.image}`}>
               <ModalImage image={col.image} caption={col.caption} imageClass={styles.gridImage} />
             </Col>
           ))}
