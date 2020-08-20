@@ -12,7 +12,7 @@ function getLink(link, slug) {
   // Check what page we are on.
   const currPage = typeof window !== 'undefined' ? window.location.pathname : '';
   // Currently, all header pages are on the home page. If we aren't at home page, link us there
-  return currPage === '/' || slug === '/' ? `#${link}` : `${slug}/${link}`;
+  return (currPage === '/' || slug === '/') ? `/#${link}` : `${slug}/${link}`;
 }
 
 const NavLink = ({ content, link }) => (
