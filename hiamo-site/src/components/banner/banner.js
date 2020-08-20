@@ -7,8 +7,10 @@ import Section from '../section';
 
 import styles from './banner.module.css';
 
-const Banner = ({ title, subtitle, imageRef }) => (
-  <Section hasLine={false}>
+const Banner = ({
+  title, subtitle, imageRef, id
+}) => (
+  <Section hasLine={false} id={id || title}>
     <Row className={styles.container}>
       <Col md={8} className={styles.titleWrapper}>
         <h1 className={styles.title}>{title}</h1>
@@ -27,6 +29,7 @@ Banner.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
   imageRef: PropTypes.string.isRequired,
+  id: PropTypes.string,
 };
 
 export default Banner;
