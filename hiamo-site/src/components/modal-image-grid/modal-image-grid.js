@@ -4,7 +4,8 @@ import PropTypes from 'prop-types';
 
 // Import Bootstrap tools
 import { Row, Col } from 'react-bootstrap';
-import { Section, ModalImage } from '../index.js';
+import ModalImage from '../modalimage';
+import Section from '../section';
 
 import styles from './modal-image-grid.module.css';
 
