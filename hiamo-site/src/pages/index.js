@@ -75,8 +75,8 @@ const IndexPage = () => (
         <Col md={5} />
         <Col md={7} className={styles.mottoWrapper}>
           <h3 className={styles.motto}>
-            `&quot;`RECONNECTING EXPLORERS WITH HISTORIC LANDMARKS THROUGH THE LENS OF TODAYS
-            INNOVATION.`&quot;`
+            &quot;RECONNECTING EXPLORERS WITH HISTORIC LANDMARKS THROUGH THE LENS OF TODAYS
+            INNOVATION.&quot;
           </h3>
         </Col>
       </Row>
