@@ -45,7 +45,7 @@ const Blog = () => (
           <div className={styles.imageRow}>
             <div className={styles.imageCol} style={{ height: '190px' }}>
               <ModalImage
-                image={require('../../images/blogs/the-presence-of-war/newzealand.jpg')}
+                image={require('../../images/blogs/the_presence_of_war/newzealand.jpg')}
                 caption={(
                   <>
                     <p id="caption">
@@ -65,7 +65,7 @@ const Blog = () => (
             </div>
             <div className={styles.imageCol} style={{ height: '190px' }}>
               <ModalImage
-                image={require('../../images/blogs/the-presence-of-war/crowds.jpg')}
+                image={require('../../images/blogs/the_presence_of_war/crowds.jpg')}
                 caption={(
                   <>
                     <p id="caption">
@@ -109,7 +109,7 @@ const Blog = () => (
         {/* Right side text */}
         <Col md={6} className={styles.mainCol}>
           <ModalImage
-            image={require('../../images/blogs/the-presence-of-war/screenshot.jpg')}
+            image={require('../../images/blogs/the_presence_of_war/screenshot.jpg')}
             caption={(
               <>
                 <p id="caption">
@@ -152,7 +152,7 @@ const Blog = () => (
             .
           </p>
           <ModalImage
-            image={require('../../images/blogs/the-presence-of-war/dorset.gif')}
+            image={require('../../images/blogs/the_presence_of_war/dorset.gif')}
             caption={(
               <>
                 <p id="caption">

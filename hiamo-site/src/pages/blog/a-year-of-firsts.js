@@ -111,7 +111,7 @@ const Blog = () => (
           date="dd/mm/yy"
           bgColor="color-secondary"
           textColor="color-text-light"
-          slug="the-presence-of-war"
+          slug="the_presence_of_war"
         />
         <BlogBox
           title="Continuing the Mission"
