@@ -1,21 +1,21 @@
 module.exports = {
   siteMetadata: {
     title: 'Hiamo',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
+    description: 'TODO this should be localised anyway',
     author: 'Hiamo Ltd.',
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-json',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/src/images`,
-      },
+        path: './data'
+      }
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     'gatsby-plugin-eslint',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
