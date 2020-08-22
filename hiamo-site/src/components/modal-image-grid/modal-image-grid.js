@@ -5,11 +5,10 @@ import PropTypes from 'prop-types';
 // Import Bootstrap tools
 import { Row, Col } from 'react-bootstrap';
 import ModalImage from '../modalimage';
-import Section from '../section';
 
 import styles from './modal-image-grid.module.css';
 
-const ModalImageGrid = ({ images = [], colCount = 2, hasLine = false }) => {
+const ModalImageGrid = ({ images = [], colCount = 2 }) => {
   const rows = [];
   let currCol = 1;
   let currRow = 0;
@@ -24,7 +23,7 @@ const ModalImageGrid = ({ images = [], colCount = 2, hasLine = false }) => {
     }
   });
   return (
-    <Section hasLine={hasLine} className={styles.gridWrapper}>
+    <div className={styles.gridWrapper}>
       {rows.map((row, i) => (
         <Row className={styles.gridRow} key={i}>
           {row.map(col => (
@@ -34,14 +33,13 @@ const ModalImageGrid = ({ images = [], colCount = 2, hasLine = false }) => {
           ))}
         </Row>
       ))}
-    </Section>
+    </div>
   );
 };
 
 ModalImageGrid.propTypes = {
   images: PropTypes.array.isRequired,
-  colCount: PropTypes.number,
-  hasLine: PropTypes.bool,
+  colCount: PropTypes.number
 };
 
 export default ModalImageGrid;
