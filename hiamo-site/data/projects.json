@@ -24,11 +24,11 @@
         "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       },
       {
-        "image": "./images/test.jpg",
+        "image": "./imgs/dorset.gif",
         "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       },
       {
-        "image": "./imgs/test.jpg",
+        "image": "/test.jpg",
         "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       }
     ]

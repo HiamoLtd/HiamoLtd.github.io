@@ -14,7 +14,6 @@ import styles from './project.module.css';
 
 // eslint-disable-next-line react/prop-types
 export default ({ data }) => {
-  console.log(data);
   const {
     title,
     subtitle,
@@ -30,13 +29,24 @@ export default ({ data }) => {
   // leftContent = JSON.parse(leftContent);
   // rightContent = JSON.parse(rightContent);
   // eslint-disable-next-line react/prop-types
+  // Get the sources for the grid images, or fall back to a default.
+  // TODO do this for banner
+  const gridImageMap = gridImages.map(gridImage => (
+    {
+      image: gridImage.image?.childImageSharp?.fluid?.src
+      || gridImage.image?.publicURL
+      || require('../../src/images/default.jpg'),
+      caption: gridImage.caption
+    }
+  ));
+  console.log(gridImageMap, gridImages);
   return (
     <Screen>
       <SEO title={title} />
       <HighlightBanner
         title={title}
         subtitle={subtitle}
-        imageRef={bannerImage}
+        imageRef={bannerImage?.childImageSharp?.fluid?.src}
         imageCaption={imageCaption}
         videoSource={bannerVideoUrl}
         videoTitle={bannerVideoTitle}
@@ -55,10 +65,11 @@ export default ({ data }) => {
           </Col>
         </Row>
       </Section>
-      <Section title="GALLERY" hasLine={false} />
-      {/* Grid display all the images */}
-      {/* TODO these need to auto */}
-      <ModalImageGrid images={gridImages} hasLine />
+      <Section title="GALLERY" hasLine>
+        {/* Grid display all the images */}
+        {/* TODO these need to auto */}
+        <ModalImageGrid images={gridImageMap} />
+      </Section>
       <Section title="OTHER PROJECTS">
         <Row className={styles.otherProjectsWrapper}>
           <ProjectBox
@@ -82,6 +93,7 @@ export default ({ data }) => {
   );
 };
 
+// TODO really should use this https://github.com/gatsbyjs/gatsby/issues/17783
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
@@ -103,12 +115,12 @@ export const query = graphql`
       rightContent
       gridImages {
         image {
+          publicURL
           childImageSharp {
             fluid {
               src
             }
           }
-          publicURL
         }
         caption
       }
