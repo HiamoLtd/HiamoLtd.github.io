@@ -1,10 +1,42 @@
 [
   {
-    "slug": "coastal-defence", 
+    "slug": "coastal", 
     "title": "Aotearoa's Coastal Defence",
     "subtitle": "Recreating objects digitally & returning context to heritage landmarks.",
     "bannerImage": "./imgs/test.jpg",
     "imageCaption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>",
+    "bannerVideoTitle": "Coastal Defence Demo",
+    "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
+    "bannerVideoAspectRatio": "16by10",
+    "leftContent": "<p>New Zealand is covered in coastal defence sites, but many of them lack the naval guns that they were built for. We bring these objects back digitally, returning context to the site and enabling lifelong learning through interaction with the models, all without the need to construct or maintain replicas.<\/p>",
+    "rightContent": "<p>To further engage with this history and the public, we bring these applications to the Wrights Hill Fortress open days in Wellington.<\/p>",
+    "gridImages": [
+      {
+        "image": "./imgs/test.jpg",
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/test.jpg",
+        "caption": " <p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+      },
+      {
+        "image": "./imgs/test.jpg",
+        "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+      },
+      {
+        "image": "./imgs/dorset.gif",
+        "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+      },
+      {
+        "image": "/test.jpg",
+        "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+      }
+    ]
+  },
+  {
+    "slug": "wahine", 
+    "title": "Wahine Disaster",
+    "subtitle": "Gotta mention heritage week.",
     "bannerVideoTitle": "Coastal Defence Demo",
     "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
     "bannerVideoAspectRatio": "16by10",

@@ -12,7 +12,6 @@ import { SEO } from '../../src/components/shared';
 
 import styles from './project.module.css';
 
-// eslint-disable-next-line react/prop-types
 export default ({ data }) => {
   const {
     title,
@@ -24,22 +23,21 @@ export default ({ data }) => {
     bannerVideoAspectRatio,
     leftContent,
     rightContent,
-    gridImages
+    gridImages,
   } = data?.projectsJson;
-  // leftContent = JSON.parse(leftContent);
-  // rightContent = JSON.parse(rightContent);
-  // eslint-disable-next-line react/prop-types
-  // Get the sources for the grid images, or fall back to a default.
   // TODO do this for banner
-  const gridImageMap = gridImages.map(gridImage => (
-    {
-      image: gridImage.image?.childImageSharp?.fluid?.src
+  const gridImageMap = gridImages.map(gridImage => ({
+    image:
+      gridImage.image?.childImageSharp?.fluid?.src
       || gridImage.image?.publicURL
       || require('../../src/images/default.jpg'),
-      caption: gridImage.caption
-    }
-  ));
-  console.log(gridImageMap, gridImages);
+    caption: gridImage.caption,
+  }));
+  // Parse HTML objects
+  const htmlParse = require('html-react-parser');
+  const htmlLeftContent = htmlParse(leftContent);
+  const htmlRightContent = htmlParse(rightContent);
+
   return (
     <Screen>
       <SEO title={title} />
@@ -57,11 +55,11 @@ export default ({ data }) => {
         <Row className={styles.endRow}>
           {/* Left side text */}
           <Col md={6} className={styles.mainCol}>
-            {leftContent}
+            {htmlLeftContent}
           </Col>
           {/* Right side text */}
           <Col md={6} className={styles.mainCol}>
-            {rightContent}
+            {htmlRightContent}
           </Col>
         </Row>
       </Section>
