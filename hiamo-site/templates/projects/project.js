@@ -12,6 +12,8 @@ import { SEO } from '../../src/components/shared';
 
 import styles from './project.module.css';
 
+const htmlParse = require('html-react-parser');
+
 export default ({ data }) => {
   const {
     title,
@@ -25,16 +27,17 @@ export default ({ data }) => {
     rightContent,
     gridImages,
   } = data?.projectsJson;
-  // TODO do this for banner
+  // Get the actual sources for the images
+  const bannerImageSrc = bannerImage?.childImageSharp?.fluid?.src || bannerImage?.publicURL || require('../../src/images/default.jpg');
   const gridImageMap = gridImages.map(gridImage => ({
     image:
       gridImage.image?.childImageSharp?.fluid?.src
       || gridImage.image?.publicURL
       || require('../../src/images/default.jpg'),
-    caption: gridImage.caption,
+    caption: htmlParse(gridImage.caption),
   }));
   // Parse HTML objects
-  const htmlParse = require('html-react-parser');
+  const imageCaptionHtml = imageCaption ? htmlParse(imageCaption) : <></>;
   const htmlLeftContent = htmlParse(leftContent);
   const htmlRightContent = htmlParse(rightContent);
 
@@ -44,8 +47,8 @@ export default ({ data }) => {
       <HighlightBanner
         title={title}
         subtitle={subtitle}
-        imageRef={bannerImage?.childImageSharp?.fluid?.src}
-        imageCaption={imageCaption}
+        imageRef={bannerImageSrc}
+        imageCaption={imageCaptionHtml}
         videoSource={bannerVideoUrl}
         videoTitle={bannerVideoTitle}
         videoAspectRatio={bannerVideoAspectRatio}
