@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "the-presence-of-war", 
+    "title": "The Presence of War",
+    "type": "Heritage Highlight",
+    "date": "dd/mm/yy",
+    "extraInfo": {
+      "heading": "Recreating Objects",
+      "content": "<p>When we at Hiamo set about recreating these historic items we faced many problems sourcing the information, getting consistent reference photographs, and finding out exactly what Oruaiti \/ Fort Dorset’s guns looked like. To learn more about how we are overcoming these issues and using exciting new technologies to accurately reconstruct these 100-year-old machines, keep an eye out for our next blog on our recreation process!<\/p>"
+    },
+    "leftContent": "<p>Research is a large part of the work we do at Hiamo, and the Heritage Highlights series exists to share a few of the stories we find. Some objects which we have researched extensively in our ongoing quest to accurately recreate historic objects in augmented reality are the 4-inch guns New Zealand used in its coastal defence.<br \/><br \/>Built around 1910 Aotearoa’s 4-inch guns, named due to the width of the shells they fired<sup>[1]<\/sup>, had a rich history even before they reached our shores. The weapons were originally used on the battlecruiser HMS New Zealand, a warship which the New Zealand government paid for Britain to build to help defend our shores<sup>[2]<\/sup>.<\/p><div className={styles.imageRow}><div className={styles.imageCol} style={{ height: '190px' }}><ModalImage image={displayImage[0]} caption={( <><p id=\"caption\"> HMS New Zealand seen in Scotland, during World War I.<br \/><span>Image reference:<\/span><\/p><a href=\"https:\/\/www.deviantart.com\/asarigoddess\/art\/HMS-New-Zealand-689465614\" id=\"ref\">https:\/\/www.deviantart.com\/asarigoddess\/art\/HMS-New-Zealand-689465614<\/a><\/>)}\/><\/div><div className={styles.imageCol} style={{ height: '190px' }}><ModalImage image={displayImages[1]}caption={(<><p id=\"caption\">Photograph of a crowd gathered by the British Battlecruiser HMS New Zealand, Lyttelton.<br \/><span>Image reference:<\/span><\/p><a href=\"https:\/\/natlib.govt.nz\/records\/22525840\" id=\"ref\">https:\/\/natlib.govt.nz\/records\/22525840<\/a><\/>)}\/><\/div><\/div><p>Despite this initial plan, the HMS New Zealand only went to its namesake country twice. Almost half a million people went to see the ship when it first visited in 1913, just under half the country’s population at the time.<br \/><br \/>During this visit, the captain was gifted a piupiu (flax skirt) and a greenstone hei-tiki (pendant) by the Ngāti Raukawa iwi (tribe) to protect the ship and its crew<sup>[3]<\/sup>. “As to these garments,” one of their chiefs, Rere Nikitini, said, “let them be as sails for your ship, carrying you to distant shores, and even to the presence of war if that should happen.” This proved to be true, a war did occur and the vessel would see it.<br /><br />HMS New Zealand fought in multiple major battles in World War One, including the last and largest battleship-focussed engagement in history. Despite these battles, the ship only got hit by fire once and suffered no major damage or injury<sup>[2]<\/sup>. The crew credited this incredible luck to the gifted piupiu and hei-tiki which the captain wore during battle.<\/p>",
+    "references": [
+      {
+        "link": "www.google.com",
+        "text": "A link."
+      }
+    ],
+    "images": [
+      {
+        "name": "test",
+        "image": "./imgs/test.jpg",
+        "caption": " <p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+      }
+    ]
+  }
+]

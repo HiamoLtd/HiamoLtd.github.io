@@ -28,10 +28,11 @@ export default ({ data }) => {
     gridImages,
   } = data?.projectsJson;
   // Get the actual sources for the images
-  const bannerImageSrc = bannerImage?.childImageSharp?.fluid?.src || bannerImage?.publicURL || require('../../src/images/default.jpg');
+  const bannerImageSrc = bannerImage?.childImageSharp?.fluid?.src
+                      || bannerImage?.publicURL
+                      || require('../../src/images/default.jpg');
   const gridImageMap = gridImages.map(gridImage => ({
-    image:
-      gridImage.image?.childImageSharp?.fluid?.src
+    image: gridImage.image?.childImageSharp?.fluid?.src
       || gridImage.image?.publicURL
       || require('../../src/images/default.jpg'),
     caption: htmlParse(gridImage.caption),
@@ -43,7 +44,7 @@ export default ({ data }) => {
 
   return (
     <Screen>
-      <SEO title={title} />
+      <SEO title={`${title} | Project`} />
       <HighlightBanner
         title={title}
         subtitle={subtitle}
