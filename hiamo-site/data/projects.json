@@ -20,7 +20,7 @@
         "caption": " <p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       },
       {
-        "image": "./imgs/test.jpg",
+        "image": "./imgs/default.jpg",
         "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       },
       {
@@ -28,7 +28,7 @@
         "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       },
       {
-        "image": "/test.jpg",
+        "image": "/default.jpg",
         "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
       }
     ]
@@ -44,7 +44,7 @@
     "rightContent": "<p>To further engage with this history and the public, we bring these applications to the Wrights Hill Fortress open days in Wellington.<\/p>",
     "gridImages": [
       {
-        "image": "./imgs/test.jpg",
+        "image": "./imgs/default.jpg",
         "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
       },
       {
