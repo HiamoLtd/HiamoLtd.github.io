@@ -64,6 +64,7 @@ export default ({ data }) => {
     rightContent,
     images,
   } = data?.blogsJson;
+
   // Reset image counter so reloading the page still places images in the right spot
   imageCounter = -1;
   // Parse html objects
@@ -115,7 +116,8 @@ export default ({ data }) => {
                       <>
                         {refPair.text}
                         {' '}
-                        <a href={refPair.link}>{refPair.link}</a>
+                        { refPair.link && <a href={refPair.link}>{refPair.link}</a> }
+                        <br />
                         <br />
                       </>
                     );
