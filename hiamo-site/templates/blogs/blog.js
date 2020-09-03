@@ -24,7 +24,7 @@ const getModalImage = input => (
       || input?.image?.publicURL
       || require('../../src/images/default.jpg')
     }
-    caption={input?.caption || ''}
+    caption={input?.caption ? htmlParse(input.caption) : ''}
   />
 );
 
