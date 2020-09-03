@@ -40,6 +40,7 @@ export default ({ data }) => {
   // Parse HTML objects
   const imageCaptionHtml = imageCaption ? htmlParse(imageCaption) : <></>;
   const htmlLeftContent = htmlParse(leftContent);
+
   const htmlRightContent = htmlParse(rightContent);
 
   return (
