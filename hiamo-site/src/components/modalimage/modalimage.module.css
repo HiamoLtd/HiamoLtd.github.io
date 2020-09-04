@@ -1,18 +1,22 @@
 /* Selectible display image on the page */
+.image-wrapper {
+  cursor: pointer;
+  transition: 0.3s;
+}
 .image {
   max-width: 100%;
   max-height: 100%;
-  cursor: pointer;
-  transition: 0.3s;
   box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
   margin : 0 0 20px 0;
+  padding: 0;
 }
-.image:hover {
+.image-wrapper:hover {
   opacity: .8;
 }
 
 /* Modal background styling */
 .modal {
+  cursor: pointer;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -28,10 +32,10 @@
 
 /* Modal image styling */
 .modal-image {
-  margin: auto;
+  margin: 0;
+  padding: 0;
   display: block;
-  width: 80%;
-  max-width: 1000px;
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
 }
@@ -45,6 +49,7 @@
   max-width: 800px;
   text-align: center;
   padding: 10px 0 30px 0;
+  cursor: default;
 }
 .modal-caption p {
   color:rgb(var(--color-text-light));
@@ -84,8 +89,17 @@
   cursor: pointer;
 }
 
+.modal-image-wrapper {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+  cursor: default;
+}
+
 /* Add Animation - Zoom in the Modal */
 .modal-content {
+  text-align: center;
   animation-name: zoom;
   animation-duration: .5s;
 }
