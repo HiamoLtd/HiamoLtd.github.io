@@ -23,9 +23,6 @@
   max-width: 100%;
   padding: 5px 0 15px 0;
 }
-.image-col:nth-child(2) {
-  margin: 0 0 0 8px;
-}
 
 .subheading {
   padding: 10px 0 10px 0;

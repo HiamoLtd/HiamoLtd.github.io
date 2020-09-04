@@ -17,14 +17,17 @@ const htmlParse = require('html-react-parser');
 
 let imageCounter;
 
-const getModalImage = input => (
+const getModalImage = (image, height) => (
   <ModalImage
+    imageFluid={
+      image?.image?.childImageSharp?.fluid
+    }
     image={
-      input?.image?.childImageSharp?.fluid?.src
-      || input?.image?.publicURL
+      image?.image?.publicURL
       || require('../../src/images/default.jpg')
     }
-    caption={input?.caption ? htmlParse(input.caption) : ''}
+    height={height}
+    caption={image?.caption ? htmlParse(image.caption) : ''}
   />
 );
 
@@ -45,9 +48,9 @@ const getHtmlContent = (content, images) => {
   return htmlParse(updatedStr, {
     // eslint-disable-next-line consistent-return
     replace: (element) => {
-      if (element?.data === '{displayImage}') {
+      if (element?.data === '{displayImage}' || element?.data?.match(/{displayImage\[(.*?)\]}/)) {
         imageCounter += 1;
-        return getModalImage(images[imageCounter]);
+        return getModalImage(images[imageCounter], element?.data?.match(/{displayImage\[(.*?)\]}/)?.[1]);
       }
     }
   });
@@ -110,15 +113,19 @@ export default ({ data }) => {
             <Col md={12} className={styles.mainCol}>
               <h5 className={`${styles.references} ${styles.subheading}`}>References</h5>
               <p>
-                {references?.map((refPair) => {
+                {references?.map((refPair, index) => {
                   if (refPair.link) {
                     return (
                       <>
                         {refPair.text}
                         {' '}
                         { refPair.link && <a href={refPair.link}>{refPair.link}</a> }
-                        <br />
-                        <br />
+                        {index < references.length - 1 && (
+                          <>
+                            <br />
+                            <br />
+                          </>
+                        )}
                       </>
                     );
                   }
@@ -173,8 +180,8 @@ export const query = graphql`
         image {
           publicURL
           childImageSharp {
-            fluid {
-              src
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
