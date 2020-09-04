@@ -28,7 +28,12 @@ const ModalImageGrid = ({ images = [], colCount = 2 }) => {
         <Row className={styles.gridRow} key={i}>
           {row.map(col => (
             <Col className={styles.gridCol} key={`${i}_${col.image}`} style={{ maxWidth: `${100 / colCount}%` }}>
-              <ModalImage image={col.image} caption={col.caption} imageClass={styles.gridImage} />
+              <ModalImage
+                imageFluid={col.fluidImage}
+                image={col.staticImage}
+                caption={col.caption}
+                imageClass={styles.gridImage}
+              />
             </Col>
           ))}
         </Row>

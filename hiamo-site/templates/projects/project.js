@@ -28,11 +28,13 @@ export default ({ data }) => {
     gridImages,
   } = data?.projectsJson;
   // Get the actual sources for the images
+  const bannerImageFluid = bannerImage?.childImageSharp?.fluid;
   const bannerImageSrc = bannerImage?.childImageSharp?.fluid?.src
                       || bannerImage?.publicURL
                       || require('../../src/images/default.jpg');
   const gridImageMap = gridImages.map(gridImage => ({
-    image: gridImage.image?.childImageSharp?.fluid?.src
+    fluidImage: gridImage.image?.childImageSharp?.fluid,
+    staticImage: gridImage.image?.childImageSharp?.fluid?.src
       || gridImage.image?.publicURL
       || require('../../src/images/default.jpg'),
     caption: htmlParse(gridImage.caption),
@@ -50,6 +52,7 @@ export default ({ data }) => {
         title={title}
         subtitle={subtitle}
         imageRef={bannerImageSrc}
+        fluidImageRef={bannerImageFluid}
         imageCaption={imageCaptionHtml}
         videoSource={bannerVideoUrl}
         videoTitle={bannerVideoTitle}
@@ -104,8 +107,8 @@ export const query = graphql`
       subtitle
       bannerImage {
         childImageSharp {
-          fluid {
-            src
+          fluid(quality: 100) {
+            ...GatsbyImageSharpFluid
           }
         }
         publicURL
@@ -120,8 +123,8 @@ export const query = graphql`
         image {
           publicURL
           childImageSharp {
-            fluid {
-              src
+            fluid(quality: 100) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
