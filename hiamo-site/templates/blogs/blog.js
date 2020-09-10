@@ -89,8 +89,8 @@ export default ({ data }) => {
             </Col>
           </Row>
         )}
-        {/* Main content section TODO spacing */}
-        <Row>
+        {/* Main content section */}
+        <Row className={(!!references && !extraInfo) && styles.endRow}>
           {/* Left side text */}
           <Col md={6} className={styles.mainCol}>
             {leftContentHtml}
@@ -102,7 +102,7 @@ export default ({ data }) => {
         </Row>
         {/* Exta info section, if needed. */}
         { extraInfo && (
-          <Row>
+          <Row className={!!references && styles.endRow}>
             <Col md={6} className={styles.mainCol}>
               <h3 className={styles.subheading}>{extraInfo.heading}</h3>
               {htmlEIContent}
