@@ -27,14 +27,15 @@ const PageBoxGrid = ({ pages = [], colCount = 3, type = 'blog' }) => {
       currCol += 1;
     }
   });
+
   return (
     <div className={styles.gridWrapper}>
       {rows.map((row, i) => (
         <Row className={styles.gridRow} key={i}>
           {row.map(col => (type.toLowerCase() === 'blog' ? (
             <BlogBox
-              title={col.cardTitle}
-              type={col.cardType}
+              title={col.title}
+              type={col.type}
               date={col.date}
               content={col.cardDescription}
               bgColor={col.bgColor}
