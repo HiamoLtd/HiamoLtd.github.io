@@ -110,30 +110,24 @@ export default ({ data }) => {
           </Row>
         )}
         {/* References section, if needed. */}
-        {/* // TODO collapsable. Also, highlighting text. */}
         { references && (
           <Row className={styles.endRow}>
             <Col md={12} className={styles.mainCol}>
               <h5 className={`${styles.references} ${styles.subheading}`}>References</h5>
-              <p>
-                {references?.map((refPair, index) => {
-                  if (refPair.link) {
-                    return (
-                      <>
-                        {refPair.text}
-                        {' '}
-                        { refPair.link && <a href={refPair.link}>{refPair.link}</a> }
-                        {index < references.length - 1 && (
-                          <>
-                            <br />
-                            <br />
-                          </>
-                        )}
-                      </>
-                    );
-                  }
-                  return refPair.text;
-                })}
+              <p className={styles.referenceText}>
+                {references?.map((refPair, index) => (
+                  <>
+                    {refPair.text}
+                    {' '}
+                    { refPair.link && <a href={refPair.link}>{refPair.link}</a> }
+                    {index < references.length - 1 && (
+                    <>
+                      <br />
+                      <br />
+                    </>
+                    )}
+                  </>
+                ))}
               </p>
             </Col>
           </Row>

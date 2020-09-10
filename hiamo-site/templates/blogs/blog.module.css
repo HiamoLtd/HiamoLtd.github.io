@@ -38,6 +38,17 @@
   padding: 60px 0 20px 0;
 }
 
+.reference-text {
+  font-size: 16px;
+}
+.reference-text a {
+  color: rgb(var(--color-secondary-light));
+}
+.reference-text a:hover {
+  color: rgb(var(--color-text-trim));
+  text-decoration: none;
+}
+
 /* Style the row at the end for padding */
 .end-row {
   padding-bottom: 80px;
