@@ -6,7 +6,7 @@ import { graphql } from 'gatsby';
 import { Row, Col } from 'react-bootstrap';
 
 import {
-  HighlightBanner, Screen, Section, ProjectBox, ModalImageGrid
+  HighlightBanner, Screen, Section, PageBoxGrid, ModalImageGrid
 } from '../../src/components';
 import { SEO } from '../../src/components/shared';
 
@@ -26,7 +26,9 @@ export default ({ data }) => {
     leftContent,
     rightContent,
     gridImages,
+    slug
   } = data?.projectsJson;
+
   // Get the actual sources for the images
   const bannerImageFluid = bannerImage?.childImageSharp?.fluid;
   const bannerImageSrc = bannerImage?.childImageSharp?.fluid?.src
@@ -73,33 +75,15 @@ export default ({ data }) => {
       </Section>
       <Section title="GALLERY" hasLine>
         {/* Grid display all the images */}
-        {/* TODO these need to auto */}
         <ModalImageGrid images={gridImageMap} />
       </Section>
       <Section title="OTHER PROJECTS">
-        <Row className={styles.otherProjectsWrapper}>
-          <ProjectBox
-            title="XXXXXXXXXX"
-            type="XXXXXXXXXX"
-            content="XXXXXXXXXX"
-            bgColor="color-secondary"
-            textColor="color-text-light"
-            slug="XXXXXXXXXX"
-          />
-          <ProjectBox
-            title="XXXXXXXXXX"
-            content="XXXXXXXXXX"
-            bgColor="color-tertiary"
-            textColor="color-text-dark"
-            slug="XXXXXXXXXX"
-          />
-        </Row>
+        <PageBoxGrid pages={data?.allProjectsJson?.nodes.filter(p => p.slug !== slug)} type="project" />
       </Section>
     </Screen>
   );
 };
 
-// TODO really should use this https://github.com/gatsbyjs/gatsby/issues/17783
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
@@ -129,6 +113,14 @@ export const query = graphql`
           }
         }
         caption
+      }
+    }
+    allProjectsJson {
+      nodes {
+        slug
+        cardTitle
+        cardType
+        cardDescription
       }
     }
   }

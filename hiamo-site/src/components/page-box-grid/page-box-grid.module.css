@@ -1,0 +1,7 @@
+/* Style outer row wrapper */
+.grid-wrapper {
+  padding: 40px 0 80px 0;
+}
+.grid-row {
+  width: 100%;
+}

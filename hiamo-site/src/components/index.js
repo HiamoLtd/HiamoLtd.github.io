@@ -5,6 +5,7 @@ export { default as ProjectBox } from './projectbox';
 export { default as BlogBox } from './blogbox';
 export { default as ModalImage } from './modalimage';
 export { default as ModalImageGrid } from './modal-image-grid';
+export { default as PageBoxGrid } from './page-box-grid';
 export { default as Section } from './section';
 export { default as SubSection } from './subsection';
 export { default as Video } from './video';
