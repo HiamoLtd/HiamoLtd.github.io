@@ -1,13 +1,3 @@
-/* TODO what effect do we want on hover? */
-.link {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-}
-.link:hover {
-  text-decoration: none;
-}
-
 .title-wrapper {
   height: 150px;
 }
