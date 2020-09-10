@@ -87,6 +87,7 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
+      slug
       title
       subtitle
       bannerImage {
