@@ -101,15 +101,17 @@ export default ({ data }) => {
           </Col>
         </Row>
         {/* Exta info section, if needed. */}
-        <Row>
-          <Col md={6} className={styles.mainCol}>
-            <h3 className={styles.subheading}>{extraInfo.heading}</h3>
-            {htmlEIContent}
-          </Col>
-        </Row>
+        { extraInfo && (
+          <Row>
+            <Col md={6} className={styles.mainCol}>
+              <h3 className={styles.subheading}>{extraInfo.heading}</h3>
+              {htmlEIContent}
+            </Col>
+          </Row>
+        )}
         {/* References section, if needed. */}
         {/* // TODO collapsable. Also, highlighting text. */}
-        {references && (
+        { references && (
           <Row className={styles.endRow}>
             <Col md={12} className={styles.mainCol}>
               <h5 className={`${styles.references} ${styles.subheading}`}>References</h5>
