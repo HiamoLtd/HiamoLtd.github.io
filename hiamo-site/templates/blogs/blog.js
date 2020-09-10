@@ -72,9 +72,9 @@ export default ({ data }) => {
   // Reset image counter so reloading the page still places images in the right spot
   imageCounter = -1;
   // Parse html objects
-  const htmlEIContent = htmlParse(extraInfo?.content);
-  const leftContentHtml = getHtmlContent(leftContent, images);
-  const rightContentHtml = getHtmlContent(rightContent, images);
+  const htmlEIContent = extraInfo && htmlParse(extraInfo?.content);
+  const leftContentHtml = leftContent && getHtmlContent(leftContent, images);
+  const rightContentHtml = rightContent && getHtmlContent(rightContent, images);
 
   return (
     <Screen>
@@ -89,7 +89,7 @@ export default ({ data }) => {
             </Col>
           </Row>
         )}
-        {/* Main content section */}
+        {/* Main content section TODO spacing */}
         <Row>
           {/* Left side text */}
           <Col md={6} className={styles.mainCol}>
