@@ -10,13 +10,13 @@ const ProjectBox = ({
   title, subtitle, content, bgColor, textColor, width, slug
 }) => (
   <Box width={width} bgColor={bgColor}>
-    <Link to="/project" className={styles.link}>
-      {console.log(`TODO: ${slug}`)}
+    <Link to={`/project/${slug}`} className={styles.link}>
       <h3 className={styles.title}>{title}</h3>
       <h4 className={styles.subtitle}>{subtitle}</h4>
       <p className={styles.text} style={{ color: `rgb(var(--${textColor}))` }}>
         {content}
       </p>
+      <p className={styles.readMore}>Read more...</p>
     </Link>
   </Box>
 );
