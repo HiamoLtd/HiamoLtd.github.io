@@ -1,6 +1,9 @@
 [
   {
-    "slug": "coastal", 
+    "slug": "coastal",
+    "cardTitle": "COASTAL DEFENCE",
+    "cardType": "VISUALIZATION",
+    "cardDescription": "New Zealand is covered in coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, increasing interaction and engagement.",
     "title": "Aotearoa's Coastal Defence",
     "subtitle": "Recreating objects digitally & returning context to heritage landmarks.",
     "bannerImage": "./imgs/test.jpg",
@@ -34,7 +37,10 @@
     ]
   },
   {
-    "slug": "wahine", 
+    "slug": "wahine",
+    "cardTitle": "WAHINE DISASTER",
+    "cardType": "STORYTELLING",
+    "cardDescription": "Hiamo shared the tragic story of the ill-fated ferry using Augmented Reality to visualse the path of the ship by the Wahine memorial mast.",
     "title": "Wahine Disaster",
     "subtitle": "Gotta mention heritage week.",
     "bannerVideoTitle": "Coastal Defence Demo",
