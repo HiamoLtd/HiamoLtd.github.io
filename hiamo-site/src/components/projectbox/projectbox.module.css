@@ -27,7 +27,9 @@
 .read-more {
   font-size: 16px;
   margin: 0;
-  float: right;
   color: rgb(var(--color-trim));
   text-decoration: none;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
 }
