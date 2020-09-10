@@ -1,12 +1,12 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 
-import styles from 'collapsible.module.css';
+import styles from './collapsible.module.css';
 
-const Collapsible = (startOpen = false, children, header, hasArrow = false) => {
+const Collapsible = ({
+  startOpen = false, children, header, hasArrow = false
+}) => {
   const [open, setOpen] = useState(startOpen);
 
-  // TODO do we want the arrow? How would we go about that?
   return (
     <>
       <div
@@ -24,10 +24,12 @@ const Collapsible = (startOpen = false, children, header, hasArrow = false) => {
             </div>
           </>
         ) : (
-          header
+          <>{header}</>
         )}
       </div>
-      <div className={`${styles.dropdown} ${open ? styles.openDropdown : styles.closeDropdown}`}>{children}</div>
+      <div className={`${styles.dropdown} ${open ? styles.openDropdown : styles.closeDropdown}`}>
+        {children}
+      </div>
     </>
   );
 };

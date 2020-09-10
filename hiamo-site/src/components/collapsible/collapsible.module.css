@@ -1,2 +1,64 @@
-/* For if we want to do this, visit here
-https://github.com/HiamoLtd/HiamoLtd.github.io/blob/react-prototype/src/styles/global.css */
+.header-wrapper {
+
+}
+.header {
+
+}
+
+.arrow-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  background: none;
+  width: 100%;
+  cursor: pointer;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 6px;
+  cursor: pointer;
+}
+.arrow-up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+.arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -webkit-transition: transform 0.5s ease-out;
+  -moz-transition: transform 0.5s ease-out;
+  -o-transition: transform 0.5s ease-out;
+  -ms-transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out;
+}
+
+.dropdown {
+
+}
+.open-dropdown {
+  overflow: hidden;
+  height: auto;
+  max-height: 300px;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+.close-dropdown {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -ms-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
