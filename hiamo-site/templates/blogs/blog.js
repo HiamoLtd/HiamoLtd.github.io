@@ -7,7 +7,7 @@ import { Row, Col } from 'react-bootstrap';
 
 // eslint-disable-next-line no-unused-vars
 import {
-  Screen, BlogBox, Section, ModalImage
+  Screen, Section, ModalImage, PageBoxGrid
 } from '../../src/components';
 import { SEO } from '../../src/components/shared';
 
@@ -58,6 +58,7 @@ const getHtmlContent = (content, images) => {
 
 export default ({ data }) => {
   const {
+    slug,
     title,
     type,
     date,
@@ -137,24 +138,7 @@ export default ({ data }) => {
         )}
       </Section>
       <Section title="OTHER BLOGS">
-        <Row className={styles.otherBlogsWrapper}>
-          <BlogBox
-            title="Continuing the Mission"
-            content="A new year brings new challenges and oppourtunities; we reflect on the busy first month of 2019."
-            date="dd/mm/yy"
-            bgColor="color-secondary"
-            textColor="color-text-light"
-            slug="continuing-the-mission"
-          />
-          <BlogBox
-            title="A Year of Firsts"
-            date="dd/mm/yy"
-            content="After an eventful year filled with great events and changes, we look back on all that has happened since our company first launched."
-            bgColor="color-tertiary"
-            textColor="color-text-dark"
-            slug="a-year-of-firsts"
-          />
-        </Row>
+        <PageBoxGrid pages={data?.allBlogsJson?.nodes.filter(p => p.slug !== slug)} type="blog" />
       </Section>
     </Screen>
   );
@@ -163,6 +147,7 @@ export default ({ data }) => {
 export const query = graphql`
   query($slug: String!) {
     blogsJson(slug: { eq: $slug }) {
+      slug
       title
       type
       date
@@ -186,6 +171,15 @@ export const query = graphql`
           }
         }
         caption
+      }
+    }
+    allBlogsJson {
+      nodes {
+        slug
+        cardDescription
+        title
+        date
+        type
       }
     }
   }
