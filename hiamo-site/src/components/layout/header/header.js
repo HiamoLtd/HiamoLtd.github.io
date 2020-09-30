@@ -25,7 +25,7 @@ const Header = () => (
   <div className={styles.container}>
     <Navbar className={`content align-items-end ${styles.nav}`} expand="lg" sticky="top">
       {/* Brand sign */}
-      <Link to={getLink('Home', '/')}>
+      <Link to="/">
         <Navbar.Brand className={styles.brandWrapper}>
           <img
             src={require('../../../images/icons/logo_name.png')}
