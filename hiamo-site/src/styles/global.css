@@ -70,7 +70,7 @@ This class wraps all main content in the site, ensuring there is whitespace on t
 .id-link-anchor {
   visibility: hidden;
   position: relative;
-  top: -108px;
+  top: -109px;
   height: 0;
   padding: 0;
   margin: 0;
