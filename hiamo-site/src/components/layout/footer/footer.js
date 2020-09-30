@@ -11,8 +11,8 @@ function getYear() {
 
 const Footer = () => (
   <div className={`${styles.container}`}>
-    <div className={`${styles.wrapper} content`}>
-      <div className={`${styles.column} ${styles.collapsable}`} key="footer-contact">
+    <div className={`${styles.wrapper} content row`}>
+      <div className={`${styles.column} ${styles.collapsable} col-xs-4`} key="footer-contact">
         <p className={styles.info}>
           <a href="mailto:contact@hiamo.nz" className={styles.link}>
             contact@hiamo.nz
@@ -32,15 +32,14 @@ const Footer = () => (
           </span>
         </p>
       </div>
-      <div className={styles.column} key="footer-logo">
-        {/* TODO this should also link based on the page */}
+      <div className={styles.column} key="footer-logo col-xs-4">
         <div className={styles.logoWrapper}>
           <Link to="/" className={styles.logoLink}>
             <Image src={require('../../../images/icons/logo.svg')} className={styles.logo} />
           </Link>
         </div>
       </div>
-      <div className={styles.column} key="footer-social">
+      <div className={`${styles.column} col-xs-4`} key="footer-social">
         <div className={styles.socialWrapper}>
           <a href="https://www.instagram.com/hiamo_nz/">
             <Image
