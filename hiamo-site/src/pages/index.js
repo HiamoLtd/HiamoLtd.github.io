@@ -23,7 +23,6 @@ export default ({ data }) => (
       title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
       subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
       imageRef={require('../images/projects/forts/WrightsHill.jpg')}
-      id="Home"
     />
     <Contact />
     {/* About Section */}
