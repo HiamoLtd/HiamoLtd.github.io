@@ -69,10 +69,9 @@ h1, h2, h3, h4, h5, h6 {
 .id-link-anchor {
   visibility: hidden;
   position: relative;
-  top: -109px;
+  top: -107px;
   height: 0;
-  padding: 0;
-  margin: 0;
+  display: block;
 }
 
 /* Handling custom video aspect ratios is done here because classNames need to be global for the embed. */

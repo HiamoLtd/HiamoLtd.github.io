@@ -20,9 +20,3 @@
   font-size: 70px;
   color: rgb(var(--color-trim));
 }
-
-/* Raise the link anchor so when a user clicks to go to a section it shows the title */
-.id-link-anchor {
-  position: relative;
-  top: -110px;
-}
