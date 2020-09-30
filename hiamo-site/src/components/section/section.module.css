@@ -1,10 +1,17 @@
+/* Set the MAXIMUM width for the page elements. 
+  This class wraps all main content in the site, ensuring there is whitespace on the sides. */
 .container {
-  padding: 0;
-  margin: 0;
+  width: var(--page-width);
+  padding: 0 1.0875rem;
+  margin: 0 auto;
 }
 
 .after-line {
   border-bottom: 1px solid rgb(var(--color-trim));
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 0;
 }
 
 .title {

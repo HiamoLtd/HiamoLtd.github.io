@@ -1,6 +1,7 @@
 /* Style outer row wrapper */
 .container {
   padding: 80px 15px;
+  width: 100%;
 }
 
 /* Style header section and texts */

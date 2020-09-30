@@ -10,7 +10,7 @@ import styles from './banner.module.css';
 const Banner = ({
   title, subtitle, imageRef, id
 }) => (
-  <Section hasLine={false} id={id || title}>
+  <Section hasLine={false} id={id || title} className={styles.container}>
     <Row className={styles.container}>
       <Col md={8} className={styles.titleWrapper}>
         <h1 className={styles.title}>{title}</h1>

@@ -4,16 +4,24 @@ import PropTypes from 'prop-types';
 import styles from './section.module.css';
 
 const Section = ({
-  children, hasLine = true, title, mainHeader = false, id, className
+  children,
+  hasLine = true,
+  title,
+  mainHeader = false,
+  id,
+  className
 }) => (
-  <div className={`${styles.container} ${hasLine ? styles.afterLine : ''} ${className || ''}`}>
-    <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
-      {`${id || title} section`}
-    </a>
-    {title && !mainHeader && <h2 className={styles.title}>{title}</h2>}
-    {title && mainHeader && <h1 className={styles.title}>{title}</h1>}
-    {children}
-  </div>
+  <>
+    <div className={`${styles.container} ${className || ''}`}>
+      <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
+        {`${id || title} section`}
+      </a>
+      {title && !mainHeader && <h2 className={styles.title}>{title}</h2>}
+      {title && mainHeader && <h1 className={styles.title}>{title}</h1>}
+      {children}
+      {hasLine && <hr className={styles.afterLine} />}
+    </div>
+  </>
 );
 
 Section.propTypes = {

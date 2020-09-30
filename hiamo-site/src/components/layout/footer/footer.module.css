@@ -15,6 +15,8 @@
 }
 .wrapper {
   display: flex;
+  width: var(--page-width);
+  margin: 0 auto;
 }
 
 /* Style the contact section */

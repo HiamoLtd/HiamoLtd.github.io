@@ -1,6 +1,6 @@
 /* --- Absolute base CSS --- */
-/* Define some custom colours for the app */
 :root {
+  /* Define some custom colours */
   --color-primary: 247,248,250;
   --color-secondary: 33,34,36;
   --color-tertiary: 242,242,242;
@@ -10,6 +10,8 @@
   --color-text-dark: var(--color-secondary);
   --color-text-light: var(--color-primary);
   --color-text-trim: var(--color-trim);
+  /* Define sizes */
+  --page-width: 1170px;
 }
 
 /** Introduce custom fonts **/
@@ -58,12 +60,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Fjalla-One;
 }
 
-/* Set the MAXIMUM width for the page elements. 
-This class wraps all main content in the site, ensuring there is whitespace on the sides. */
+/* Style the page wrapper */
 .content {
-  width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom:  1.45rem;
 }
 
 /* There are screen readable id link anchors around the site. Make them invisible, they're navigation only. */
