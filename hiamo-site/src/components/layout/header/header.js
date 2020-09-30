@@ -42,7 +42,7 @@ const Header = () => (
         className={`${styles.linkWrapper} align-items-end justify-content-end`}
       >
         {/* Links */}
-        <NavLink content="HOME" link={getLink('Home', '/')} />
+        <NavLink content="HOME" link="/" />
         <NavLink content="ABOUT" link={getLink('About', '/')} />
         <NavLink content="PROJECTS" link={getLink('Projects', '/')} />
         <NavLink content="TEAM" link={getLink('Team', '/')} />
