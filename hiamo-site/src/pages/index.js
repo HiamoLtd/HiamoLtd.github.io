@@ -48,7 +48,7 @@ export default ({ data }) => (
             <br />
             AR lets us visualize whatever is necessary for the experience you want. This could mean
             using AR to digitally recreate an interactive and expandable replica of a heritage site
-            or item, or to visualize a new product which hasn`&apos;`t been built yet.
+            or item, or to visualize a new product which hasn&apos;t been built yet.
           </p>
         </About>
         <About title="AR EXPERIENCES">
