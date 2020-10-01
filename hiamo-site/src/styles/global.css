@@ -88,6 +88,9 @@ h1, h2, h3, h4, h5, h6 {
   .id-link-anchor {
     top: -87px;
   }
+  p {
+    font-size: 18px;
+  }
 }
 /*
 @media screen and (max-width: 480px) {
