@@ -9,7 +9,7 @@ const Screen = ({ children }) => (
   <>
     {/* TODO add site title query */}
     <Header />
-    <div className={`${styles.pageWrapper} content`}>
+    <div className={styles.pageWrapper}>
       <main>{children}</main>
     </div>
     <Footer />
