@@ -83,13 +83,24 @@ h1, h2, h3, h4, h5, h6 {
   padding: 62.5% 0 0 0 !important;
 }
 
-/* Adjust global sizes for tablets */
+/* Adjust the larger width for smaller desktops */
 @media only screen and (max-width: 1170px) {
   :root {
     --page-width: 100%;
   }
   
   .content {
-    padding: 0 1.0875rem 1.45rem;
+    padding: 0 20px 10px;
   }
 }
+@media screen and (max-width: 1024px) {
+  .id-link-anchor {
+    top: -87px;
+  }
+}
+/*
+@media screen and (max-width: 480px) {
+  .brand {
+    height: 50px;
+  }
+} */
