@@ -101,8 +101,8 @@
   }
   /* Align text to centre if we are in mobile view */
   .collapsable {
-      justify-content: center;
-      text-align: center;
+    justify-content: center;
+    text-align: center;
   }
   /* Centre social content on collapse as well */
   .social-wrapper {
