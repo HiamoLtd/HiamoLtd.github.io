@@ -26,12 +26,6 @@
   margin: 10px 0;
   height: 60px;
 }
-@media screen and (max-width: 1024px) {
-  .brand {
-    margin: 5px 0;
-    height: 50px;
-  }
-}
 
 /* Style the nav link buttons */
 .link-wrapper {
@@ -54,6 +48,20 @@
 .link:hover {
   color: rgb(var(--color-trim));
 }
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .brand {
+    margin: 5px 0;
+    height: 50px;
+  }
+
+  .link {
+    margin: 0;
+    text-align: center;
+  }
+}
+
 
 /* Hamburger styles and animation */
 .hamburger-wrapper {
