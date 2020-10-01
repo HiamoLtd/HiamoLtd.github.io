@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 
-import Image from 'react-bootstrap/Image';
+import { Row, Col, Image } from 'react-bootstrap';
 
 import styles from './footer.module.css';
 
@@ -11,8 +11,8 @@ function getYear() {
 
 const Footer = () => (
   <div className={`${styles.container}`}>
-    <div className={`${styles.wrapper} content row`}>
-      <div className={`${styles.column} ${styles.collapsable} col-xs-4`} key="footer-contact">
+    <Row className={`${styles.wrapper} content`}>
+      <Col className={`${styles.column} ${styles.collapsable}`} key="footer-contact" sm="4">
         <p className={styles.info}>
           <a href="mailto:contact@hiamo.nz" className={styles.link}>
             contact@hiamo.nz
@@ -31,15 +31,15 @@ const Footer = () => (
             Icons by icons8
           </span>
         </p>
-      </div>
-      <div className={styles.column} key="footer-logo col-xs-4">
+      </Col>
+      <Col className={styles.column} key="footer-logo" sm="4">
         <div className={styles.logoWrapper}>
           <Link to="/" className={styles.logoLink}>
             <Image src={require('../../../images/icons/logo.svg')} className={styles.logo} />
           </Link>
         </div>
-      </div>
-      <div className={`${styles.column} col-xs-4`} key="footer-social">
+      </Col>
+      <Col className={styles.column} key="footer-social" sm="4">
         <div className={styles.socialWrapper}>
           <a href="https://www.instagram.com/hiamo_nz/">
             <Image
@@ -66,8 +66,8 @@ const Footer = () => (
             />
           </a>
         </div>
-      </div>
-    </div>
+      </Col>
+    </Row>
   </div>
 );
 

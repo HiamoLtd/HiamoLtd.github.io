@@ -90,14 +90,14 @@
 }
 
 /* Handle changes for mobile screen sizes */
-@media (max-width: 813px) {
+@media screen and (max-width: 1024px) {
   /* Style the containers to centre and match the size */
   .container {
     display: block;
   }
   .column {
     width: 100%;
-    margin: 7% 0;
+    margin: 2% 0;
   }
   /* Align text to centre if we are in mobile view */
   .collapsable {
@@ -109,7 +109,6 @@
       height: 40px;
       display: flex;
       justify-content: center;
-      margin: 7% 0 15% 0;
   } 
   .social-icon {
       width: 40px;
@@ -118,5 +117,22 @@
   /* Style specific text elements */
   .legal {
     font-size: 12px;
+    line-height: 1.1;
+  }
+  .legal br {
+    display: block;
+    margin: -5px 0;
+  }
+}
+/* Handle specifically mobile styles */
+@media screen and (max-width: 480px) {
+  .logo-wrapper {
+    height: 66px;
+    width: 66px;
+  }
+  .logo {
+    height: 66px;
+    width: 66px;
+    padding: 10px;
   }
 }
