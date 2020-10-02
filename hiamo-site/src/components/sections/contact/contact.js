@@ -9,7 +9,7 @@ import ContactForm from './contactform.js';
 import styles from './contact.module.css';
 
 const Contact = () => (
-  <Section>
+  <Section id="contact">
     <Row className={styles.container}>
       <Col md={4} className={styles.titleWrapper}>
         <h3 className={styles.title}>CONTACT US</h3>
