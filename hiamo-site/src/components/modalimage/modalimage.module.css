@@ -16,7 +16,6 @@
 
 /* Modal background styling */
 .modal {
-  cursor: pointer;
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
