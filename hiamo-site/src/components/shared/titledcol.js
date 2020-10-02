@@ -1,15 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// Import Bootstrap components
-import Col from 'react-bootstrap/Col';
-
 import styles from './titledcol.module.css';
 
 const TitledCol = ({
-  header, children, width, headerBgColor, headerColor, paddingSide = 0
+  header, children, size, width, headerBgColor, headerColor, paddingSide = 0
 }) => (
-  <Col md={width || 4} className={styles.container}>
+  <div className={`${styles.container} col-${size || 'xl'}-${width || '4'}`}>
     <div
       className={styles.headerWrapper}
       style={{ backgroundColor: `rgb(var(--${headerBgColor || 'color-trim'}))` }}
@@ -34,12 +31,13 @@ const TitledCol = ({
     >
       {children}
     </div>
-  </Col>
+  </div>
 );
 
 TitledCol.propTypes = {
   header: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
+  size: PropTypes.string.isRequired,
   width: PropTypes.number,
   headerBgColor: PropTypes.string,
   headerColor: PropTypes.string,

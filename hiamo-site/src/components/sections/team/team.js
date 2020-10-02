@@ -14,6 +14,7 @@ const Team = ({
     headerBgColor={nameBgColor}
     headerColor={nameColor}
     paddingSide="30px"
+    size="sm"
   >
     <h4 className={styles.job}>{job}</h4>
     {email && (
