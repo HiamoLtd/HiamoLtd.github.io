@@ -10,7 +10,7 @@ import styles from './box.module.css';
 const Box = ({
   children, width, bgColor, to
 }) => (
-  <Col md={width || 4} className={styles.container}>
+  <Col lg={width || 4} sm={6} className={styles.container}>
     { to ? (
       <Link to={to} className={`${styles.box} ${styles.link}`} style={{ backgroundColor: `rgb(var(--${bgColor}))` }}>
         {children}

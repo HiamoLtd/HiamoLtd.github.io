@@ -31,7 +31,7 @@ const PageBoxGrid = ({ pages = [], colCount = 3, type = 'blog' }) => {
   return (
     <div className={styles.gridWrapper}>
       {rows.map((row, i) => (
-        <Row className={styles.gridRow} key={i}>
+        <Row key={i}>
           {row.map(col => (type.toLowerCase() === 'blog' ? (
             <BlogBox
               title={col.title}

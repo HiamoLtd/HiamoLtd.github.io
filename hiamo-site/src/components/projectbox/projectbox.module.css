@@ -24,3 +24,9 @@
   bottom: 30px;
   right: 30px;
 }
+
+@media screen and (max-width: 1024px) {
+  .title {
+    padding-top: 0;
+  }
+}
