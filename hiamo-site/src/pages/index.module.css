@@ -14,3 +14,24 @@
 .team-wrapper {
   padding: 50px 0 90px 0;
 }
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .motto {
+    font-size: 30px;
+  }
+  .motto-wrapper {
+    padding: 30px 0;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .motto {
+    font-size: 25px;
+  }
+  .motto-wrapper {
+    padding: 10px 0 40px 0;
+    text-align: center;
+  }
+}
