@@ -21,11 +21,15 @@
     font-size: 30px;
   }
   .motto-wrapper {
-    padding: 30px 0;
+    padding: 20px 0 70px;
   }
 
   .about-wrapper {
     padding-top: 40px;
+  }
+
+  .team-wrapper {
+    padding: 40px 0 60px 0;
   }
 }
 
@@ -35,7 +39,7 @@
     font-size: 25px;
   }
   .motto-wrapper {
-    padding: 10px 0 40px 0;
+    padding-top: 10px;
     text-align: center;
   }
 }
