@@ -83,7 +83,7 @@ export default ({ data }) => {
         {/* Subtitle Section */}
         {(type || date) && (
           <Row className={styles.titleRow}>
-            <Col md={12}>
+            <Col md={12} className={styles.titleCol}>
               {type && <h2 className={styles.type}>{type}</h2>}
               {date && <p className={styles.date}>{date}</p>}
             </Col>
