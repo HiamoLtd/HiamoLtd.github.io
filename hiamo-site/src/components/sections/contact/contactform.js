@@ -11,20 +11,23 @@ const ContactForm = () => (
     <input type="hidden" name="bot-field" />
     {/* A row for name and organisation */}
     <div className={styles.inputWrapper}>
-      <label htmlFor="name" className={styles.label}>
+      <label htmlFor="name">
         Name
       </label>
-      <input type="text" name="name" id="name" className={styles.input} />
+      <input type="text" name="name" id="name" />
     </div>
     <div className={styles.inputWrapper}>
-      <label htmlFor="company" className={styles.label}>
+      <label htmlFor="company" className={styles.companyLong}>
         Company / Organisation
       </label>
-      <input type="text" name="company" id="company" className={styles.input} />
+      <label htmlFor="company" className={styles.companyShort}>
+        Company
+      </label>
+      <input type="text" name="company" id="company" />
     </div>
     {/* A row for email */}
     <div className={styles.inputWrapper}>
-      <label htmlFor="email" className={styles.label}>
+      <label htmlFor="email">
         Email
       </label>
       <input
@@ -33,12 +36,11 @@ const ContactForm = () => (
         id="email"
         placeholder="This one's a must have."
         required
-        className={styles.input}
       />
     </div>
     {/* A row for content */}
     <div className={styles.inputWrapper}>
-      <label htmlFor="message" className={styles.label}>
+      <label htmlFor="message">
         Message
       </label>
       <textarea name="message" className={styles.message} />
