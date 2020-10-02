@@ -19,3 +19,14 @@
 .content-wrapper {
   padding-top: 15px ;
 }
+
+/* Tablet and below styles */
+@media screen and (max-width: 1024px) {
+  .header {
+    font-size: 22px;
+  }
+
+  .content-wrapper {
+    padding: 10px 0 12px 0;
+  }
+}

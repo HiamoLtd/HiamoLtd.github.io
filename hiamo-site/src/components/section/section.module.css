@@ -33,4 +33,8 @@
   .title {
     font-size: 38px;
   }
+  
+  .container {
+    padding: 0;
+  }
 }

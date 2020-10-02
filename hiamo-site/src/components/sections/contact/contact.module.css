@@ -101,11 +101,12 @@
   }
 }
 
-/* Mobile styles */
+/* Tablet styles */
 @media screen and (max-width: 1024px) {
   .container {
     border-top: 1px solid rgb(var(--color-trim));
     padding: 20px 0 35px 0;
+    margin: 0;
   }
 
   .title {
@@ -116,12 +117,19 @@
     content: 'Company';
   }
   
-  .contact-wrapper {
+  .contact-wrapper, .title-wrapper {
     border: none;
-    padding: 15px 0 0 0;
+    padding-right: 0;
   }
 
   .submit {
+    padding: 15px 0 0 0;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .contact-wrapper {
     padding: 15px 0 0 0;
   }
 }
