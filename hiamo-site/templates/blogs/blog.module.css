@@ -35,7 +35,7 @@
 }
 
 .references {
-  padding: 60px 0 20px 0;
+  padding: 0 0 20px 0;
 }
 
 .reference-text {
@@ -57,4 +57,11 @@
 /* Style other sections */
 .other-blogs-wrapper {
   padding: 40px 0 80px 0;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .end-row {
+    padding-bottom: 70px;
+  }
 }

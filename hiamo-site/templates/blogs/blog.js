@@ -103,7 +103,7 @@ export default ({ data }) => {
         {/* Exta info section, if needed. */}
         { extraInfo && (
           <Row className={!!references && styles.endRow}>
-            <Col md={6} className={styles.mainCol}>
+            <Col xl={6} className={styles.mainCol}>
               <h3 className={styles.subheading}>{extraInfo.heading}</h3>
               {htmlEIContent}
             </Col>
