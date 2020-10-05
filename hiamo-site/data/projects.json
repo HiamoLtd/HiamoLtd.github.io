@@ -12,7 +12,7 @@
     "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
     "bannerVideoAspectRatio": "16by10",
     "leftContent": "<p>New Zealand is covered in coastal defence sites, but many of them lack the naval guns that they were built for. We bring these objects back digitally, returning context to the site and enabling lifelong learning through interaction with the models, all without the need to construct or maintain replicas.<\/p>",
-    "rightContent": "<p>To further engage with this history and the public, we bring these applications to the Wrights Hill Fortress open days in Wellington.<\/p>",
+    "rightContent": "<p>To further engage with this history and the public, we bring these applications to the <a href=\"https:\/\/wrightshillfortress.org.nz\" id=\"Wrights Hill Fortress website\">Wrights Hill Fortress<\/a> open days in Wellington.<\/p>",
     "gridImages": [
       {
         "image": "./imgs/test.jpg",

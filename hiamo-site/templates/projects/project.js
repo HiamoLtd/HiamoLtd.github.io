@@ -64,11 +64,11 @@ export default ({ data }) => {
         {/* Main text content section */}
         <Row className={styles.endRow}>
           {/* Left side text */}
-          <Col md={6} className={styles.mainCol}>
+          <Col lg={6} className={styles.mainCol}>
             {htmlLeftContent}
           </Col>
           {/* Right side text */}
-          <Col md={6} className={styles.mainCol}>
+          <Col lg={6} className={styles.mainCol}>
             {htmlRightContent}
           </Col>
         </Row>

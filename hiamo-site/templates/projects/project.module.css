@@ -1,3 +1,15 @@
+.main-col > p > a {
+  color: rgb(var(--color-text-trim));
+  text-decoration: none;
+  transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -webkit-transition: color .2s ease-in-out;
+}
+.main-col > p > a:hover {
+  color: rgb(var(--color-secondary));
+  text-decoration: underline;
+}
+
 /* Style title area */
 .title-row {
   padding: 30px 0;
