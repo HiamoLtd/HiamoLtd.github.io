@@ -12,9 +12,11 @@ const Section = ({
   className
 }) => (
   <div className={`${styles.container} ${className || ''}`}>
-    <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
-      {`${id || title} section`}
-    </a>
+    {id && (
+      <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
+        {`${id || title} section`}
+      </a>
+    )}
     {title && !mainHeader && <h2 className={styles.title}>{title}</h2>}
     {title && mainHeader && <h1 className={styles.title}>{title}</h1>}
     {children}
