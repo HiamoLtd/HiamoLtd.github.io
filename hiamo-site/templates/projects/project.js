@@ -76,7 +76,7 @@ export default ({ data }) => {
       </Section>
       <Section title="GALLERY" hasLine>
         {/* Grid display all the images */}
-        <ModalImageGrid images={gridImageMap} colCount={gridImagesColCount} />
+        <ModalImageGrid images={gridImageMap} colCount={gridImagesColCount || undefined} />
       </Section>
       <Section title="OTHER PROJECTS">
         <PageBoxGrid pages={data?.allProjectsJson?.nodes.filter(p => p.slug !== slug)} type="project" />
