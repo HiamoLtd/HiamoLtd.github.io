@@ -70,12 +70,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Handling custom video aspect ratios is done here because classNames need to be global for the embed. */
+.embed-responsive-19by9 {
+  padding-bottom: 47.37% !important;
+}
 .embed-responsive-9by19 {
-  max-height: 80%;
-  padding: 190% 0 0 0 !important;
+  padding-bottom: 211.11% !important;
 }
 .embed-responsive-16by10 {
-  padding: 62.5% 0 0 0 !important;
+  padding-bottom: 62.5% !important;
 }
 
 /* Adjust the larger width for smaller desktops */
