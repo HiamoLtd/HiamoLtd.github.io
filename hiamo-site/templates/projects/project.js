@@ -25,6 +25,7 @@ export default ({ data }) => {
     bannerVideoAspectRatio,
     leftContent,
     rightContent,
+    gridImagesColCount,
     gridImages,
     slug
   } = data?.projectsJson;
@@ -75,7 +76,7 @@ export default ({ data }) => {
       </Section>
       <Section title="GALLERY" hasLine>
         {/* Grid display all the images */}
-        <ModalImageGrid images={gridImageMap} />
+        <ModalImageGrid images={gridImageMap} colCount={gridImagesColCount} />
       </Section>
       <Section title="OTHER PROJECTS">
         <PageBoxGrid pages={data?.allProjectsJson?.nodes.filter(p => p.slug !== slug)} type="project" />
@@ -104,6 +105,7 @@ export const query = graphql`
       bannerVideoAspectRatio
       leftContent
       rightContent
+      gridImagesColCount
       gridImages {
         image {
           publicURL

@@ -6,8 +6,6 @@
     "cardDescription": "New Zealand is covered in coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, increasing interaction and engagement.",
     "title": "Aotearoa's Coastal Defence",
     "subtitle": "Recreating objects digitally & returning context to heritage landmarks.",
-    "bannerImage": "./imgs/test.jpg",
-    "imageCaption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>",
     "bannerVideoTitle": "Coastal Defence Demo",
     "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
     "bannerVideoAspectRatio": "19by9",
@@ -48,6 +46,7 @@
     "bannerVideoAspectRatio": "16by9",
     "leftContent": "",
     "rightContent": "",
+    "gridImagesColCount": 3,
     "gridImages": [
       {
         "image": "./imgs/default.jpg",
@@ -60,11 +59,10 @@
     "cardTitle": "SEEING STARS",
     "cardType": "EDUCATION",
     "cardDescription": "Hiamo was asked to solve the problem of what a stargazing business could do if it was too cloudy to see the stars on a given night. Our answer? Bring the stars to earth!",
-    "title": "Wahine Disaster",
-    "subtitle": "Gotta mention heritage week.",
-    "bannerVideoTitle": "Coastal Defence Demo",
-    "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
-    "bannerVideoAspectRatio": "16by10",
+    "title": "Seeing Stars",
+    "subtitle": "Creating Augmented Reality tools for engaging education and tourism experiences.",
+    "bannerImage": "./imgs/test.jpg",
+    "imageCaption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>",
     "leftContent": "",
     "rightContent": "",
     "gridImages": [
