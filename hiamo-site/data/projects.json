@@ -6,6 +6,7 @@
     "cardDescription": "New Zealand is covered in coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, increasing interaction and engagement.",
     "title": "Aotearoa's Coastal Defence",
     "subtitle": "Recreating objects digitally & returning context to heritage landmarks.",
+    "bannerImage": "./imgs/default.jpg",
     "bannerVideoTitle": "Coastal Defence Demo",
     "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
     "bannerVideoAspectRatio": "19by9",
@@ -13,7 +14,7 @@
     "rightContent": "<p>To further engage with this history and the public, we bring these applications to the <a href=\"https:\/\/wrightshillfortress.org.nz\" id=\"Wrights Hill Fortress website\">Wrights Hill Fortress<\/a> open days in Wellington.<\/p>",
     "gridImages": [
       {
-        "image": "./imgs/test.jpg",
+        "image": "./imgs/projects/coastal_defence/gun_at_dorset.jpg",
         "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
       },
       {
@@ -41,6 +42,7 @@
     "cardDescription": "Hiamo shared the tragic story of the ill-fated ferry using Augmented Reality to visualse the path of the ship by the Wahine memorial mast.",
     "title": "Wahine Disaster",
     "subtitle": "Gotta mention heritage week.",
+    "bannerImage": "./imgs/default.jpg",
     "bannerVideoTitle": "Coastal Defence Demo",
     "bannerVideoUrl": "https://www.youtube.com/embed/uH-m34xP4nU",
     "bannerVideoAspectRatio": "16by9",
@@ -61,14 +63,34 @@
     "cardDescription": "Hiamo was asked to solve the problem of what a stargazing business could do if it was too cloudy to see the stars on a given night. Our answer? Bring the stars to earth!",
     "title": "Seeing Stars",
     "subtitle": "Creating Augmented Reality tools for engaging education and tourism experiences.",
-    "bannerImage": "./imgs/test.jpg",
-    "imageCaption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>",
-    "leftContent": "",
-    "rightContent": "",
+    "bannerImage": "./imgs/projects/seeing_stars/banner.jpg",
+    "imageCaption": "<p id=\"caption\">Earth visualised in Augmented Reality by Hiamo Ltd. 2018.<\/p>",
+    "leftContent": "<p>Hiamo was approached by a tourism operator within a Dark Sky reserve who was looking to solve a problem; what do visitors do when clouds block the night sky? Our answer was to bring the stars to earth.<\/p><p>We used augmented reality to create an interactive 3D presentation, which complemented their existing in-person tour of the heavens. This idea behind this mix of real and digital teaching was to create a unique experience for potential visitors, one which they would learn from and remember for the rest of their lives.<\/p>",
+    "rightContent": "<p>The Hiamo team also went to fundraiser for Martinborough's new water park, volunteering at Glow in the Park and letting families learn and engage with the stars by seeing and interacting with models of the planets through our application.<\/p><p>Using AR, we were able to increase engagement with space, create exciting experiences for visitors, and demonstrate the effectiveness of our approach in the education and tourism spaces.<\/p>",
     "gridImages": [
       {
-        "image": "./imgs/default.jpg",
-        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
+        "image": "./imgs/projects/seeing_stars/grid_1.jpg",
+        "caption": "<p id=\"caption\">Venus displayed in Augmented Reality by Hiamo Ltd. 2018.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/seeing_stars/grid_2.jpg",
+        "caption": "<p id=\"caption\">Mars displayed in Augmented Reality by Hiamo Ltd. 2018.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/seeing_stars/grid_3.jpg",
+        "caption": "<p id=\"caption\">Saturn displayed in Augmented Reality by Hiamo Ltd. 2018.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/seeing_stars/grid_4.jpg",
+        "caption": "<p id=\"caption\">Uranus displayed in Augmented Reality by Hiamo Ltd. 2018.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/seeing_stars/grid_5.jpg",
+        "caption": "<p id=\"caption\">Mercury displayed in Augmented Reality by Hiamo Ltd. 2018.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/seeing_stars/grid_6.jpg",
+        "caption": "<p id=\"caption\">Our stall for the `Glow In The Park` fundraiser. Hiamo Ltd. 2018.<\/p>"
       }
     ]
   }
