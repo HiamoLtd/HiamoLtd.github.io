@@ -6,7 +6,7 @@
     "cardDescription": "New Zealand is covered in coastal defence sites, but many lack the naval guns they were built for. We bring these objects back digitally, increasing interaction and engagement.",
     "title": "Aotearoa's Coastal Defence",
     "subtitle": "Recreating objects digitally & returning context to heritage landmarks.",
-    "bannerImage": "./imgs/default.jpg",
+    "bannerImage": "./imgs/projects/coastal_defence/grid_1.jpg",
     "bannerVideoTitle": "Coastal Defence Demo",
     "bannerVideoUrl": "https://www.youtube.com/embed/aWRgNYwCXuw",
     "bannerVideoAspectRatio": "19by9",
@@ -14,24 +14,48 @@
     "rightContent": "<p>To further engage with this history and the public, we bring these applications to the <a href=\"https:\/\/wrightshillfortress.org.nz\" id=\"Wrights Hill Fortress website\">Wrights Hill Fortress<\/a> open days in Wellington.<\/p>",
     "gridImages": [
       {
-        "image": "./imgs/projects/coastal_defence/gun_at_dorset.jpg",
-        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
+        "image": "./imgs/projects/coastal_defence/grid_1.jpg",
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
       },
       {
-        "image": "./imgs/test.jpg",
-        "caption": " <p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+        "image": "./imgs/projects/coastal_defence/grid_2.jpg",
+        "caption": "<p id=\"caption\">The 9.2-inch gun of Wrights Hill Fortress recreated in Augmented Reality. Hiamo Ltd. 2019.<\/p>"
       },
       {
-        "image": "./imgs/default.jpg",
-        "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+        "image": "./imgs/projects/coastal_defence/grid_3.jpg",
+        "caption": "<p id=\"caption\">The underside of 9.2-inch gun of Wrights Hill Fortress recreated at full scale in Augmented Reality, with our CEO for reference. Hiamo Ltd. 2019.<\/p>"
       },
       {
-        "image": "./imgs/dorset.gif",
-        "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+        "image": "./imgs/projects/coastal_defence/grid_4.jpg",
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
       },
       {
-        "image": "/default.jpg",
-        "caption": "<p id=\"caption\">XXXXXXXXXXXXXXX<\/p>"
+        "image": "./imgs/projects/coastal_defence/grid_5.jpg",
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/coastal_defence/grid_6.jpg",
+        "caption": "<p id=\"caption\">The rear of 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/coastal_defence/grid_7.jpg",
+        "caption": "<p id=\"caption\">The open breech of the 4-inch gun. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/coastal_defence/grid_8.jpg",
+        "caption": "<p id=\"caption\">The side details of the 4-inch gun. These were recreated manually and with meticulous research, as surviving examples have lost these pieces. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/coastal_defence/grid_9.jpg",
+        "caption": "<p id=\"caption\">Our stall for some of the Wrights Hill Fortress Open Days, located 20 metres underground in the cartridge store. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/coastal_defence/grid_10.jpg",
+        "caption": "<p id=\"caption\">The front of of the 4-inch gun. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/coastal_defence/grid_11.jpg",
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
       }
     ]
   },
