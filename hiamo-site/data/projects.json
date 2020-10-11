@@ -15,7 +15,7 @@
     "gridImages": [
       {
         "image": "./imgs/projects/coastal_defence/grid_1.jpg",
-        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve. Hiamo Ltd. 2019.<\/p>"
       },
       {
         "image": "./imgs/projects/coastal_defence/grid_2.jpg",
@@ -27,15 +27,15 @@
       },
       {
         "image": "./imgs/projects/coastal_defence/grid_4.jpg",
-        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve. Hiamo Ltd. 2019.<\/p>"
       },
       {
         "image": "./imgs/projects/coastal_defence/grid_5.jpg",
-        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve. Hiamo Ltd. 2019.<\/p>"
       },
       {
         "image": "./imgs/projects/coastal_defence/grid_6.jpg",
-        "caption": "<p id=\"caption\">The rear of 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve.Hiamo Ltd. 2019.<\/p>"
+        "caption": "<p id=\"caption\">The rear of 4-inch gun recreated in Augmented Reality, and placed back at it's spot in the Gap Battery at Fort Dorset inside the Oruaiti Reserve. Hiamo Ltd. 2019.<\/p>"
       },
       {
         "image": "./imgs/projects/coastal_defence/grid_7.jpg",
@@ -64,19 +64,35 @@
     "cardTitle": "WAHINE DISASTER",
     "cardType": "STORYTELLING",
     "cardDescription": "Hiamo shared the tragic story of the ill-fated ferry using Augmented Reality to visualse the path of the ship by the Wahine memorial mast.",
-    "title": "Wahine Disaster",
-    "subtitle": "Gotta mention heritage week.",
+    "title": "The Wahine Ferry Disaster",
+    "subtitle": "Sharing a complex, sensitive, and engaging story for Wellington Heritage Week.",
     "bannerImage": "./imgs/default.jpg",
     "bannerVideoTitle": "Coastal Defence Demo",
     "bannerVideoUrl": "https://www.youtube.com/embed/uH-m34xP4nU",
     "bannerVideoAspectRatio": "16by9",
-    "leftContent": "",
-    "rightContent": "",
+    "leftContent": "<p>The Wellington waterfront is a harbour not just of ships, but of stories. It is filled with fascinating history and legends; from the tale of the taniwha <a href=\"https:\/\/www.penguin.co.nz\/books\/the-taniwha-of-wellington-harbour-9780143504498\">Ngake and Whātaitai</a> to the arrival of Kupe, and later, the European settlers.<\/p><p>For <a href=\"https:\/\/www.eventfinda.co.nz\/2019\/recreating-heritage-in-augmented-reality\/wellington\">Wellington Heritage Week 2019<\/a>, we set out to tell one of the stories of the Te Whanganui-a-Tara, that of the sinking of the passenger ferry, T.E.V Wahine.<\/p><p>Using Augmented Reality, we visualised the path of the cyclone which doomed the fated ferry, along with the journey the Wahine went on to reach Wellington. 3D models allowed us to visualise the path the ship took once inside the harbour, and to explain what went wrong that led to the tragic loss of 53 lives.<\/p>",
+    "rightContent": "<p>We then took people on a tour to the Wahine Memorial Mast and visualized the full story beside the mast of the ship in question. This connected the visitors further with the story, but also provided an accessible and well known site from which to tell the story.<\/p><p>We also volunteered to demonstrate this experience at Maker Faire Wellington 2019, where 3000 people were able to engage with us and other Wellington creatives.<\/p><p>We are sharing this story again for <a href=\"https:\/\/wellingtonheritageweek.co.nz\/event\/the-wahine-disaster-augmented-reality-storytelling\/\">Wellington Heritage Week 2020<\/a>. Come and join us, for free, by signing up at the link below!<\/p><p><a href=\"https:\/\/www.eventfinda.co.nz\/2020\/the-wahine-disaster-augmented-reality-storytelling\/wellington\">The Wahine Disaster – Augmented Reality Storytelling<\/a><\/p>",
     "gridImagesColCount": 3,
     "gridImages": [
       {
-        "image": "./imgs/default.jpg",
-        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
+        "image": "./imgs/projects/wahine_disaster/grid_1.jpg",
+        "caption": "<p id=\"caption\">The Wellington Heritage Week 2019 Wahine storytelling application, showing a map of New Zealand with the path of the cyclone towards the ferry T.E.V Wahine. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/wahine_disaster/grid_2.jpg",
+        "caption": "<p id=\"caption\">Wellington Heritage Week 2019 app, displaying the AR map placed on the Wahine Memorial at Frank Kitts Park. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/wahine_disaster/grid_3.jpg",
+        "caption": "<p id=\"caption\">Wellington Heritage Week 2019, showing the AR app displaying 3D models, a historic photo, and storytelling text. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/wahine_disaster/grid_4.jpg",
+        "caption": "<p id=\"caption\">A cutaway view of the T.E.V Wahine, which included a live physics simulation that explained how the cars in the hold helped cause the vessel to capsize. Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/projects/wahine_disaster/grid_5.jpg",
+        "caption": "<p id=\"caption\">Our application at Wellington Maker Faire 2019, where we gave a sneak peak at our Heritage Week storytelling. Hiamo Ltd. 2019.<\/p>"
       }
     ]
   },
