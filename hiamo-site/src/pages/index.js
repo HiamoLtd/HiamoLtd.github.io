@@ -30,48 +30,37 @@ export default ({ data }) => (
       <Row className={styles.aboutWrapper}>
         <About title="STORY TELLING">
           <p>
-            History is created and connected by its stories, and the objects those before us have
-            left behind.
+            History is created and retained through stories, and the objects those before us
+            have left behind.
             <br />
             <br />
-            We bring these stories to life by visualizing them exactly where the events occurred and
-            connect people with the tales by letting them be a part of the history through
+            We bring these stories to life by visualizing them exactly where the events occurred,
+            and connect people with the past by letting them be a part of the events through
             gamification.
           </p>
         </About>
         <About title="VISUALIZATION">
           <p>
             Using Augmented Reality (AR), we can create things that never were, or recreate
-            something which has since disappeared.
+            something which has long since disappeared.
             <br />
             <br />
-            AR lets us visualize whatever is necessary for the experience you want. This could mean
-            using AR to digitally recreate an interactive and expandable replica of a heritage site
-            or item, or to visualize a new product which hasn&apos;t been built yet.
+            AR allows us to visualize whatever is necessary for the experience you want. This
+            could mean using AR to digitally recreate an interactive and expandable replica of a
+            heritage site or item, or to visualize a new product which hasn&apos;t been built yet.
           </p>
         </About>
         <About title="AR EXPERIENCES">
           <p>
-            Each experience we build is uniquely tied to the subject or target industry. We build
-            experiences that visitors and users will remember, and ones that deeply connect them to
+            We don&apos;t just create applications, we create experiences, and each one is
+            uniquely tied to the subject or target industry. We build
+            experiences which users will remember, and ones that deeply connect them to
             the content they are seeing in front of them.
             <br />
             <br />
-            Our skillset can also be applied to a variety of opportunities in the culture and
+            Our skillset can be applied to a variety of opportunities in the culture and
             heritage sector and beyond.
           </p>
-          {/* TODO this is also an option */}
-          {/* <p>
-            We don't just create applications, we create experiences, and each experience is
-            uniquely tied to its subject.
-            Hiamo crafts experiences thatvisitors and users will remember, and ones that deeply
-            connect them to the content
-            they are seeing in front of them.
-            <br/>
-            <br/>
-            This skillset can be applied to a variety of opportunities in the culture and heritage
-            sector and beyond.
-          </p> */}
         </About>
       </Row>
       <Row>
