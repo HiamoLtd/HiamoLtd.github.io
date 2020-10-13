@@ -1,5 +1,3 @@
 {
-  "files.eol": "\n",
-  "typescript.format.semicolons": "insert",
-  "javascript.format.semicolons": "insert"
+  "files.eol": "\n"
 }
