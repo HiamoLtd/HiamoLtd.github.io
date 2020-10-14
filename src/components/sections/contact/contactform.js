@@ -35,9 +35,15 @@ const ContactForm = () => {
 
   return (
     // Attach Netlify form handling to form
-    <form onSubmit={handleSubmit} method="post" netlify-honeypot="bot-field" data-netlify="true">
-      <input type="hidden" name="bot-field" />
+    <form
+      onSubmit={handleSubmit}
+      method="post"
+      netlify-honeypot="bot-field"
+      data-netlify="true"
+      name="contact"
+    >
       <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
       {/* A row for name and organisation */}
       <div className={styles.inputWrapper}>
         <label htmlFor="name">Name</label>
