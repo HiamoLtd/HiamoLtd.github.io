@@ -1,0 +1,17 @@
+.container {
+  height: 45vh;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .container {
+    height: 55vh;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .container {
+    height: 70vh;
+  }
+}

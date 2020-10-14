@@ -1,0 +1,40 @@
+/* Set the MAXIMUM width for the page elements. 
+  This class wraps all main content in the site, ensuring there is whitespace on the sides. */
+.container {
+  width: var(--page-width);
+  padding: 0 1.0875rem;
+  margin: 0 auto;
+}
+
+.after-line {
+  border-bottom: 1px solid rgb(var(--color-trim));
+  padding: 0;
+  margin: 0;
+  position: relative;
+  bottom: 0;
+}
+
+.title {
+  padding: 20px 0 0 0;
+  margin: 0;
+  font-size: 70px;
+  color: rgb(var(--color-trim));
+}
+
+/* Non-wide screen */
+@media only screen and (max-width: 1170px) {
+  .title {
+    font-size: 40px;
+  }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 38px;
+  }
+  
+  .container {
+    padding: 0;
+  }
+}

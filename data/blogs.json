@@ -1,0 +1,78 @@
+[
+  {
+    "slug": "the-presence-of-war",
+    "cardDescription": "The story of Aotearoa's 4-inch coastal defence guns, from the battles of Europe to the shores of New Zealand.",
+    "title": "The Presence of War",
+    "type": "Heritage Highlight",
+    "date": "29/06/2019",
+    "extraInfo": {
+      "heading": "Recreating Objects",
+      "content": "<p>When we at Hiamo set about recreating these historic items we faced many problems sourcing the information, getting consistent reference photographs, and finding out exactly what Oruaiti \/ Fort Dorset’s guns looked like. To learn more about how we are overcoming these issues and using exciting new technologies to accurately reconstruct these 100-year-old machines, keep an eye out for our next blog on our recreation process!<\/p>"
+    },
+    "leftContent": "<p>Research is a large part of the work we do at Hiamo, and the Heritage Highlights series exists to share a few of the stories we find. Some objects which we have researched extensively in our ongoing quest to accurately recreate historic objects in augmented reality are the 4-inch guns New Zealand used in its coastal defence.<br \/><br \/>Built around 1910 Aotearoa’s 4-inch guns, named due to the width of the shells they fired<sup>[1]<\/sup>, had a rich history even before they reached our shores. The weapons were originally used on the battlecruiser HMS New Zealand, a warship which the New Zealand government paid for Britain to build to help defend our shores<sup>[2]<\/sup>.<\/p><div className={styles.imageRow}><div style=\"width:100%\">{displayImage[190px]}<\/div><div style=\"width: 100%; margin: 0 0 0 8px\">{displayImage[190px]}<\/div><\/div><p>Despite this initial plan, the HMS New Zealand only went to its namesake country twice. Almost half a million people went to see the ship when it first visited in 1913, just under half the country’s population at the time.<br \/><br \/>During this visit, the captain was gifted a piupiu (flax skirt) and a greenstone hei-tiki (pendant) by the Ngāti Raukawa iwi (tribe) to protect the ship and its crew<sup>[3]<\/sup>. “As to these garments,” one of their chiefs, Rere Nikitini, said, “let them be as sails for your ship, carrying you to distant shores, and even to the presence of war if that should happen.” This proved to be true, a war did occur and the vessel would see it.<br /><br />HMS New Zealand fought in multiple major battles in World War One, including the last and largest battleship-focussed engagement in history. Despite these battles, the ship only got hit by fire once and suffered no major damage or injury<sup>[2]<\/sup>. The crew credited this incredible luck to the gifted piupiu and hei-tiki which the captain wore during battle.<\/p>",
+    "rightContent": "{displayImage}<p>The HMS New Zealand was scrapped in 1922, only 10 years after entering service and 23 years before the New Zealand government would finish paying back the purchase in 1945<sup>[4]<\/sup>. The 4-inch secondary guns were brought to Aotearoa for the final time, where theywere used as saluting guns in Auckland and Wellington for over 10 years.<br \/><br \/>Eventually, the 4-inch guns were placed in coastal defence roles around the country<sup>[5]<\/sup>. Four were used in Wellington, and these are the ones we have focussed on the most. They were first emplaced inside the Oruaiti reserve at Fort Dorset’s Gap Battery, where the original emplacements can still be seen<sup>[5][6]</sup>. These were intended to guard the harbour entrance but, luckily, they never had to.<br \/><br \/>Over time the 4-inch guns were modified in numerous ways, receiving better sights to aim and shields to protect the crews operating them. Seatoun residents had to put up with multiple test firings of the guns for training during the Second World War, something which is surely not missed now. Two of the guns were moved to Fort Ballance above Scorching Bay<sup>[6]<\/sup>, but the threat of invasion had already decreased.<br \/><br \/> After the war ended the 4-inch guns had lost their purpose, and most of them were scrapped during the 1950s-60s. Two examples remain outside the Auckland War Memorial Museum, although they have lost many pieces over time<sup>[7]<\/sup>.<\/p>{displayImage}",
+    "references": [
+      {
+        "text": "[1] (2017) 4”/50 (10.2 cm) bl mark vii. NavWeaps. [Online]. Available:",
+        "link": "http://www.navweaps.com/Weapons/WNBR"
+      },
+      {
+        "text": "[2] (2006) A Nation's Gift - The HMS New Zealand Story. New Zealand Defence Force, Scoop. [Online]. Available:",
+        "link": "http://www.scoop.co.nz/stories/PO0612/S00017/a-nations-gift-the-hms-new-zealand-story.htm"
+      },
+      {
+        "text": "[3] (1913) Māori Chiefs Visit Warship. Evening Post. [Online]. Available:",
+        "link": "https://paperspast.natlib.govt.nz/newspapers/EP19130418.2.90"
+      },
+      {
+        "text": "[4] HMS New Zealand: ‘A Grim and Formidable Fighting Machine’. Te Papa Tongarewa. [Online]. Available:",
+        "link": "htps://collections.tepapa.govt.nz/topic/1049"
+      },
+      {
+        "text": "[5] P. Cooke, Defending New Zealand: Ramparts on the Sea 1840-1950s. Defence of New Zealand Study Group, 2010."
+      },
+      {
+        "text": "[6] Fort dorset. NZ Coastal Defences. [Online]. Available:",
+        "link": "https://sites.google.com/site/nzcoastaldefences/wellington-s-coastal-defences/fort-dorset"
+      },
+      {
+        "text": "[7] V. Yakubov. British bl 4-inch mk vii naval gun, auckland war memorial museum, auckland, nz. [Online]. Available:",
+        "link": "http://svsm.org/gallery/102mm_mk7"
+      }
+    ],
+    "images": [
+      {
+        "image": "./imgs/blogs/the_presence_of_war/newzealand.jpg",
+        "caption": "<p id=\"caption\">The HMS New Zealand seen in Scotland, during World War I.<br \/><span>Image reference:<\/span><\/p><a href=\"https:\/\/www.deviantart.com\/asarigoddess\/art\/HMS-New-Zealand-689465614\" id=\"ref\">https:\/\/www.deviantart.com\/asarigoddes\\s/art\/HMS-New-Zealand-689465614<\/a>"
+      },
+      {
+        "image": "./imgs/blogs/the_presence_of_war/crowds.jpg",
+        "caption": "<p id=\"caption\">Photograph of a crowd gathered by the British Battlecruiser HMS New Zealand, Lyttelton.<br \/><span>Image reference:<\/span><\/p><a href=\"https://natlib.govt.nz/records/22525840\" id=\"ref\">https:\/\/natlib.govt.nz\/records\/22525840<\/a>"
+      },
+      {
+        "image": "./imgs/blogs/the_presence_of_war/screenshot.jpg",
+        "caption": "<p id=\"caption\">The 4-inch gun recreated in Augmented Reality by Hiamo Ltd. 2019.<\/p>"
+      },
+      {
+        "image": "./imgs/blogs/the_presence_of_war/dorset.gif",
+        "caption": "<p id=\"caption\">A 4-inch gun of the Fort Dorset Gap Battery in operation. This gun was just down the hill from where the augmented reality photo was taken.<br \/><span>Image reference:<\/span><\/p><a href=\"https:\/\/paperspast.natlib.govt.nz\/newspapers\/EP19390912.2.49.8\" id=\"ref\">https:\/\/paperspast.natlib.govt.nz\/newspapers\/EP19390912.2.49.8<\/a>"
+      }
+    ]
+  },
+  {
+    "slug": "continuing-the-mission",
+    "cardDescription": "A new year brings new challenges and oppourtunities; we reflect on the busy first month of 2019.",
+    "title": "Continuing the Mission",
+    "date": "11/02/2019",
+    "leftContent": "<p>The first month of 2019 done and dusted!<br \/><br \/>We hope everyone has had a wonderful New Years and an enjoyable summer break.<br \/><br \/>While we will miss the road trips, food comas and sleep-ins, we at Hiamo are looking forward to what 2019 has in store. We have also been working some of the brilliant students from ICT Graduate School in Wellington who have offered their expertise and skills to transform our app UI into something more polished. Look out for our sneak peeks in the upcoming weeks!<br \/><br \/>We`&apos;`ve spent this January practising our mission and have been reconnecting ourselves with historic landmarks around NZ. We`&apos;`ve travelled to Matiu / Somes Island where we explored the gun emplacements left from the WWII anti-aircraft batteries while also appreciating the amazing views of Wellington from the summit.<br \/><br \/>We then headed down to Lyttelton`&apos;`s Godley Head coastal defence batteries where we were pleasantly surprised to be greeted with an actual operating 3.7-inch gun restored by the Godley Head Heritage Trust amongst the other impressive remnants.<\/p>",
+    "rightContent": "<p>We concluded our heritage journey by revisiting the site that began our interest with coastal defence and bringing lost objects and stories to life; Fort Dorset at the Oruaiti Reserve in Wellington. It has been a very exciting and rewarding journey for Hiamo so far and it was nice to take some time to revisit some of these monumental landmarks and look back at what has motivated us to create and innovate.<br \/><br \/>It is always worth revisting important places that have been landmarks for your journey, and we hope that you all get the same opportunities!<br \/><br \/>We look forward to updating you more about our upcoming work and development, so as always we will keep you up to date on our social media channels.<\/p>"
+  },
+  {
+    "slug": "a-year-of-firsts",
+    "cardDescription": "After an eventful year filled with great events and changes, we look back on all that has happened since our company first launched.",
+    "title": "A Year of Firsts",
+    "date": "31st Dec. 2018",
+    "leftContent": "<p>Happy New Year’s Eve everyone! We hope you had a brilliant and rewarding 2018 and that 2019 will be even more exciting.<br \/><br \/>Our 2018 has been very an exciting year with many firsts.<br \/>First time launching a company.<br \/>First time participating in an innovation (business) accelerator program.<br \/>First time pitching to potential clients and future partners.<br \/>First time participating in a business showcase.<br \/>First time ordering company merchandise!<br \/><br \/>As we got to grips with all the new jargon and the never-ending paperwork needs we found ourselves solidifying our company, building our brand and identity, realising our strengths, and planning how we will contribute the Cultural and Heritage sector of New Zealand and beyond. Of course, we wouldn`&apos;`t have made this far without the encouragement and advice of our mentors and peers and we would like to take this moment to appreciate all the amazing people who have and are continuing to support us and our company.<br \/><br \/>A huge thank you to Te Papa and the Mahuki Innovation Accelerator program. We are extremely grateful for the opportunity given to us to manifest our company, while also providing us with a platform to grow, connect with others, and present ourselves to many audiences.<br \/><br \/>Thank you to the Mahuki team, Tui Te Hau, and Ezel Kokcu for your endless support, advice, and for seeing the best in us. You have been the first people we turned to and you always made time for us.<br \/><br \/>Thank you to the 2018 Mahuki cohort and the Alumni. We are incredibly glad to have grown alongside 10 amazing teams. Where we saw problems and risks, you saw solutions and opportunities. Your quirkiness, advice, banter, and lunch trips are what we will miss the most.<\/p>",
+    "rightContent": "<p>Thank you to our spectacular mentors. Your guidance and counsel are invaluable to us and has greatly assisted us as we found our footing through the journey so far.<br \/><br \/>Thank you to all who have offered their consultation and resources for our company and ideas. Your recommendations and knowledge have helped us progress much farther with our work.<br \/><br \/>Thank you to our cohort, staff, and supervisors at Victoria University of Wellington for being so understanding, encouraging, and accommodating to us starting our business venture in the middle of our final year!<br \/><br \/>Thank you to our family, friends and peers for the non-stop support, love, rides in your cars and for taking us out for much-needed breaks and hearing out all our ramblings even when it didn’t make any sense!<br \/><br \/>And last but not the least, a big thank you to you who are reading this! It is because of your interest and encouragement in us and what we do that makes us eager to create and innovate. You all are the reason why we are ‘Hiamo’ and we hope we can return that excitement and elevation to you with our products.<br \/><br \/>Happy Holidays and Happy New Year!<br \/>Shaika and Alex<\/p>"
+  }
+]

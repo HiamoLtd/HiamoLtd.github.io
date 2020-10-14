@@ -1,0 +1,116 @@
+/* Selectible display image on the page */
+.image-wrapper {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.image {
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  margin : 0 0 20px 0;
+  padding: 0;
+}
+.image-wrapper:hover {
+  opacity: .8;
+}
+
+/* Modal background styling */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 125px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(var(--color-secondary, 0, 0, 0)); /* Fallback color */
+  background-color: rgba(var(--color-secondary, 0, 0, 0), .95);
+}
+
+/* Modal image styling */
+.modal-image {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
+}
+
+/* Modal caption styling */
+.modal-caption {
+  z-index: 2;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+  padding: 10px 0 30px 0;
+  cursor: default;
+}
+.modal-caption p {
+  color:rgb(var(--color-text-light));
+  margin: 0;
+}
+.modal-caption a {
+  font-size: 20px;
+  color:rgb(var(--color-text-light));
+  text-decoration: none;
+}
+.modal-caption a:hover {
+  text-decoration: none;
+  color: rgb(var(--color-trim));
+}
+.modal-caption span {
+  color: rgb(var(--color-trim));
+  font-family: Fjalla-One;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+/* TODO change clours */
+/* Close cross styling */
+.modal-cross {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.modal-cross:hover,
+.modal-cross:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-image-wrapper {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1000px;
+  cursor: default;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content {
+  text-align: center;
+  animation-name: zoom;
+  animation-duration: .5s;
+}
+
+@keyframes zoom {
+  from {transform: scaleX(1.05); filter:opacity(.5)}
+  to {transform: scaleX(1); filter:opacity(1)}
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-image {
+    width: 100%;
+  }
+}

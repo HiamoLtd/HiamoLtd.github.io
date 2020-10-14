@@ -1,0 +1,59 @@
+/* Style outer row wrapper */
+.container {
+  display: block;
+}
+
+.grid-wrapper {
+  padding: 20px 0 40px 0;
+  margin: 0;
+}
+.grid-row {
+  margin: 0 0 10px 0;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+}
+.grid-col {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* Remove side padding on outer cols */
+.grid-col:first-child {
+  padding-left: 0;
+}
+.grid-col:last-child {
+  padding-right: 0;
+}
+
+.grid-image {
+  display: block;
+  margin: auto auto;
+  height: auto;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  border-radius: 2px;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .grid-wrapper {
+    padding-bottom: 70px;
+  }
+  
+  .grid-row {
+    margin: 0 0 0 0;
+  }
+
+  .grid-col {
+    padding: 5px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .grid-col {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 0;
+  }
+}

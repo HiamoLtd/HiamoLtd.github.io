@@ -1,0 +1,8 @@
+# Redirects from what the browser requests to what we serve
+/home              /
+/blog.html         /#Blog
+/news              /#Blog
+#Projects          /#Projects
+/blog_4in.html     /blog/the-presence-of-war
+/blog_two.html     /blog/continuing-the-mission
+/blog_one.html     /blog/a-year-of-firsts

@@ -1,0 +1,81 @@
+/* Style title area */
+.title-row {
+  padding: 30px 0;
+  margin: 30px 0;
+  background-color: rgb(var(--color-secondary));
+  color: rgb(var(--color-text-light));
+}
+.type {
+  margin: 0;
+  font-weight: normal;
+  font-size: 40px;
+  color: rgb(var(--color-text-light));
+}
+.date {
+  margin: 0;
+  font-size: 20px;
+  color: rgb(var(--color-text-light));
+}
+
+/* Handle image columns */
+.image-row {
+  display: flex;
+  max-width: 100%;
+  padding: 5px 0 15px 0;
+}
+.image-col:nth-child(2) {
+  margin: 0 0 0 8px;
+}
+
+.subheading {
+  padding: 10px 0 10px 0;
+  font-weight: normal;
+  font-size: 30px;
+  color: rgb(var(--color-trim));
+}
+
+.references {
+  padding: 0 0 20px 0;
+}
+
+.reference-text {
+  font-size: 16px;
+}
+.reference-text a {
+  color: rgb(var(--color-secondary-light));
+}
+.reference-text a:hover {
+  color: rgb(var(--color-text-trim));
+  text-decoration: none;
+}
+
+/* Style the row at the end for padding */
+.end-row {
+  padding-bottom: 80px;
+}
+
+/* Style other sections */
+.other-blogs-wrapper {
+  padding: 40px 0 80px 0;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .title-row {
+    margin: 10px -20px 20px;
+    padding: 20px 0;
+  }
+  .title-col {
+    padding: 0 20px;
+  }
+  .type {
+    font-size: 26px;
+  }
+  .date {
+    font-size: 18px;
+  }
+
+  .end-row {
+    padding-bottom: 70px;
+  }
+}

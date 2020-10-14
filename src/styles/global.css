@@ -1,0 +1,96 @@
+/* --- Absolute base CSS --- */
+:root {
+  /* Define some custom colours */
+  --color-primary: 247,248,250;
+  --color-secondary: 33,34,36;
+  --color-tertiary: 242,242,242;
+  --color-secondary-light: 76,77,79;
+  --color-trim: 254,88,38;
+  --color-trim-dark: 239,79,23;
+  --color-text-dark: var(--color-secondary);
+  --color-text-light: var(--color-primary);
+  --color-text-trim: var(--color-trim);
+  /* Define sizes */
+  --page-width: 1170px;
+}
+
+/** Introduce custom fonts **/
+@font-face {
+  font-family: 'Noto-Sans';
+  font-style: normal;
+  src: local('NotoSans'), local('Noto-Sans'),
+  url("../fonts/Noto_Sans/NotoSans-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Fjalla-One';
+  font-style: normal;
+  src: local('Fjalla_One'), local('Fjalla-One'),
+  url("../fonts/Fjalla_One/FjallaOne-Regular.ttf") format('truetype');
+}
+
+/* Style the base components */
+html {
+  scroll-behavior: smooth;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: Noto-Sans;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Style specific text elements */
+a, label, input, button {
+  font-family: Noto-Sans;
+}
+p {
+  font-family: Noto-Sans;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--color-text-dark));
+  /* text-rendering: optimizeLegibility; */
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: rgb(var(--color-text-dark));
+  font-family: Fjalla-One;
+}
+
+/* There are screen readable id link anchors around the site. Make them invisible, they're navigation only. */
+.id-link-anchor {
+  visibility: hidden;
+  position: relative;
+  top: -107px;
+  height: 0;
+  display: block;
+}
+
+/* Handling custom video aspect ratios is done here because classNames need to be global for the embed. */
+.embed-responsive-19by9 {
+  padding-bottom: 47.37% !important;
+}
+.embed-responsive-9by19 {
+  padding-bottom: 211.11% !important;
+}
+.embed-responsive-16by10 {
+  padding-bottom: 62.5% !important;
+}
+
+/* Adjust the larger width for smaller desktops */
+@media only screen and (max-width: 1170px) {
+  :root {
+    --page-width: 100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .id-link-anchor {
+    top: -87px;
+  }
+  p {
+    font-size: 18px;
+  }
+}

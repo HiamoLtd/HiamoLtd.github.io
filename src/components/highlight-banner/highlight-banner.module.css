@@ -1,0 +1,63 @@
+/* Style outer row wrapper */
+.container {
+  padding: 80px 15px 40px 15px;
+  display: block;
+}
+
+/* Style header section and texts */
+.title {
+  padding: 0 0 10px 0;
+  color: rgb(var(--color-text-trim));
+  font-family: Fjalla-One;
+  font-weight: 500;
+  font-size: 70px;
+  text-align: center;
+}
+.subtitle {
+  font-family: Noto-Sans;
+  color: rgb(var(--color-text-dark));
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Style image section */
+.image-Container {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 75%;
+  margin-bottom: 60px;
+}
+
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 60px 0 30px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .image-Container {
+    margin-bottom: 40px;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 40px 0 20px;
+  }
+  
+  .image-Container {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

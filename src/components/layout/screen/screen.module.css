@@ -1,0 +1,17 @@
+.page-wrapper {
+  margin: 0 auto;
+  margin-top: 106px;
+  padding-bottom:  1.45rem;
+}
+  
+@media only screen and (max-width: 1170px) {
+  .page-wrapper {
+    padding: 0 20px 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .page-wrapper {
+    margin-top: 86px;
+  }
+}

@@ -1,0 +1,135 @@
+/* Style main container  */
+.container {
+  padding: 0 15px 50px 15px;
+}
+
+/* Style title section */
+.title-wrapper {
+  padding: 0 20px 0 0;
+  margin: 0;
+}
+.title {
+  font-size: 60px;
+  color: rgb(var(--color-trim));
+}
+.subtitle {
+  font-family: Noto-Sans;
+  color: rgb(var(--color-text-dark));
+  font-weight: normal;
+  font-size: 26px;
+}
+
+/* Style the contact section */
+.contact-wrapper {
+  border-top: 1px solid rgb(var(--color-trim));
+  padding: 30px 0 0 15px;
+}
+
+/* Style the contact form */
+.input-wrapper {
+  padding: 5px 0;
+  width: 100%;
+  display: flex;
+}
+.input-wrapper label {
+  font-family: Fjalla-One;
+  white-space: nowrap;
+  margin-right: 10px;
+  color: rgb(var(--color-trim));
+  font-weight: normal;
+  font-size: 24px;
+}
+.input-wrapper input:not(.submit-btn) {
+  width: 100%;
+  flex-grow: 1;
+  border: none;
+  background-color: rgb(var(--color-tertiary));
+  padding: 0 10px;
+}
+
+.company-long {
+  display: initial;
+}
+.company-short {
+  display: none;
+}
+
+.message {
+  width: 100%;
+  padding: 5px 10px 0 10px;
+  flex-grow: 1;
+  border: none;
+  background-color: rgb(var(--color-tertiary));
+}
+/* Style the submit button */
+.submit {
+  width: 100%;
+}
+.submit-btn {
+  transition: background-color .2s ease-in-out;
+  -moz-transition: background-color .2s ease-in-out;
+  -webkit-transition: background-color .2s ease-in-out;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.2);
+  width: 100%;
+  border: none;
+  background-color: rgb(var(--color-trim));
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(var(--color-text-light));
+}
+.submit-btn:hover {
+  background-color: rgb(var(--color-secondary));
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 1170px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .company-long {
+    display: none;
+  }
+  .company-short {
+    display: initial;
+  }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .container {
+    border-top: 1px solid rgb(var(--color-trim));
+    padding: 20px 0 35px 0;
+    margin: 0;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .company {
+    content: 'Company';
+  }
+  
+  .contact-wrapper, .title-wrapper {
+    border: none;
+    padding-right: 0;
+  }
+
+  .submit {
+    padding: 15px 0 0 0;
+  }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+  .contact-wrapper {
+    padding: 15px 0 0 0;
+  }
+}

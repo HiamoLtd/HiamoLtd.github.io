@@ -1,0 +1,10 @@
+/* Style outer row wrapper */
+.grid-wrapper {
+  padding: 40px 0 80px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-wrapper {
+    padding-bottom: 40px;
+  }
+}
