@@ -20,8 +20,8 @@ export default ({ data }) => (
     <SEO title="Home" />
     {/* Banner Section */}
     <Banner
-      title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
-      subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
+      title="RURU DO YOUR WORK."
+      subtitle="This is a supportive message ❤❤❤"
       imageRef={require('../images/default.jpg')}
     />
     <Contact />
