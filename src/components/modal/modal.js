@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
@@ -18,12 +17,12 @@ const Modal = ({ isOpen = false, children }) => {
   };
 
   return (
-    <div
+    <btn
       className={styles.modal}
       style={{ display: modalOpen ? 'block' : 'none' }}
       id="modal-closer"
       role="dialog"
-      onClick={e => { console.log('TAP:', e.target); setModal(false); }}
+      onClick={() => setModal(false)}
       onKeyPress={() => setModal(false)}
     >
       {/* Close modal */}
@@ -37,7 +36,7 @@ const Modal = ({ isOpen = false, children }) => {
       >
         &times;
       </span>
-      <div
+      <btn
         id="modal-retainer"
         className={`content ${styles.modalContent}`}
         onClick={avoidCloseOnChildDiv}
@@ -45,8 +44,8 @@ const Modal = ({ isOpen = false, children }) => {
         role="dialog"
       >
         {children}
-      </div>
-    </div>
+      </btn>
+    </btn>
   );
 };
 
