@@ -9,8 +9,12 @@ const Modal = ({ isOpen = false, children }) => {
 
   // If the child container detects a click on a non-important (non-div) object,
   // then close keep it open.
+  // If you tag an element with data-modal-retainer, clicking it keeps the modal open.
+  // The same applies to elements with no tag that are not divs
+  // If you tag an element with "data-modal-retainer={false}", it will close, regardless of type
   const avoidCloseOnChildDiv = (e) => {
-    if (e.target.tagName !== 'DIV') {
+    if (e.target.dataset.modalRetainer === 'false') return;
+    if (e.target.dataset.modalRetainer || (e.target.tagName && e.target.tagName !== 'DIV')) {
       setModal(true);
       e.stopPropagation();
     }
@@ -42,6 +46,7 @@ const Modal = ({ isOpen = false, children }) => {
         onClick={avoidCloseOnChildDiv}
         onKeyPress={avoidCloseOnChildDiv}
         role="dialog"
+        data-modal-retainer={false}
       >
         {children}
       </btn>

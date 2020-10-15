@@ -36,17 +36,20 @@ const ModalImage = ({
         {/* Modal image */}
         <div
           className={styles.modalImageWrapper}
+          data-modal-retainer={false}
         >
           {imageFluid ? (
             <Img
               className={`${styles.image} ${styles.modalImage} ${imageClass || ''}`}
               fluid={imageFluid}
+              data-modal-retainer
             />
           ) : (
             image && (
               <Image
                 className={`${styles.image} ${styles.modalImage} ${imageClass || ''}`}
                 src={image}
+                data-modal-retainer
               />
             )
           )}
@@ -54,6 +57,7 @@ const ModalImage = ({
         {/* The image caption */}
         <div
           className={styles.modalCaption}
+          data-modal-retainer
         >
           {caption}
         </div>
