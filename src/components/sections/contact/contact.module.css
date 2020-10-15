@@ -78,9 +78,39 @@
   font-weight: bold;
   font-size: 20px;
   color: rgb(var(--color-text-light));
+  cursor: pointer;
 }
 .submit-btn:hover {
   background-color: rgb(var(--color-secondary));
+}
+.submit-btn:disabled {
+  background-color: rgb(var(--color-secondary));
+  cursor: not-allowed;
+}
+
+/* Post submit acceptance modal styles */
+.dialog-wrapper {
+  width: 25%;
+  margin: 0 auto;
+  height: 80%;
+}
+.dialog-box {
+  text-align: center;
+  background-color: rgb(var(--color-primary));
+  width: 100%;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+}
+.dialog-header {
+  font-size: 32px;
+}
+.dialog-content {
+  padding: 15px 0;
+}
+.dialog-button {
+  display: block;
+  width: 100%;
 }
 
 /* Tablet styles */
@@ -125,11 +155,19 @@
   .submit {
     padding: 15px 0 0 0;
   }
+  
+  .dialog-wrapper {
+    width: 60%;
+  }
 }
 
 /* Mobile styles */
 @media screen and (max-width: 480px) {
   .contact-wrapper {
     padding: 15px 0 0 0;
+  }
+  
+  .dialog-wrapper {
+    width: 80%;
   }
 }
