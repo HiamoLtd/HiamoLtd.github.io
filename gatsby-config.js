@@ -38,9 +38,9 @@ module.exports = {
       // Add Google Analytics
       resolve: 'gatsby-plugin-gtag',
       // NOTE: Disable this on staging, just to avoid breaking the GA data
-      // options: {
-      //   trackingId: 'UA-141741488-1',
-      // },
+      options: {
+        trackingId: 'UA-141741488-1',
+      },
     }
   ],
 };
