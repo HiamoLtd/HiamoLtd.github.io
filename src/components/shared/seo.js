@@ -23,6 +23,10 @@ function SEO({
             author
             siteUrl
             siteName
+            yandexVerify
+            msVerify
+            googleVerify
+            themeColor
           }
         }
         file(relativePath: { eq: "imgs/default-meta.jpg" }) {
@@ -95,6 +99,22 @@ function SEO({
           name: 'twitter:site',
           content: site.siteMetadata.siteName,
         },
+        {
+          name: 'yandex-verification',
+          content: site.siteMetadata.yandexVerify,
+        },
+        {
+          name: 'msvalidate.01',
+          content: site.siteMetadata.msVerify,
+        },
+        {
+          name: 'google-site-verification',
+          content: site.siteMetadata.googleVerify,
+        },
+        {
+          name: 'theme-color',
+          content: site.siteMetadata.themeColor,
+        },
       ]
         .concat(
           image
@@ -131,7 +151,7 @@ function SEO({
 SEO.defaultProps = {
   lang: 'en',
   meta: [],
-  description: '',
+  description: 'Hiamo - Augmented Reality experiences for historic sites, education, and beyond.',
 };
 
 SEO.propTypes = {
