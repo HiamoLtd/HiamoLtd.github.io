@@ -151,7 +151,7 @@ function SEO({
 SEO.defaultProps = {
   lang: 'en',
   meta: [],
-  description: 'Hiamo - Augmented Reality experiences for historic sites, education, and beyond.',
+  description: 'Kia ora! We are Hiamo, a company creating Augmented Reality experiences for heritage sites, education, and beyond. Share your ideas and stories, then we bring them to life in AR.',
 };
 
 SEO.propTypes = {
