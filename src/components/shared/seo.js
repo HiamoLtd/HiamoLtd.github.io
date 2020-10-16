@@ -64,10 +64,6 @@ function SEO({
           content: metaTitle,
         },
         {
-          property: 'og:url',
-          content: window.location.href,
-        },
-        {
           property: 'og:description',
           content: metaDescription,
         },
