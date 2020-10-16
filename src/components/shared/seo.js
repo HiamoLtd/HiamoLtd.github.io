@@ -11,9 +11,9 @@ import Helmet from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 function SEO({
-  description, lang, meta, title
+  description, lang, meta, title, metaImage
 }) {
-  const { site } = useStaticQuery(
+  const { site, file } = useStaticQuery(
     graphql`
       query {
         site {
@@ -21,13 +21,26 @@ function SEO({
             title
             description
             author
+            siteUrl
+          }
+        }
+        file(relativePath: { eq: "imgs/default-meta.jpg" }) {
+          publicURL
+          childImageSharp {
+            fixed {
+              height
+              width
+            }
           }
         }
       }
     `
   );
 
+  const metaTitle = `${title} | ${site.siteMetadata.title}`;
   const metaDescription = description || site.siteMetadata.description;
+  // Use either the given image or the default one
+  const image = metaImage || file;
 
   return (
     <Helmet
@@ -43,7 +56,7 @@ function SEO({
         },
         {
           property: 'og:title',
-          content: title,
+          content: metaTitle,
         },
         {
           property: 'og:description',
@@ -63,13 +76,41 @@ function SEO({
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: metaTitle,
         },
         {
           name: 'twitter:description',
           content: metaDescription,
         },
-      ].concat(meta)}
+      ]
+        .concat(
+          image
+            ? [
+              {
+                property: 'og:image',
+                content: `${site.siteMetadata.siteUrl}${image.publicURL}`,
+              },
+              {
+                property: 'og:image:width',
+                content: image.childImageSharp?.fixed?.width,
+              },
+              {
+                property: 'og:image:height',
+                content: image.childImageSharp?.fixed?.height,
+              },
+              {
+                name: 'twitter:card',
+                content: 'summary_large_image',
+              },
+            ]
+            : [
+              {
+                name: 'twitter:card',
+                content: 'summary',
+              },
+            ]
+        )
+        .concat(meta)}
     />
   );
 }
@@ -85,6 +126,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  metaImage: PropTypes.object,
 };
 
 export default SEO;

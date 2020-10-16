@@ -60,6 +60,8 @@ export default ({ data }) => {
   const {
     slug,
     title,
+    cardDescription,
+    cardImage,
     type,
     date,
     extraInfo,
@@ -78,7 +80,7 @@ export default ({ data }) => {
 
   return (
     <Screen>
-      <SEO title={`${title} | Blog`} />
+      <SEO title={`${title} | Blog`} description={cardDescription} metaImage={cardImage} />
       <Section title={title} mainHeader>
         {/* Subtitle Section */}
         {(type || date) && (
@@ -145,6 +147,16 @@ export const query = graphql`
     blogsJson(slug: { eq: $slug }) {
       slug
       title
+      cardDescription
+      cardImage {
+        publicURL
+        childImageSharp {
+          fixed {
+            height
+            width
+          }
+        }
+      }
       type
       date
       extraInfo {

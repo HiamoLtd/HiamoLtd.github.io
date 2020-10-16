@@ -18,6 +18,8 @@ export default ({ data }) => {
   const {
     title,
     subtitle,
+    cardDescription,
+    cardImage,
     bannerImage,
     imageCaption,
     bannerVideoUrl,
@@ -50,7 +52,7 @@ export default ({ data }) => {
 
   return (
     <Screen>
-      <SEO title={`${title} | Project`} />
+      <SEO title={`${title} | Project`} description={cardDescription} metaImage={cardImage} />
       <HighlightBanner
         title={title}
         subtitle={subtitle}
@@ -90,6 +92,16 @@ export const query = graphql`
     projectsJson(slug: { eq: $slug }) {
       slug
       title
+      cardDescription
+      cardImage {
+        publicURL
+        childImageSharp {
+          fixed {
+            height
+            width
+          }
+        }
+      }
       subtitle
       bannerImage {
         childImageSharp {

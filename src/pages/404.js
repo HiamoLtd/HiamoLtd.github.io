@@ -7,7 +7,7 @@ import styles from './404.module.css';
 
 const NotFoundPage = () => (
   <Screen>
-    <SEO title="404: Not found" />
+    <SEO title="404: Not found" description="We commend your explorative nature, but it seems there is nothing here!" />
     <div className={styles.container}>
       <Banner
         title="PAGE NOT FOUND"

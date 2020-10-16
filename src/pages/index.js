@@ -16,7 +16,6 @@ import styles from './index.module.css';
 
 export default ({ data }) => (
   <Screen>
-    {/* TODO SEO Data */}
     <SEO title="Home" />
     {/* Banner Section */}
     <Banner
