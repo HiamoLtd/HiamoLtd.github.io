@@ -56,7 +56,7 @@ function SEO({
           content: metaDescription,
         },
         {
-          property: 'name',
+          property: 'author',
           content: site.siteMetadata.author,
         },
         {
