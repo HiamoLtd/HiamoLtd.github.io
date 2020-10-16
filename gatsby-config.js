@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Hiamo',
-    description: 'TODO this should be localised anyway',
+    description: 'Augmented Reality experiences for historic sites and beyond.',
     author: 'Hiamo Ltd.',
+    siteUrl: 'https://hiamo-staging.netlify.app/'
   },
   plugins: [
     'gatsby-transformer-json',
