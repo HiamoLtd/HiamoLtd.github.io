@@ -22,6 +22,7 @@ function SEO({
             description
             author
             siteUrl
+            siteName
           }
         }
         file(relativePath: { eq: "imgs/default-meta.jpg" }) {
@@ -55,8 +56,16 @@ function SEO({
           content: metaDescription,
         },
         {
+          property: 'name',
+          content: site.siteMetadata.author,
+        },
+        {
           property: 'og:title',
           content: metaTitle,
+        },
+        {
+          property: 'og:url',
+          content: window.location.href,
         },
         {
           property: 'og:description',
@@ -65,6 +74,10 @@ function SEO({
         {
           property: 'og:type',
           content: 'website',
+        },
+        {
+          property: 'og:site_name',
+          content: site.siteMetadata.siteName,
         },
         {
           name: 'twitter:card',
@@ -81,6 +94,10 @@ function SEO({
         {
           name: 'twitter:description',
           content: metaDescription,
+        },
+        {
+          name: 'twitter:site',
+          content: site.siteMetadata.siteName,
         },
       ]
         .concat(

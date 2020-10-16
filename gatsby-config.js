@@ -3,7 +3,8 @@ module.exports = {
     title: 'Hiamo',
     description: 'Augmented Reality experiences for historic sites and beyond.',
     author: 'Hiamo Ltd.',
-    siteUrl: 'https://hiamo-staging.netlify.app/'
+    siteUrl: 'https://hiamo-staging.netlify.app/',
+    siteName: 'hiamo.nz'
   },
   plugins: [
     'gatsby-transformer-json',
