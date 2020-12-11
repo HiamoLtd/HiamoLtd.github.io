@@ -8,17 +8,17 @@ import Section from '../section';
 import styles from './banner.module.css';
 
 const Banner = ({
-  title, subtitle, imageRef
+  title, subtitle, bannerImageUrl, backgroundImageUrl
 }) => (
-  <Section hasLine={false} className={styles.container}>
-    <Row className={styles.container}>
+  <Section hasLine={false} className={styles.container} backgroundImageUrl={backgroundImageUrl}>
+    <Row className={styles.wrapper}>
       <Col md={8} className={styles.titleWrapper}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
       </Col>
-      {imageRef && (
+      {bannerImageUrl && (
         <Col md={4} className={styles.imageWrapper}>
-          <Image src={imageRef} className={styles.image} />
+          <Image src={bannerImageUrl} className={styles.image} />
         </Col>
       )}
     </Row>
@@ -28,7 +28,8 @@ const Banner = ({
 Banner.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
-  imageRef: PropTypes.string.isRequired
+  bannerImageUrl: PropTypes.string.isRequired,
+  backgroundImageUrl: PropTypes.string.isRequired
 };
 
 export default Banner;

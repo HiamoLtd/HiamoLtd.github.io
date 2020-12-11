@@ -21,7 +21,7 @@ export default ({ data }) => (
     <Banner
       title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
       subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
-      imageRef={require('../images/default.jpg')}
+      backgroundImageUrl={require('../images/bannerImage.jpg')}
     />
     <Contact />
     {/* About Section */}

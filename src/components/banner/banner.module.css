@@ -1,13 +1,25 @@
 /* Style outer row wrapper */
 .container {
-  padding: 80px 15px;
-  width: var(--page-width);
+  width: 100%;
+  padding: 200px 0;
+  margin-bottom: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  max-width: var(--page-width);
+  margin: 0 auto;
 }
 
 /* Style header section and texts */
 .title-wrapper {
-  padding: 0;
-  margin: 0;
+  padding: 30px 30px 30px 30px;
+  margin: 0 -15px 0 -15px;
+  max-width: 740px;
+  background-color: rgba(var(--color-primary), 1);
 }
 .title {
   padding: 0 0 10px 0;
@@ -17,7 +29,7 @@
 }
 .subtitle {
   font-family: Noto-Sans;
-  padding-right: 110px;
+  padding-right: 40px;
   color: rgb(var(--color-text-dark));
   font-weight: normal;
   font-size: 24px;

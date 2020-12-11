@@ -12,7 +12,7 @@ const NotFoundPage = () => (
       <Banner
         title="PAGE NOT FOUND"
         subtitle="We commend your explorative nature, but it seems there is nothing here!"
-        imageRef={require('../images/default.jpg')}
+        backgroundImageUrl={require('../images/default.jpg')}
       />
     </div>
   </Screen>
