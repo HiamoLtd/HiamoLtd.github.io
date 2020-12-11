@@ -9,9 +9,10 @@ const Section = ({
   title,
   mainHeader = false,
   id,
-  className
+  className,
+  backgroundImageUrl
 }) => (
-  <div className={`${styles.container} ${className || ''}`}>
+  <div className={`${styles.container} ${className || ''}`} style={{ backgroundImage: `url(${backgroundImageUrl})` }}>
     {id && (
       <a className="id-link-anchor" id={id || title} href={`#${id || title}`}>
         {`${id || title} section`}
@@ -31,6 +32,7 @@ Section.propTypes = {
   mainHeader: PropTypes.bool,
   id: PropTypes.string,
   className: PropTypes.string,
+  backgroundImageUrl: PropTypes.string
 };
 
 export default Section;
