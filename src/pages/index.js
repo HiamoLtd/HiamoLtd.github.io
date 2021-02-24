@@ -21,7 +21,7 @@ export default ({ data }) => (
     <Banner
       title="AUGMENTED REALITY FOR HISTORIC SITES AND BEYOND."
       subtitle="Hiamo creates AR experiences that bring content to life by immersing users in interactive stories, visualizations, and more."
-      backgroundImageUrl={require('../images/bannerImage.jpg')}
+      backgroundImageUrl={data?.file?.childImageSharp?.fixed?.src || data?.file?.publicURL || require('../images/bannerImage.jpg')}
     />
     <Contact />
     {/* About Section */}
@@ -119,6 +119,14 @@ export const query = graphql`
         date
         type
       }
+    }
+    file(relativePath: { eq: "imgs/bannerImage.jpg" }) {
+      childImageSharp {
+        fixed(width: 1938) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+      publicURL
     }
   }
 `;
