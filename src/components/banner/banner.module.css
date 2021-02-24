@@ -54,9 +54,16 @@
 /* Tablet styles */
 @media screen and (max-width: 1025px) {
   .container {
-    padding: 20px 0;
+    padding: 30px 0;
+    margin: 0 -20px;
+    width: calc(100% + 40px);
+    background-position: unset;
+  }
+
+  .title-wrapper {
+    padding: 10px 20px;
     margin: 0;
-    width: 100%;
+    background-color: rgba(var(--color-primary), .9);
   }
 
   .title {
@@ -71,8 +78,18 @@
 
 /* Handle specifically mobile styles */
 @media screen and (max-width: 480px) {
+  .container {
+    background-position: bottom right;
+    background-size: auto 100%;
+  }
+
+  .wrapper {
+    margin: 110px 20px;
+  }
+
   .title-wrapper {
     text-align: center;
+    background-color: rgba(var(--color-primary), .75);
   }
 
   .subtitle {
