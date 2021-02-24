@@ -43,6 +43,8 @@
   font-size: 20px;
   color:rgb(var(--color-text-light));
   text-decoration: none;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .modal-caption a:hover {
   text-decoration: none;
