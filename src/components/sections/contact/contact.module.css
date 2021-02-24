@@ -135,8 +135,8 @@
 @media screen and (max-width: 1024px) {
   .container {
     border-top: 1px solid rgb(var(--color-trim));
-    padding: 20px 0 35px 0;
-    margin: 0;
+    padding: 20px 20px 35px;
+    margin: 0 -20px;
   }
 
   .title {
