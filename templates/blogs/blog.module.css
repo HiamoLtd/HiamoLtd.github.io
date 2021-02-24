@@ -43,6 +43,8 @@
 }
 .reference-text a {
   color: rgb(var(--color-secondary-light));
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 .reference-text a:hover {
   color: rgb(var(--color-text-trim));
